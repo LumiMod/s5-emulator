@@ -1,0 +1,31 @@
+name: AF collection tools
+
+on:
+  push:
+    paths: ['af-research/**', '.github/workflows/af-collection.yml']
+  pull_request:
+    paths: ['af-research/**', '.github/workflows/af-collection.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  firmware-free-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: af-research
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check collection and portable inputs with synthetic fixtures
+        run: |
+          python verify_collection.py
+          python verify_portability.py
+      - name: Build and verify the empty owner kit
+        run: python build_owner_kit.py
+      - name: Check research source syntax (no firmware or training)
+        run: python -c "import ast,pathlib; [ast.parse(p.read_text(encoding='utf-8'), filename=str(p)) for p in pathlib.Path('.').glob('*.py')]"

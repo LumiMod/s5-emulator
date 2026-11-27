@@ -1,0 +1,13 @@
+test_content_leak (__main__.ToolsTest.test_content_leak) ... ok
+test_corrupt_file_hash (__main__.ToolsTest.test_corrupt_file_hash) ... ok
+test_focus_units_not_pooled (__main__.ToolsTest.test_focus_units_not_pooled) ... ok
+test_known_ap_and_track_switch (__main__.ToolsTest.test_known_ap_and_track_switch) ... ok
+test_sequence_leak (__main__.ToolsTest.test_sequence_leak) ... ok
+test_synthetic_capture_cannot_be_original (__main__.ToolsTest.test_synthetic_capture_cannot_be_original) ... ok
+test_valid_structure_keeps_missing_focus_gap (__main__.ToolsTest.test_valid_structure_keeps_missing_focus_gap) ... ok
+test_wrong_box (__main__.ToolsTest.test_wrong_box) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.024s
+
+OK

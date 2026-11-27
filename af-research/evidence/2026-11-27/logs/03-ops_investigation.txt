@@ -1,0 +1,2 @@
+43_hm_d_nw {'concat_branches_agree': 12, 'explicit_reshape_counts_agree': 12, 'packed_input_channel_counts_agree': 65}
+44_hm_d_nw_sng {'concat_branches_agree': 12, 'explicit_reshape_counts_agree': 4, 'packed_input_channel_counts_agree': 61}

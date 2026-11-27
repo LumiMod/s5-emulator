@@ -1,0 +1,5 @@
+# Python 3.12 or newer is required by the pinned NumPy version.
+numpy==2.5.5
+torch==2.15.0
+pillow==13.0.0
+capstone==5.0.7

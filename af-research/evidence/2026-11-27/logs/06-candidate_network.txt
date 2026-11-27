@@ -1,0 +1,6 @@
+43_hm_d_nw o4_i4_hw 111 candidate records, forward/backward passed; 0.17 seconds
+43_hm_d_nw hw_o4_i4 111 candidate records, forward/backward passed; 0.119 seconds
+43_hm_d_nw o4_hw_i4 111 candidate records, forward/backward passed; 0.084 seconds
+44_hm_d_nw_sng o4_i4_hw 95 candidate records, forward/backward passed; 0.064 seconds
+44_hm_d_nw_sng hw_o4_i4 95 candidate records, forward/backward passed; 0.061 seconds
+44_hm_d_nw_sng o4_hw_i4 95 candidate records, forward/backward passed; 0.063 seconds

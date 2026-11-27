@@ -1,0 +1,2 @@
+Located 10 runtime class vtables; 86 method-pointer entries
+code base 0x84268000 data base 0x84568000 ARM evidence {'available': True, 'output': 'runtime-arm-consumer.txt'}

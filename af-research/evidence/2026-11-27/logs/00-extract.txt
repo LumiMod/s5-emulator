@@ -1,0 +1,3 @@
+43_hm_d_nw 117 layers; 12 output ports; pinned model identity passed
+44_hm_d_nw_sng 97 layers; 4 output ports; pinned model identity passed
+Optional checks: {'firmware_package_check': 'passed', 'manifest_check': 'passed_for_models', 'zip_check': 'passed'}

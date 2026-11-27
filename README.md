@@ -1,5 +1,11 @@
 # S5 固件研究工具：可运行的第一版
 
+## S5 对焦研究与机主采集（2026-11-27）
+
+新增 [af-research 完整项目](af-research/README.md)：模型解析、候选网络、训练前检查、数据评估工具及正常相机拍摄的采集流程。可直接转发 [机主消息](af-research/docs/给S5机主的转发消息.md)，阅读 [完整指南](af-research/docs/S5机主采集指南.md)，或 [下载机主采集包](https://github.com/LumiMod/s5-emulator/raw/refs/heads/main/af-research/dist/S5-owner-collection-kit.zip)。当前电脑端准备已复现，正式训练和原机数值一致性验证尚未完成；原片请通过私密渠道交接。
+
+## 模拟器现状
+
 本机已构建并验证：**原厂 S5 V2.9 Linux 内核在专用 QEMU 机型中启动，读取原厂文件系统，并运行原厂 Bash、cat、ls 等用户态程序。** 另附真实固件函数和 LUT 补丁的局部执行工具。
 
 这是一套离线研究工具。已增加“合成图像 → QEMU 执行实际 LUT 补丁 → 电脑编码 JPEG”的可运行管线，以及真正执行三个 RTOS 核心的新 `s5-rtos` 机型。多核握手、RTC 串行初始化和原厂 IRQ 处理已实际通过；完整相机菜单、原厂快门流程、视频、传感器、JPU/ISP 和主核完整启动仍未完成。Linux 命令测试不能证明主核补丁能在机身运行。

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-27",
+  "python": "3.12.14",
+  "platform": "Apple Silicon macOS",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "torch": "2.15.0",
+    "Pillow": "13.0.0",
+    "capstone": "5.0.7"
+  },
+  "collection_tests": 26,
+  "portable_input_tests": 9,
+  "pretraining_data_tests": 8,
+  "preparation_steps": 14,
+  "formal_training_started": false
+}

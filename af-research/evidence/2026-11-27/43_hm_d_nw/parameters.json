@@ -1,0 +1,4607 @@
+{
+  "source_sha256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+  "input_candidate": {
+    "offset": 35008,
+    "bytes": 197632,
+    "stored_shape": [
+      1,
+      1,
+      256,
+      386
+    ],
+    "valid_width": 384,
+    "valid_height": 256,
+    "scale_candidate": 0.0078125,
+    "valid_area_all_same": true,
+    "valid_area_raw_value": 14976,
+    "valid_area_scaled_value": 117.0,
+    "row_padding_interpretation": "Two stored i16 elements per row; meaning unverified."
+  },
+  "input_auxiliary": {
+    "offset": 232640,
+    "bytes": 64,
+    "sha256": "96a02d99f0a7b0ef16ce52b1ba6a4fc2067fd7c0c88380ca28ce5984a71269a5"
+  },
+  "convolutions": [
+    {
+      "index": 1,
+      "name": "conv1",
+      "tensor_key": "layer_001",
+      "input_layer": 0,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        4,
+        4
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.006317331455647945,
+      "output_scale": 0.00039101208676584065,
+      "weight_scale": 2.436604745525983e-06,
+      "bias_scale": 1.539283900342525e-08,
+      "scale_identity_relative_error": 5.2002564247091554e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 1722,
+        "bytes": 1024,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          16
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.436604745525983e-06,
+        "raw_scale_area_hex": "8d842336000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 232704,
+        "sha256": "d6b30cfa7465d7f97b2f4f0f97504f536de98798de01dd7ba2936a255c23e682"
+      },
+      "bias": {
+        "descriptor_offset": 1790,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.539283900342525e-08,
+        "raw_scale_area_hex": "36398432000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 233728,
+        "sha256": "1c5faa122e285ae3090663e4df97294c1434296d79310828ecfedbd439df563c"
+      }
+    },
+    {
+      "index": 2,
+      "name": "conv2",
+      "tensor_key": "layer_002",
+      "input_layer": 1,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00039101208676584065,
+      "output_scale": 0.0004325717454776168,
+      "weight_scale": 4.895548045169562e-05,
+      "bias_scale": 1.9142184726206324e-08,
+      "scale_identity_relative_error": 8.158133572714158e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 2123,
+        "bytes": 27648,
+        "stored_shape": [
+          48,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.895548045169562e-05,
+        "raw_scale_area_hex": "8c554d38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 233984,
+        "sha256": "41382029a252f1486d3eab4e51c74b84da6ab5e839f4b11358e58a67b8940951"
+      },
+      "bias": {
+        "descriptor_offset": 2191,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.9142184726206324e-08,
+        "raw_scale_area_hex": "1c6ea432000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 261632,
+        "sha256": "f2a2ee7ca6b5b681dfc6a9bddbee1e4e4f080f359fab8f7e2da032461a355803"
+      }
+    },
+    {
+      "index": 3,
+      "name": "conv3",
+      "tensor_key": "layer_003",
+      "input_layer": 2,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0004325717454776168,
+      "output_scale": 0.00015652643924113363,
+      "weight_scale": 3.467777787591331e-05,
+      "bias_scale": 1.5000626518713034e-08,
+      "scale_identity_relative_error": 2.5755982071796174e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 2524,
+        "bytes": 82944,
+        "stored_shape": [
+          96,
+          12,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.467777787591331e-05,
+        "raw_scale_area_hex": "fb721138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 262016,
+        "sha256": "800b00e2ec94389a818873e96336757b2a06ccb51b62132205192cfe4f825481"
+      },
+      "bias": {
+        "descriptor_offset": 2592,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.5000626518713034e-08,
+        "raw_scale_area_hex": "bada8032000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 344960,
+        "sha256": "6ad63395e77c1603b69870b4ae07d09dcb1b5e44e03aefcc8911ef009be3e048"
+      }
+    },
+    {
+      "index": 5,
+      "name": "inc3a/conv1",
+      "tensor_key": "layer_005",
+      "input_layer": 4,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00023018229694571346,
+      "output_scale": 0.00022175918275024742,
+      "weight_scale": 5.699224493582733e-05,
+      "bias_scale": 1.3118605757256319e-08,
+      "scale_identity_relative_error": 6.873072006004157e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 3115,
+        "bytes": 18432,
+        "stored_shape": [
+          96,
+          96,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.699224493582733e-05,
+        "raw_scale_area_hex": "f50a6f38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 345728,
+        "sha256": "312a27c9c018dcbd3ebc6a2e89d74e2c5323807e9bec07823fec3bb25faa4aac"
+      },
+      "bias": {
+        "descriptor_offset": 3183,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.3118605757256319e-08,
+        "raw_scale_area_hex": "3d606132000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 364160,
+        "sha256": "be5f6a27ffdb85315e76e2f02edbad9199cdf9bebce855851e0696a1e75f9f74"
+      }
+    },
+    {
+      "index": 6,
+      "name": "uconv312",
+      "tensor_key": "layer_006",
+      "input_layer": 3,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00015652643924113363,
+      "output_scale": 0.0002722000645007938,
+      "weight_scale": 6.633630982832983e-05,
+      "bias_scale": 1.0383386594980948e-08,
+      "scale_identity_relative_error": 2.168424152946873e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 3519,
+        "bytes": 6144,
+        "stored_shape": [
+          32,
+          96,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.633630982832983e-05,
+        "raw_scale_area_hex": "091e8b38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 364928,
+        "sha256": "1bc9c77a4dfe782e38d62254960fe658123381bbfd07800a7173f181578f62f6"
+      },
+      "bias": {
+        "descriptor_offset": 3587,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.0383386594980948e-08,
+        "raw_scale_area_hex": "9e623232000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 371072,
+        "sha256": "72c94aca86d3c3bb47ca50f46c0002d38f5c81f9f4815b93905431322f8d677d"
+      }
+    },
+    {
+      "index": 8,
+      "name": "inc3a/conv3_2",
+      "tensor_key": "layer_008",
+      "input_layer": 7,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0002722000645007938,
+      "output_scale": 0.00022175918275024742,
+      "weight_scale": 2.6188819902017713e-05,
+      "bias_scale": 7.1285986003033486e-09,
+      "scale_identity_relative_error": 1.876588400601218e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 4051,
+        "bytes": 18432,
+        "stored_shape": [
+          64,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.6188819902017713e-05,
+        "raw_scale_area_hex": "10b0db37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 371328,
+        "sha256": "85bb7fa84785e1aaa850d4005e2b412b3c2ac0dfdcc906db07b5fbdb1c457744"
+      },
+      "bias": {
+        "descriptor_offset": 4119,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 7.1285986003033486e-09,
+        "raw_scale_area_hex": "d1eff431000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 389760,
+        "sha256": "45b9ab8aeb1ee7562b38b5e615a2b62baf705fb916fb99db649e56bf2d89ca5c"
+      }
+    },
+    {
+      "index": 9,
+      "name": "inc3a/conv5_2",
+      "tensor_key": "layer_009",
+      "input_layer": 7,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0002722000645007938,
+      "output_scale": 0.00021408141765277833,
+      "weight_scale": 3.732142431545071e-05,
+      "bias_scale": 1.0158894170331223e-08,
+      "scale_identity_relative_error": 6.339670754072091e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 4460,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.732142431545071e-05,
+        "raw_scale_area_hex": "93891c38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 390272,
+        "sha256": "89ec2b8b39cda3a2fcb4d5a8cb6f946fc7d76ce6e4fafb21ce9e4bd094a56715"
+      },
+      "bias": {
+        "descriptor_offset": 4528,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.0158894170331223e-08,
+        "raw_scale_area_hex": "4a872e32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 399488,
+        "sha256": "119c8af1e34dc5932a07bd7ef200fd7d120ed65d847356d62e98620b512dcd3b"
+      }
+    },
+    {
+      "index": 10,
+      "name": "inc3a/conv5_3",
+      "tensor_key": "layer_010",
+      "input_layer": 9,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00021408141765277833,
+      "output_scale": 0.00022175918275024742,
+      "weight_scale": 4.2724179365905e-05,
+      "bias_scale": 9.146452484287693e-09,
+      "scale_identity_relative_error": 4.399703936173958e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 4869,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.2724179365905e-05,
+        "raw_scale_area_hex": "bd323338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 399744,
+        "sha256": "b28e02118f94900439e58efbe046b08e2fe1984984e90226e48e313770ba3671"
+      },
+      "bias": {
+        "descriptor_offset": 4937,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 9.146452484287693e-09,
+        "raw_scale_area_hex": "86221d32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 418176,
+        "sha256": "43f083577ca5eb57cc67a057e6778ec52f1fea0398ddfc5e456da518fc96972a"
+      }
+    },
+    {
+      "index": 12,
+      "name": "inc3b/conv1",
+      "tensor_key": "layer_012",
+      "input_layer": 11,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00022175918275024742,
+      "output_scale": 0.00025022251065820456,
+      "weight_scale": 4.607458322425373e-05,
+      "bias_scale": 1.0217461543504669e-08,
+      "scale_identity_relative_error": 3.6982189370497244e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 5392,
+        "bytes": 36864,
+        "stored_shape": [
+          96,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.607458322425373e-05,
+        "raw_scale_area_hex": "35404138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 418432,
+        "sha256": "ceb6063322ee1ea73dcd97608640544f63e50e896df6a8333c89f8357414f60e"
+      },
+      "bias": {
+        "descriptor_offset": 5460,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.0217461543504669e-08,
+        "raw_scale_area_hex": "df882f32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 455296,
+        "sha256": "2211e591cee1dcd281b72cfb06fd03117d120a11a0d19218ce053d9deecd41da"
+      }
+    },
+    {
+      "index": 13,
+      "name": "uconv314",
+      "tensor_key": "layer_013",
+      "input_layer": 11,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00022175918275024742,
+      "output_scale": 0.00030534755205735564,
+      "weight_scale": 5.2525960200000554e-05,
+      "bias_scale": 1.164811358478346e-08,
+      "scale_identity_relative_error": 3.6258290489969854e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 5796,
+        "bytes": 12288,
+        "stored_shape": [
+          32,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.2525960200000554e-05,
+        "raw_scale_area_hex": "524f5c38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 456064,
+        "sha256": "f815324acdfeee244a9003a7f63ce6dbad05eae06124ec2b402b96fc37a819a6"
+      },
+      "bias": {
+        "descriptor_offset": 5864,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.164811358478346e-08,
+        "raw_scale_area_hex": "f21c4832000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 468352,
+        "sha256": "e329b62e0b88f5d5625c5e10e370b3b27571a4c7d1c52339fd3a12f3848915d6"
+      }
+    },
+    {
+      "index": 15,
+      "name": "inc3b/conv3_2",
+      "tensor_key": "layer_015",
+      "input_layer": 14,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00030534755205735564,
+      "output_scale": 0.00025022251065820456,
+      "weight_scale": 5.015155329601839e-05,
+      "bias_scale": 1.5313654344595307e-08,
+      "scale_identity_relative_error": 2.0490346569150473e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 6328,
+        "bytes": 18432,
+        "stored_shape": [
+          64,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.015155329601839e-05,
+        "raw_scale_area_hex": "d2595238000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 468608,
+        "sha256": "22735966ce68b33aeeda2b6b4cfb5a231eaddbea0ff24179fac8d9a3cf4a5a14"
+      },
+      "bias": {
+        "descriptor_offset": 6396,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.5313654344595307e-08,
+        "raw_scale_area_hex": "158b8332000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 487040,
+        "sha256": "89563cc1829a71994e534475af38ee8d6f091058a639c33e594daa2c6962da6c"
+      }
+    },
+    {
+      "index": 16,
+      "name": "inc3b/conv5_2",
+      "tensor_key": "layer_016",
+      "input_layer": 14,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00030534755205735564,
+      "output_scale": 0.00020162960572633892,
+      "weight_scale": 3.732522964128293e-05,
+      "bias_scale": 1.1397167654081386e-08,
+      "scale_identity_relative_error": 1.3436407799388396e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 6737,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.732522964128293e-05,
+        "raw_scale_area_hex": "a98d1c38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 487552,
+        "sha256": "921a332d4bd811b941daa00dba2b3b5dc44772ec054cfeefe353966bf229a787"
+      },
+      "bias": {
+        "descriptor_offset": 6805,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.1397167654081386e-08,
+        "raw_scale_area_hex": "46cd4332000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 496768,
+        "sha256": "2ecd1e0dc7311b5e45c7b36c189fa8da9f0b90a636de456f79311d25cc7f6829"
+      }
+    },
+    {
+      "index": 17,
+      "name": "inc3b/conv5_3",
+      "tensor_key": "layer_017",
+      "input_layer": 16,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00020162960572633892,
+      "output_scale": 0.00025022251065820456,
+      "weight_scale": 6.632770237047225e-05,
+      "bias_scale": 1.3373628426904816e-08,
+      "scale_identity_relative_error": 3.797582721865081e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 7146,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.632770237047225e-05,
+        "raw_scale_area_hex": "6a198b38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 497024,
+        "sha256": "5d788857782bdad48aefa6d83371f8ea3dc7b97ac85109ceac257cb43f48cb7a"
+      },
+      "bias": {
+        "descriptor_offset": 7214,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.3373628426904816e-08,
+        "raw_scale_area_hex": "d7c16532000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 515456,
+        "sha256": "0c7a642fa1863d5418a747129163288bf5941b2bba963833a1da77161e015653"
+      }
+    },
+    {
+      "index": 19,
+      "name": "inc3c/conv1",
+      "tensor_key": "layer_019",
+      "input_layer": 18,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00025022251065820456,
+      "output_scale": 0.0005696924636140466,
+      "weight_scale": 8.923601126298308e-05,
+      "bias_scale": 2.232885876196633e-08,
+      "scale_identity_relative_error": 7.784148873414085e-10,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 7669,
+        "bytes": 36864,
+        "stored_shape": [
+          96,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 8.923601126298308e-05,
+        "raw_scale_area_hex": "3824bb38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 515712,
+        "sha256": "c118bbb56d901f6c105550ab5450f5cb2d9dee679b1fc6e8a8925fb230983488"
+      },
+      "bias": {
+        "descriptor_offset": 7737,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.232885876196633e-08,
+        "raw_scale_area_hex": "aecdbf32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 552576,
+        "sha256": "d465b4ef3c23a80e237ed51acd77a9755b3a6a3a6acf9214225ff634770dd2a8"
+      }
+    },
+    {
+      "index": 20,
+      "name": "uconv316",
+      "tensor_key": "layer_020",
+      "input_layer": 18,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00025022251065820456,
+      "output_scale": 0.0002629968512337655,
+      "weight_scale": 4.009514668723568e-05,
+      "bias_scale": 1.0032707997709167e-08,
+      "scale_identity_relative_error": 2.7069455103788693e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 8073,
+        "bytes": 12288,
+        "stored_shape": [
+          32,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.009514668723568e-05,
+        "raw_scale_area_hex": "d62b2838000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 553344,
+        "sha256": "b677d839b9a4be28f07a0d7268fddee68b268dc2e48cc957cb527b28843eadaf"
+      },
+      "bias": {
+        "descriptor_offset": 8141,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.0032707997709167e-08,
+        "raw_scale_area_hex": "515c2c32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 565632,
+        "sha256": "38d8415284f09a63a5d85bd43df16cc93f2f45cf740fca6306c8ed9c07877e0c"
+      }
+    },
+    {
+      "index": 22,
+      "name": "inc3c/conv3_2",
+      "tensor_key": "layer_022",
+      "input_layer": 21,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0002629968512337655,
+      "output_scale": 0.0005696924636140466,
+      "weight_scale": 8.101001003524289e-05,
+      "bias_scale": 2.1305377018165927e-08,
+      "scale_identity_relative_error": 2.5323123551617634e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 8605,
+        "bytes": 18432,
+        "stored_shape": [
+          64,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 8.101001003524289e-05,
+        "raw_scale_area_hex": "ebe3a938000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 565888,
+        "sha256": "0540ab05f0a8c60c6da92b673832605de5ad7cc7589b4fb3e69cccdcfe083b5a"
+      },
+      "bias": {
+        "descriptor_offset": 8673,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.1305377018165927e-08,
+        "raw_scale_area_hex": "0503b732000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 584320,
+        "sha256": "d2db5dc27494d940eb1e58f4d3d3245293c1695b6ca4d8e652c8322a10bb7dc1"
+      }
+    },
+    {
+      "index": 23,
+      "name": "inc3c/conv5_2",
+      "tensor_key": "layer_023",
+      "input_layer": 21,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0002629968512337655,
+      "output_scale": 0.00016465719090774655,
+      "weight_scale": 7.911196007626131e-05,
+      "bias_scale": 2.0806195877298705e-08,
+      "scale_identity_relative_error": 2.4881501068125997e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 9014,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 7.911196007626131e-05,
+        "raw_scale_area_hex": "e9e8a538000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 584832,
+        "sha256": "fccc36c5125bc708956d70505f35005c7937f0986ad50bc193c5cdbf611bd124"
+      },
+      "bias": {
+        "descriptor_offset": 9082,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.0806195877298705e-08,
+        "raw_scale_area_hex": "4fb9b232000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 594048,
+        "sha256": "8da6662b70a3d461916a5ee8620d2dd0fe020d286370dce8606ad17e5532f03d"
+      }
+    },
+    {
+      "index": 24,
+      "name": "inc3c/conv5_3",
+      "tensor_key": "layer_024",
+      "input_layer": 23,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00016465719090774655,
+      "output_scale": 0.0005696924636140466,
+      "weight_scale": 5.343127122614533e-05,
+      "bias_scale": 8.797843342733813e-09,
+      "scale_identity_relative_error": 3.591866830157755e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 9423,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.343127122614533e-05,
+        "raw_scale_area_hex": "641b6038000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 594304,
+        "sha256": "3d91fe9a0447ac5034d9e1422cd0ae378e8d82f3423269ba7b2be631dab09758"
+      },
+      "bias": {
+        "descriptor_offset": 9491,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 8.797843342733813e-09,
+        "raw_scale_area_hex": "53251732000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 612736,
+        "sha256": "048fb6f45992492af7858c3d493ba5773eda1de15b0beb129cb4fadfedc09b7d"
+      }
+    },
+    {
+      "index": 26,
+      "name": "inc3d/conv1",
+      "tensor_key": "layer_026",
+      "input_layer": 25,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0005696924636140466,
+      "output_scale": 0.0008584009483456612,
+      "weight_scale": 3.172813740093261e-05,
+      "bias_scale": 1.8075279939466782e-08,
+      "scale_identity_relative_error": 4.5496141256070244e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 9946,
+        "bytes": 36864,
+        "stored_shape": [
+          96,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.172813740093261e-05,
+        "raw_scale_area_hex": "d4130538000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 612992,
+        "sha256": "964cbe1fe650a1b1cf3b262a4499e015fb200655ee40a6ae7f923792bb8bf26d"
+      },
+      "bias": {
+        "descriptor_offset": 10014,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.8075279939466782e-08,
+        "raw_scale_area_hex": "f6439b32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 649856,
+        "sha256": "8923cc95fdbae839c064903e7eb3e372077332475022b6e00fe70e0a5ebd3e30"
+      }
+    },
+    {
+      "index": 27,
+      "name": "uconv318",
+      "tensor_key": "layer_027",
+      "input_layer": 25,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0005696924636140466,
+      "output_scale": 0.0004536410269793123,
+      "weight_scale": 4.2817991925403476e-05,
+      "bias_scale": 2.4393086661689267e-08,
+      "scale_identity_relative_error": 2.645422456592621e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 10350,
+        "bytes": 12288,
+        "stored_shape": [
+          32,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.2817991925403476e-05,
+        "raw_scale_area_hex": "78973338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 650624,
+        "sha256": "b6edc028b3a9e399d348fe48df7d2efc25060049734870b3676ac7e1fef71100"
+      },
+      "bias": {
+        "descriptor_offset": 10418,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.4393086661689267e-08,
+        "raw_scale_area_hex": "f788d132000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 662912,
+        "sha256": "ed97adbb9583ccb82eb496c48ef1bd1a89e4b9f2ca875f9f922f1c2a7de9abd7"
+      }
+    },
+    {
+      "index": 29,
+      "name": "inc3d/conv3_2",
+      "tensor_key": "layer_029",
+      "input_layer": 28,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0004536410269793123,
+      "output_scale": 0.0008584009483456612,
+      "weight_scale": 7.076674955897033e-05,
+      "bias_scale": 3.210270094200496e-08,
+      "scale_identity_relative_error": 1.219255431601596e-10,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 10882,
+        "bytes": 18432,
+        "stored_shape": [
+          64,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 7.076674955897033e-05,
+        "raw_scale_area_hex": "9c689438000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 663168,
+        "sha256": "0df52d908920366680e6309b81def88217ee926f02a90c52cce888b04309c216"
+      },
+      "bias": {
+        "descriptor_offset": 10950,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.210270094200496e-08,
+        "raw_scale_area_hex": "4be10933000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 681600,
+        "sha256": "2e9db2fc8cff2f201ef87b38673b8ff44207d19e92ead04cecbeb9b4679466ae"
+      }
+    },
+    {
+      "index": 30,
+      "name": "inc3d/conv5_2",
+      "tensor_key": "layer_030",
+      "input_layer": 28,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0004536410269793123,
+      "output_scale": 0.0002798468922264874,
+      "weight_scale": 4.0169146814150736e-05,
+      "bias_scale": 1.822237294391016e-08,
+      "scale_identity_relative_error": 3.827380327346356e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 11291,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.0169146814150736e-05,
+        "raw_scale_area_hex": "4b7b2838000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 682112,
+        "sha256": "f1f4cccdac17a97655c60d0ef30cd267ba2ea318d9fab0b197c09f9ad57668d3"
+      },
+      "bias": {
+        "descriptor_offset": 11359,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.822237294391016e-08,
+        "raw_scale_area_hex": "6c879c32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 691328,
+        "sha256": "32de43e77a9f2a3a60e179350af5d0547a319bd681efc93a3376db1c142e27b6"
+      }
+    },
+    {
+      "index": 31,
+      "name": "inc3d/conv5_3",
+      "tensor_key": "layer_031",
+      "input_layer": 30,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0002798468922264874,
+      "output_scale": 0.0008584009483456612,
+      "weight_scale": 6.170092092361301e-05,
+      "bias_scale": 1.7266810203864225e-08,
+      "scale_identity_relative_error": 4.4253751456728626e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 11700,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.170092092361301e-05,
+        "raw_scale_area_hex": "6e658138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 691584,
+        "sha256": "314f94e575def9bce275232a1fdc90045f093900f1a81d93903021f582363fc9"
+      },
+      "bias": {
+        "descriptor_offset": 11768,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.7266810203864225e-08,
+        "raw_scale_area_hex": "1e529432000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 710016,
+        "sha256": "8c6808f76007f28235cb484c8329995e03daf6bc906b6fe31fbe769fd5a12a37"
+      }
+    },
+    {
+      "index": 33,
+      "name": "inc3e/conv1",
+      "tensor_key": "layer_033",
+      "input_layer": 32,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008584009483456612,
+      "output_scale": 0.0013499135384336114,
+      "weight_scale": 4.4747193896910176e-05,
+      "bias_scale": 3.841103435320292e-08,
+      "scale_identity_relative_error": 1.7606608547118854e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 12223,
+        "bytes": 36864,
+        "stored_shape": [
+          96,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.4747193896910176e-05,
+        "raw_scale_area_hex": "efae3b38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 710272,
+        "sha256": "f89c2b9da71a363f44cac8b959a735954c69af02cdc697fafb46cdda07c4b1ac"
+      },
+      "bias": {
+        "descriptor_offset": 12291,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.841103435320292e-08,
+        "raw_scale_area_hex": "61f92433000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 747136,
+        "sha256": "1286677145d344575b10a0eb7f93ce09ca5c887b4eba1faf21ef38448e15156c"
+      }
+    },
+    {
+      "index": 34,
+      "name": "uconv320",
+      "tensor_key": "layer_034",
+      "input_layer": 32,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008584009483456612,
+      "output_scale": 0.0006684658583253622,
+      "weight_scale": 2.9706259738304652e-05,
+      "bias_scale": 2.549988131761438e-08,
+      "scale_identity_relative_error": 8.37450424981229e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 12627,
+        "bytes": 12288,
+        "stored_shape": [
+          32,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.9706259738304652e-05,
+        "raw_scale_area_hex": "b531f937000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 747904,
+        "sha256": "69ceb77893dd91b3f766ea26fc61e00ee58abd6ab567cbcc416f0eaaf8650525"
+      },
+      "bias": {
+        "descriptor_offset": 12695,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.549988131761438e-08,
+        "raw_scale_area_hex": "d50adb32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 760192,
+        "sha256": "29d10f001c318f223405ca678d262611084dbc127e5c3be879d05990ed3b263e"
+      }
+    },
+    {
+      "index": 36,
+      "name": "inc3e/conv3_2",
+      "tensor_key": "layer_036",
+      "input_layer": 35,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0006684658583253622,
+      "output_scale": 0.0013499135384336114,
+      "weight_scale": 5.229742964729667e-05,
+      "bias_scale": 3.495904721262377e-08,
+      "scale_identity_relative_error": 2.904064734984161e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 13159,
+        "bytes": 18432,
+        "stored_shape": [
+          64,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.229742964729667e-05,
+        "raw_scale_area_hex": "f0595b38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 760448,
+        "sha256": "b309c9838dfac9e9cbe8660a63e5647a2de2147dbe4a6b2b266971b25ef468d2"
+      },
+      "bias": {
+        "descriptor_offset": 13227,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.495904721262377e-08,
+        "raw_scale_area_hex": "e1251633000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 778880,
+        "sha256": "507dd7a853f52c4b9bdd49838d744abe3e69ce3c6cc607c75cda260949576f61"
+      }
+    },
+    {
+      "index": 37,
+      "name": "inc3e/conv5_2",
+      "tensor_key": "layer_037",
+      "input_layer": 35,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0006684658583253622,
+      "output_scale": 0.000784912146627903,
+      "weight_scale": 4.391244874568656e-05,
+      "bias_scale": 2.9353973474144368e-08,
+      "scale_identity_relative_error": 2.4943489399981826e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 13568,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.391244874568656e-05,
+        "raw_scale_area_hex": "a22e3838000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 779392,
+        "sha256": "87fe01fc9df2cb33e67f2661a20694a85cc581088b1e2a66f6ce26c9ecebea10"
+      },
+      "bias": {
+        "descriptor_offset": 13636,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.9353973474144368e-08,
+        "raw_scale_area_hex": "1226fc32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 788608,
+        "sha256": "dd99686c6ad1fef43432477986c55590edbe94e8b8e3ecef290445cfa438ce77"
+      }
+    },
+    {
+      "index": 38,
+      "name": "inc3e/conv5_3",
+      "tensor_key": "layer_038",
+      "input_layer": 37,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.000784912146627903,
+      "output_scale": 0.0013499135384336114,
+      "weight_scale": 3.5156786907464266e-05,
+      "bias_scale": 2.7594989404633452e-08,
+      "scale_identity_relative_error": 1.176140768073786e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 13977,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.5156786907464266e-05,
+        "raw_scale_area_hex": "50751338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 788864,
+        "sha256": "cc179373477dd09d4cb74b7a71fe19bf98fa9c1afd13d0465ae0761e317d7a4a"
+      },
+      "bias": {
+        "descriptor_offset": 14045,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.7594989404633452e-08,
+        "raw_scale_area_hex": "060aed32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 807296,
+        "sha256": "6756e40e3ad3e08cf51f45fad03e83caad438cbf260e643c1a97b61a0c5eaa07"
+      }
+    },
+    {
+      "index": 41,
+      "name": "inc4a/conv1",
+      "tensor_key": "layer_041",
+      "input_layer": 40,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0015104180201888084,
+      "output_scale": 0.0010005991207435727,
+      "weight_scale": 2.0472640244406648e-05,
+      "bias_scale": 3.0922244320663594e-08,
+      "scale_identity_relative_error": 1.3754849544214494e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 14684,
+        "bytes": 49152,
+        "stored_shape": [
+          128,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.0472640244406648e-05,
+        "raw_scale_area_hex": "a9bcab37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 807552,
+        "sha256": "ee273d28aba6c40b6982ac9b2956364ef4f78c752786a5f183ebdddcbbac5789"
+      },
+      "bias": {
+        "descriptor_offset": 14752,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.0922244320663594e-08,
+        "raw_scale_area_hex": "5ecf0433000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 856704,
+        "sha256": "7122c56abeec913b2d38b9c085b9aaec2d3803a88482e9ed06261056568bfff6"
+      }
+    },
+    {
+      "index": 42,
+      "name": "uconv322",
+      "tensor_key": "layer_042",
+      "input_layer": 39,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0013499135384336114,
+      "output_scale": 0.0013499135384336114,
+      "weight_scale": 2.8217138606123626e-05,
+      "bias_scale": 3.809069681892652e-08,
+      "scale_identity_relative_error": 1.5786991013439317e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 15088,
+        "bytes": 18432,
+        "stored_shape": [
+          48,
+          192,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.8217138606123626e-05,
+        "raw_scale_area_hex": "d8b3ec37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 857728,
+        "sha256": "b59a9b4262bb3e46e9ec1bf9959f9a0698be9fa6155bc36f9a406ddb9bfd7e7e"
+      },
+      "bias": {
+        "descriptor_offset": 15156,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.809069681892652e-08,
+        "raw_scale_area_hex": "2a992333000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 876160,
+        "sha256": "5e6d83cd73208b43b131bc610b9c26a225b007cff1b979db3fac19bfdbd81811"
+      }
+    },
+    {
+      "index": 44,
+      "name": "inc4a/conv3_2",
+      "tensor_key": "layer_044",
+      "input_layer": 43,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0013499135384336114,
+      "output_scale": 0.0010005991207435727,
+      "weight_scale": 3.464861583779566e-05,
+      "bias_scale": 4.677263731878156e-08,
+      "scale_identity_relative_error": 3.6588827413784375e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 15620,
+        "bytes": 55296,
+        "stored_shape": [
+          96,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.464861583779566e-05,
+        "raw_scale_area_hex": "ab531138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 876544,
+        "sha256": "a4d223abe235ab8d7ae5893103e9fe0530c0aad92d0e9916551c90704c6f53a8"
+      },
+      "bias": {
+        "descriptor_offset": 15688,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 4.677263731878156e-08,
+        "raw_scale_area_hex": "0fe34833000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 931840,
+        "sha256": "e76772b4e7f3d3199fe7a64f08293033533cafa1ebd2a3144c65305c0f44f095"
+      }
+    },
+    {
+      "index": 45,
+      "name": "inc4a/conv5_2",
+      "tensor_key": "layer_045",
+      "input_layer": 43,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0013499135384336114,
+      "output_scale": 0.001055869273841381,
+      "weight_scale": 5.197510472498834e-05,
+      "bias_scale": 7.016189584874155e-08,
+      "scale_identity_relative_error": 2.3959229649049243e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 16029,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.197510472498834e-05,
+        "raw_scale_area_hex": "d8ff5938000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 932608,
+        "sha256": "1098e1fc75db8ccc80672cd4cf18e1e9e686e40123ceda86dc1a72fc9f2ffaf4"
+      },
+      "bias": {
+        "descriptor_offset": 16097,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 7.016189584874155e-08,
+        "raw_scale_area_hex": "e9ab9633000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 941824,
+        "sha256": "74e363f01f21cd0ed3d9650d9a51035b3b45f6607f02f8c554d295956d3732ec"
+      }
+    },
+    {
+      "index": 46,
+      "name": "inc4a/conv5_3",
+      "tensor_key": "layer_046",
+      "input_layer": 45,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.001055869273841381,
+      "output_scale": 0.0010005991207435727,
+      "weight_scale": 3.544158607837744e-05,
+      "bias_scale": 3.7421681753357916e-08,
+      "scale_identity_relative_error": 8.030833345934777e-11,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 16438,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.544158607837744e-05,
+        "raw_scale_area_hex": "1da71438000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 942080,
+        "sha256": "c75257ae3976ddcab9ed2c27095012799210dc0a511590e86017d1f63330fe87"
+      },
+      "bias": {
+        "descriptor_offset": 16506,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.7421681753357916e-08,
+        "raw_scale_area_hex": "93b92033000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 960512,
+        "sha256": "53e823206ab84e25347f8c5889df8172c7b6b333fa8d5bfc26816f05e23332c6"
+      }
+    },
+    {
+      "index": 48,
+      "name": "inc4b/conv1",
+      "tensor_key": "layer_048",
+      "input_layer": 47,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0010005991207435727,
+      "output_scale": 0.0008731148554943502,
+      "weight_scale": 2.4335378839168698e-05,
+      "bias_scale": 2.434995849398547e-08,
+      "scale_identity_relative_error": 7.205288481578374e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 16961,
+        "bytes": 65536,
+        "stored_shape": [
+          128,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.4335378839168698e-05,
+        "raw_scale_area_hex": "d423cc37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 960768,
+        "sha256": "5df8e230915b59b7f003639f01d322262ae472709006b0bf5e6771ff378fb8d2"
+      },
+      "bias": {
+        "descriptor_offset": 17029,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.434995849398547e-08,
+        "raw_scale_area_hex": "202ad132000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1026304,
+        "sha256": "46fd805bd048da067cedc465e5d31bb61f32721da27c3b33bedc2fae7fb8d52a"
+      }
+    },
+    {
+      "index": 49,
+      "name": "uconv324",
+      "tensor_key": "layer_049",
+      "input_layer": 47,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0010005991207435727,
+      "output_scale": 0.0007480341009795666,
+      "weight_scale": 2.851798308256548e-05,
+      "bias_scale": 2.8535069418467174e-08,
+      "scale_identity_relative_error": 2.1751202532088977e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 17365,
+        "bytes": 24576,
+        "stored_shape": [
+          48,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.851798308256548e-05,
+        "raw_scale_area_hex": "e739ef37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1027328,
+        "sha256": "dcbe7d0d45651d8209cf60802bb2a0fc9c873631955688905f781d8e7353b0db"
+      },
+      "bias": {
+        "descriptor_offset": 17433,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.8535069418467174e-08,
+        "raw_scale_area_hex": "481df532000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1051904,
+        "sha256": "07b0977e45bcb62446c21f678b963abd85229431d65b3c4c89f8502b0608244a"
+      }
+    },
+    {
+      "index": 51,
+      "name": "inc4b/conv3_2",
+      "tensor_key": "layer_051",
+      "input_layer": 50,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0007480341009795666,
+      "output_scale": 0.0008731148554943502,
+      "weight_scale": 5.8200472267344594e-05,
+      "bias_scale": 4.3535937521710366e-08,
+      "scale_identity_relative_error": 9.816693246895298e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 17897,
+        "bytes": 55296,
+        "stored_shape": [
+          96,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.8200472267344594e-05,
+        "raw_scale_area_hex": "481c7438000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1052288,
+        "sha256": "83b8399e7b7c43fb1ac7eac16b1bc6967bcd1b221d01dba922bfc8c2d7e68afe"
+      },
+      "bias": {
+        "descriptor_offset": 17965,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 4.3535937521710366e-08,
+        "raw_scale_area_hex": "45fc3a33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1107584,
+        "sha256": "9f01791904e40a11cd3fe98b33f7a687e7248d75526747eb16b8ff4b4c30c7ef"
+      }
+    },
+    {
+      "index": 52,
+      "name": "inc4b/conv5_2",
+      "tensor_key": "layer_052",
+      "input_layer": 50,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0007480341009795666,
+      "output_scale": 0.0004886259557679296,
+      "weight_scale": 2.6662466552807018e-05,
+      "bias_scale": 1.99444336601573e-08,
+      "scale_identity_relative_error": 2.695335797119355e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 18306,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.6662466552807018e-05,
+        "raw_scale_area_hex": "36a9df37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1108352,
+        "sha256": "eed4379d81a3310c1a2686766bf61360b72ba0756ccae5d1805120263ee720b6"
+      },
+      "bias": {
+        "descriptor_offset": 18374,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.99444336601573e-08,
+        "raw_scale_area_hex": "4652ab32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1117568,
+        "sha256": "69005b66a7327a5f7c356f3ccc54aa1cc7a34bd9eb2d476dad40576ee1c20fdf"
+      }
+    },
+    {
+      "index": 53,
+      "name": "inc4b/conv5_3",
+      "tensor_key": "layer_053",
+      "input_layer": 52,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0004886259557679296,
+      "output_scale": 0.0008731148554943502,
+      "weight_scale": 6.695626507280394e-05,
+      "bias_scale": 3.271657078585122e-08,
+      "scale_identity_relative_error": 5.410107198528477e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 18715,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.695626507280394e-05,
+        "raw_scale_area_hex": "df6a8c38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1117824,
+        "sha256": "c6195d957021a6def9b4fb06ffd82c34daf60a08ba762afa1f1da53c0ae37775"
+      },
+      "bias": {
+        "descriptor_offset": 18783,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.271657078585122e-08,
+        "raw_scale_area_hex": "40840c33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1136256,
+        "sha256": "52e2e4907fcb9a36a314747db3707ae5b586dff0c33cfadbf957d6b9cb891090"
+      }
+    },
+    {
+      "index": 55,
+      "name": "inc4c/conv1",
+      "tensor_key": "layer_055",
+      "input_layer": 54,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008731148554943502,
+      "output_scale": 0.0008692409028299153,
+      "weight_scale": 3.314635978313163e-05,
+      "bias_scale": 2.8940579710479142e-08,
+      "scale_identity_relative_error": 1.9981162584169316e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 19238,
+        "bytes": 65536,
+        "stored_shape": [
+          128,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.314635978313163e-05,
+        "raw_scale_area_hex": "a2060b38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1136512,
+        "sha256": "729f1dabd1c4c28c9ae2d53d4d6de0ad5892a221a1125737e6d10cd97442dc58"
+      },
+      "bias": {
+        "descriptor_offset": 19306,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.8940579710479142e-08,
+        "raw_scale_area_hex": "0299f832000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1202048,
+        "sha256": "845831b258cfefcdff66841d2235a04896c07f7e6f77599c710f05ce604b2ee1"
+      }
+    },
+    {
+      "index": 56,
+      "name": "uconv326",
+      "tensor_key": "layer_056",
+      "input_layer": 54,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008731148554943502,
+      "output_scale": 0.0008906131843104959,
+      "weight_scale": 3.891180676873773e-05,
+      "bias_scale": 3.397447656539043e-08,
+      "scale_identity_relative_error": 6.322366282252966e-10,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 19642,
+        "bytes": 24576,
+        "stored_shape": [
+          48,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.891180676873773e-05,
+        "raw_scale_area_hex": "3c352338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1203072,
+        "sha256": "b357d0a777fb828d9a1c4e4d9e30f33e8cd82dbcb00c9c2f313b82f8556bfc96"
+      },
+      "bias": {
+        "descriptor_offset": 19710,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.397447656539043e-08,
+        "raw_scale_area_hex": "55eb1133000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1227648,
+        "sha256": "26c6f95a6430b211b74934331917bdd7e8599af89bef9cc76bb3825928cba96b"
+      }
+    },
+    {
+      "index": 58,
+      "name": "inc4c/conv3_2",
+      "tensor_key": "layer_058",
+      "input_layer": 57,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008906131843104959,
+      "output_scale": 0.0008692409028299153,
+      "weight_scale": 4.792555409949273e-05,
+      "bias_scale": 4.268312991939638e-08,
+      "scale_identity_relative_error": 1.0003900366414458e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 20174,
+        "bytes": 55296,
+        "stored_shape": [
+          96,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.792555409949273e-05,
+        "raw_scale_area_hex": "ac034938000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1228032,
+        "sha256": "a2a3280024cf9d1e1a433a1a377c1724a8165e69c5b6923099c7cf264f056417"
+      },
+      "bias": {
+        "descriptor_offset": 20242,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 4.268312991939638e-08,
+        "raw_scale_area_hex": "99523733000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1283328,
+        "sha256": "87b8f3b31404c09b2dfa2e096ac77e5804c689eba51c7862a5d69a1e4fe6c867"
+      }
+    },
+    {
+      "index": 59,
+      "name": "inc4c/conv5_2",
+      "tensor_key": "layer_059",
+      "input_layer": 57,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008906131843104959,
+      "output_scale": 0.0004720236174762249,
+      "weight_scale": 2.5691493647173047e-05,
+      "bias_scale": 2.288118317039789e-08,
+      "scale_identity_relative_error": 8.897976377254456e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 20583,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.5691493647173047e-05,
+        "raw_scale_area_hex": "1084d737000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1284096,
+        "sha256": "40d18ee3916eeb92fd189d7fcbd9ec9c1c4bcd7d6e176cf6fc04e66c3eba5976"
+      },
+      "bias": {
+        "descriptor_offset": 20651,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.288118317039789e-08,
+        "raw_scale_area_hex": "418cc432000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1293312,
+        "sha256": "c7bdc98e1da68a3c352ab8e727bb460253bf3f5cf40bb0e4613155e0c3614be2"
+      }
+    },
+    {
+      "index": 60,
+      "name": "inc4c/conv5_3",
+      "tensor_key": "layer_060",
+      "input_layer": 59,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0004720236174762249,
+      "output_scale": 0.0008692409028299153,
+      "weight_scale": 6.896994455019012e-05,
+      "bias_scale": 3.25554410096629e-08,
+      "scale_identity_relative_error": 5.2650261546856606e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 20992,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.896994455019012e-05,
+        "raw_scale_area_hex": "f5a39038000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1293568,
+        "sha256": "7c7f776bcaa561c2252c1fd6c3d5a7975ba38757c5841686590f5bc809f324d6"
+      },
+      "bias": {
+        "descriptor_offset": 21060,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.25554410096629e-08,
+        "raw_scale_area_hex": "16d30b33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1312000,
+        "sha256": "25117f0cc31459036bc7deed7dd7c4682033564bf38dea14d26dc1baa1dbc8ae"
+      }
+    },
+    {
+      "index": 62,
+      "name": "inc4d/conv1",
+      "tensor_key": "layer_062",
+      "input_layer": 61,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008692409028299153,
+      "output_scale": 0.001153478748165071,
+      "weight_scale": 4.013745274278335e-05,
+      "bias_scale": 3.4889115596570264e-08,
+      "scale_identity_relative_error": 1.8017022285763726e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 21515,
+        "bytes": 65536,
+        "stored_shape": [
+          128,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.013745274278335e-05,
+        "raw_scale_area_hex": "43592838000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1312256,
+        "sha256": "b81b153da57d163079cadbaf094161102a1b06e8f14822dcf1582ceb012a4e43"
+      },
+      "bias": {
+        "descriptor_offset": 21583,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.4889115596570264e-08,
+        "raw_scale_area_hex": "fdd81533000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1377792,
+        "sha256": "55103bd782b8376607d47faab9decbf3aed257d2db17e27668e9a87e966e76dc"
+      }
+    },
+    {
+      "index": 63,
+      "name": "uconv328",
+      "tensor_key": "layer_063",
+      "input_layer": 61,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008692409028299153,
+      "output_scale": 0.001671352656558156,
+      "weight_scale": 7.334783003898337e-05,
+      "bias_scale": 6.375693573090757e-08,
+      "scale_identity_relative_error": 2.7090487682410647e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 21919,
+        "bytes": 24576,
+        "stored_shape": [
+          48,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 7.334783003898337e-05,
+        "raw_scale_area_hex": "51d29938000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1378816,
+        "sha256": "2c98112013108bdfada5f511855d610faca93e4e99508a11d6847e4dc299e907"
+      },
+      "bias": {
+        "descriptor_offset": 21987,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 6.375693573090757e-08,
+        "raw_scale_area_hex": "bfea8833000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1403392,
+        "sha256": "b24ebc41c7bdf652165033fcf19dcf9d8203429d75dac30d3a91a1df147e6e68"
+      }
+    },
+    {
+      "index": 65,
+      "name": "inc4d/conv3_2",
+      "tensor_key": "layer_065",
+      "input_layer": 64,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.001671352656558156,
+      "output_scale": 0.001153478748165071,
+      "weight_scale": 4.272156729712151e-05,
+      "bias_scale": 7.14028018933277e-08,
+      "scale_identity_relative_error": 4.343028969280881e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 22451,
+        "bytes": 55296,
+        "stored_shape": [
+          96,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.272156729712151e-05,
+        "raw_scale_area_hex": "ef2f3338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1403776,
+        "sha256": "1d944787b602636c9d5083c5c9eceaee15a6ba38e55bdce355c57ceb0f848f94"
+      },
+      "bias": {
+        "descriptor_offset": 22519,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 7.14028018933277e-08,
+        "raw_scale_area_hex": "1b569933000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1459072,
+        "sha256": "b5a639658ecd673a88e1287bce5377ed513d063fc79d8c21ebf48c5287df19e9"
+      }
+    },
+    {
+      "index": 66,
+      "name": "inc4d/conv5_2",
+      "tensor_key": "layer_066",
+      "input_layer": 64,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.001671352656558156,
+      "output_scale": 0.0008970894850790501,
+      "weight_scale": 2.182543721573893e-05,
+      "bias_scale": 3.647800284056757e-08,
+      "scale_identity_relative_error": 1.0129366638116809e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 22860,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.182543721573893e-05,
+        "raw_scale_area_hex": "c515b737000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1459840,
+        "sha256": "1916d4620f1fbc2ad73b51e6647566000199e4998bc864830cbf23d79c33152d"
+      },
+      "bias": {
+        "descriptor_offset": 22928,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 3.647800284056757e-08,
+        "raw_scale_area_hex": "fdab1c33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1469056,
+        "sha256": "679e39ae4b048a41a74999d1ab9a9b6838db19ff12d9ad45ee925d91c096e85e"
+      }
+    },
+    {
+      "index": 67,
+      "name": "inc4d/conv5_3",
+      "tensor_key": "layer_067",
+      "input_layer": 66,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0008970894850790501,
+      "output_scale": 0.001153478748165071,
+      "weight_scale": 5.385174517869018e-05,
+      "bias_scale": 4.830983257875232e-08,
+      "scale_identity_relative_error": 3.672558928636099e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 23269,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 5.385174517869018e-05,
+        "raw_scale_area_hex": "dfde6138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1469312,
+        "sha256": "fc2161ac8aca7f21bd1ce4786d495e6f538c76985a3c3c930bf5c9045d50a268"
+      },
+      "bias": {
+        "descriptor_offset": 23337,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 4.830983257875232e-08,
+        "raw_scale_area_hex": "397d4f33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1487744,
+        "sha256": "20ef3f0c8c667b36830fd666ea4628ea1a864484b2d9684360745291e70ca324"
+      }
+    },
+    {
+      "index": 69,
+      "name": "inc4e/conv1",
+      "tensor_key": "layer_069",
+      "input_layer": 68,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.001153478748165071,
+      "output_scale": 0.0014819466741755605,
+      "weight_scale": 4.2973042582161725e-05,
+      "bias_scale": 4.956849153359144e-08,
+      "scale_identity_relative_error": 3.4512901051470817e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 23792,
+        "bytes": 65536,
+        "stored_shape": [
+          128,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.2973042582161725e-05,
+        "raw_scale_area_hex": "f43d3438000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1488000,
+        "sha256": "ed8ca6bca3a7248af667bf3bba1dc74eb28550d58c95b4bf0ace9ec9e7426f2f"
+      },
+      "bias": {
+        "descriptor_offset": 23860,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 4.956849153359144e-08,
+        "raw_scale_area_hex": "22e55433000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1553536,
+        "sha256": "16eed6f61fb528232c9c95c4e906b218443c13bbcd4f1079f7c2990ef7048479"
+      }
+    },
+    {
+      "index": 70,
+      "name": "uconv330",
+      "tensor_key": "layer_070",
+      "input_layer": 68,
+      "output_channels_candidate": 48,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.001153478748165071,
+      "output_scale": 0.01436564140021801,
+      "weight_scale": 0.0004750956140924245,
+      "bias_scale": 5.480126787915651e-07,
+      "scale_identity_relative_error": 2.8120663936692026e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 24196,
+        "bytes": 24576,
+        "stored_shape": [
+          48,
+          256,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 0.0004750956140924245,
+        "raw_scale_area_hex": "4116f939000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1554560,
+        "sha256": "4c3683f0ca5831902b433d7cb945638fb5c43a233e154ebeeb92e2f9a73ae9ce"
+      },
+      "bias": {
+        "descriptor_offset": 24264,
+        "bytes": 384,
+        "stored_shape": [
+          48,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 5.480126787915651e-07,
+        "raw_scale_area_hex": "251b1335000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1579136,
+        "sha256": "791a97b0bafdea24374047b94f598da256840bc4b6fd731cfd57947e1505ad8b"
+      }
+    },
+    {
+      "index": 72,
+      "name": "inc4e/conv3_2",
+      "tensor_key": "layer_072",
+      "input_layer": 71,
+      "output_channels_candidate": 96,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.01436564140021801,
+      "output_scale": 0.0014819466741755605,
+      "weight_scale": 1.737366255838424e-05,
+      "bias_scale": 2.4958382027762127e-07,
+      "scale_identity_relative_error": 5.67163331080382e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 24728,
+        "bytes": 55296,
+        "stored_shape": [
+          96,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 1.737366255838424e-05,
+        "raw_scale_area_hex": "a8bd9137000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1579520,
+        "sha256": "2549dfec515731153dba826679374729fd960cee6540589b8963dcc3b148f9d4"
+      },
+      "bias": {
+        "descriptor_offset": 24796,
+        "bytes": 768,
+        "stored_shape": [
+          96,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.4958382027762127e-07,
+        "raw_scale_area_hex": "8afe8534000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1634816,
+        "sha256": "27288eba12fba14bdb0eec75035aa57c0583523a761f087fd1eac79accae21f8"
+      }
+    },
+    {
+      "index": 73,
+      "name": "inc4e/conv5_2",
+      "tensor_key": "layer_073",
+      "input_layer": 71,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.01436564140021801,
+      "output_scale": 0.003303917357698083,
+      "weight_scale": 9.987878729589283e-05,
+      "bias_scale": 1.4348228205562918e-06,
+      "scale_identity_relative_error": 1.4792875173240165e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 25137,
+        "bytes": 9216,
+        "stored_shape": [
+          32,
+          4,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 9.987878729589283e-05,
+        "raw_scale_area_hex": "0476d138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1635584,
+        "sha256": "052511abf7714e634dc45855456a299fc2839918117aab941f737a4920a6b6e6"
+      },
+      "bias": {
+        "descriptor_offset": 25205,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.4348228205562918e-06,
+        "raw_scale_area_hex": "2394c035000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1644800,
+        "sha256": "ffd20265fb76ab4d87c5f8a111b052f35c0bafad6a6247777233b50e6fccd568"
+      }
+    },
+    {
+      "index": 74,
+      "name": "inc4e/conv5_3",
+      "tensor_key": "layer_074",
+      "input_layer": 73,
+      "output_channels_candidate": 32,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.003303917357698083,
+      "output_scale": 0.0014819466741755605,
+      "weight_scale": 2.4698270863154903e-05,
+      "bias_scale": 8.160104414400848e-08,
+      "scale_identity_relative_error": 2.041515315548786e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 25546,
+        "bytes": 18432,
+        "stored_shape": [
+          32,
+          8,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.4698270863154903e-05,
+        "raw_scale_area_hex": "222fcf37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1645056,
+        "sha256": "959228114850545b310ac65dc2a39eb2ef1147a40ee9cca9ed902869fdda1bae"
+      },
+      "bias": {
+        "descriptor_offset": 25614,
+        "bytes": 256,
+        "stored_shape": [
+          32,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 8.160104414400848e-08,
+        "raw_scale_area_hex": "a63caf33000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1663488,
+        "sha256": "2e71343ca0155fefc7f298b4ae6b9ae7eb10a818cc773a8feb34cef86663ef56"
+      }
+    },
+    {
+      "index": 76,
+      "name": "upsample",
+      "tensor_key": "layer_076",
+      "input_layer": 75,
+      "output_channels_candidate": 256,
+      "kernel_hw_candidate": [
+        4,
+        4
+      ],
+      "stride_hw_candidate": [
+        2,
+        2
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0014819466741755605,
+      "output_scale": 0.0013499135384336114,
+      "weight_scale": 0.00011119453120045364,
+      "bias_scale": 1.647843674845717e-07,
+      "scale_identity_relative_error": 1.083566886956695e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 26066,
+        "bytes": 32768,
+        "stored_shape": [
+          4096,
+          1,
+          1,
+          4
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 0.00011119453120045364,
+        "raw_scale_area_hex": "1c31e9380000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff",
+        "data_offset": 1663744,
+        "sha256": "b1d373f3a43468d67e67fe5251a6aefa0e8dd8879bff82a63631977f43b7cbc6"
+      },
+      "bias": {
+        "descriptor_offset": 26134,
+        "bytes": 2048,
+        "stored_shape": [
+          256,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.647843674845717e-07,
+        "raw_scale_area_hex": "95ef30340000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff0000c0ff",
+        "data_offset": 1696512,
+        "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "upsample_hypothesis": {
+        "raw_values": [
+          0,
+          562,
+          1686,
+          5059
+        ],
+        "raw_counts": [
+          12288,
+          1024,
+          2048,
+          1024
+        ],
+        "dequantized_values": [
+          0.0,
+          0.062491326534654945,
+          0.18747397960396484,
+          0.562533133343095
+        ],
+        "matches_256_bilinear_kernel_histograms_plus_padding": true,
+        "interpretation": "Coefficients match 4x4 separable bilinear kernels within quantization error; physical channel mapping and original execution remain unverified."
+      }
+    },
+    {
+      "index": 79,
+      "name": "uconv332",
+      "tensor_key": "layer_079",
+      "input_layer": 78,
+      "output_channels_candidate": 192,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0013499135384336114,
+      "output_scale": 0.00034817145206034184,
+      "weight_scale": 9.838936421147082e-06,
+      "bias_scale": 1.3281713506785309e-08,
+      "scale_identity_relative_error": 2.115037211557504e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 26770,
+        "bytes": 208896,
+        "stored_shape": [
+          192,
+          544,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 9.838936421147082e-06,
+        "raw_scale_area_hex": "e9112537000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1698560,
+        "sha256": "97aae581bf65793eb1e2eba0f0b044db13dc8a12eb19bf123964424a097775cb"
+      },
+      "bias": {
+        "descriptor_offset": 26838,
+        "bytes": 1536,
+        "stored_shape": [
+          192,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.3281713506785309e-08,
+        "raw_scale_area_hex": "982d6432000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1907456,
+        "sha256": "ab9dd2bb213f9412744d8052a4fa672970ccfb7efa9e82358e7da511edde1663"
+      }
+    },
+    {
+      "index": 81,
+      "name": "rpn_5_1_conv",
+      "tensor_key": "layer_081",
+      "input_layer": 80,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00034817145206034184,
+      "output_scale": 6.456458504544571e-05,
+      "weight_scale": 6.935176315892022e-06,
+      "bias_scale": 2.4146304955507958e-09,
+      "scale_identity_relative_error": 3.617620943274194e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 27301,
+        "bytes": 147456,
+        "stored_shape": [
+          128,
+          16,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 6.935176315892022e-06,
+        "raw_scale_area_hex": "b6b4e836000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 1908992,
+        "sha256": "354cf3e5316083a508c964c8ae8c62b2242fed877969f458a3f9d28011df3c62"
+      },
+      "bias": {
+        "descriptor_offset": 27369,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 2.4146304955507958e-09,
+        "raw_scale_area_hex": "a1ee2531000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2056448,
+        "sha256": "c8fa7dc3eddd2eec6c8c4f4fec847f9cb171205d781cf73a12393c782380a61b"
+      }
+    },
+    {
+      "index": 82,
+      "name": "rpn_5_2_conv",
+      "tensor_key": "layer_082",
+      "input_layer": 81,
+      "output_channels_candidate": 128,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 6.456458504544571e-05,
+      "output_scale": 0.0002770680875983089,
+      "weight_scale": 2.4053595552686602e-05,
+      "bias_scale": 1.5530103869565437e-09,
+      "scale_identity_relative_error": 1.8514779660707496e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 27709,
+        "bytes": 294912,
+        "stored_shape": [
+          128,
+          32,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.4053595552686602e-05,
+        "raw_scale_area_hex": "b4c6c937000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2057472,
+        "sha256": "b892bc7da5e9d994b8fa96adabde39e69a9fd139c67be886971382ef90214fca"
+      },
+      "bias": {
+        "descriptor_offset": 27777,
+        "bytes": 1024,
+        "stored_shape": [
+          128,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.5530103869565437e-09,
+        "raw_scale_area_hex": "b271d530000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2352384,
+        "sha256": "757a7e6e1850aa2daf74ebfa0ecdf484d9af382ffeaa9128bc4454e6f17872c0"
+      }
+    },
+    {
+      "index": 83,
+      "name": "rpn_3_1_conv",
+      "tensor_key": "layer_083",
+      "input_layer": 80,
+      "output_channels_candidate": 256,
+      "kernel_hw_candidate": [
+        3,
+        3
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        1,
+        1
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.00034817145206034184,
+      "output_scale": 0.0002770680875983089,
+      "weight_scale": 1.8056520275422372e-05,
+      "bias_scale": 6.286764886453966e-09,
+      "scale_identity_relative_error": 4.776948667129246e-10,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 28117,
+        "bytes": 589824,
+        "stored_shape": [
+          256,
+          32,
+          1,
+          36
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 1.8056520275422372e-05,
+        "raw_scale_area_hex": "15789737000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2353408,
+        "sha256": "d7e3a849c375888f6abda15a8797c0fa551d353664881f65fd58842493472b6f"
+      },
+      "bias": {
+        "descriptor_offset": 28185,
+        "bytes": 2048,
+        "stored_shape": [
+          256,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 6.286764886453966e-09,
+        "raw_scale_area_hex": "f802d831000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2943232,
+        "sha256": "e2884ef7408931723eb86c7abec567b7caa803edd73aa8ed04ea15ce0bc357bb"
+      }
+    },
+    {
+      "index": 84,
+      "name": "rpn_1_conv",
+      "tensor_key": "layer_084",
+      "input_layer": 78,
+      "output_channels_candidate": 64,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 1,
+      "activation_tail_value": 1,
+      "input_scale": 0.0013499135384336114,
+      "output_scale": 0.0002770680875983089,
+      "weight_scale": 9.422093171451706e-06,
+      "bias_scale": 1.2719010733519553e-08,
+      "scale_identity_relative_error": 3.137083500213067e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 28523,
+        "bytes": 69632,
+        "stored_shape": [
+          64,
+          544,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 9.422093171451706e-06,
+        "raw_scale_area_hex": "95131e37000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 2945280,
+        "sha256": "f9e60785aabf590aa20640ba34a44f8ab92db6daba1fc4a104f45e6b3ee2b9fb"
+      },
+      "bias": {
+        "descriptor_offset": 28591,
+        "bytes": 512,
+        "stored_shape": [
+          64,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.2719010733519553e-08,
+        "raw_scale_area_hex": "cd825a32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3014912,
+        "sha256": "2e2a5ec68291788ffad1be37806788be189f7e012b889b05be871332419aa180"
+      }
+    },
+    {
+      "index": 86,
+      "name": "rpn_cls_score1",
+      "tensor_key": "layer_086",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 3.4791301004588604e-05,
+      "bias_scale": 9.639559372942585e-09,
+      "scale_identity_relative_error": 1.4372451231908354e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 29051,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.4791301004588604e-05,
+        "raw_scale_area_hex": "e0ec1138000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3015424,
+        "sha256": "ec0160aed84d9bd5dd4bf660947e21250cf87ba36c25854f7fdd658a5d506c6e"
+      },
+      "bias": {
+        "descriptor_offset": 29119,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 9.639559372942585e-09,
+        "raw_scale_area_hex": "3b9b2532000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3062016,
+        "sha256": "431bce041f78d0c05d0434c043c29e9c85a99cadd5a620a1a58aa4a83c957ff5"
+      }
+    },
+    {
+      "index": 90,
+      "name": "rpn_cls_score2",
+      "tensor_key": "layer_090",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 4.056892794324085e-05,
+      "bias_scale": 1.124035531319123e-08,
+      "scale_identity_relative_error": 2.850789924028042e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 29839,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 4.056892794324085e-05,
+        "raw_scale_area_hex": "8e282a38000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3062432,
+        "sha256": "d3f2b40fc23be1c7b56ccece303c7bc00b4fca9c7cd1cbfffb0491694e3f1d25"
+      },
+      "bias": {
+        "descriptor_offset": 29907,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.124035531319123e-08,
+        "raw_scale_area_hex": "9b1b4132000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3109024,
+        "sha256": "4cf9960632d05754778d442209d4b0b49d75e0ed38df954dca5b29609745fb76"
+      }
+    },
+    {
+      "index": 94,
+      "name": "rpn_cls_score3",
+      "tensor_key": "layer_094",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 3.2802068744786084e-05,
+      "bias_scale": 9.08840647184661e-09,
+      "scale_identity_relative_error": 1.7011198737260934e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 30627,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.2802068744786084e-05,
+        "raw_scale_area_hex": "f4940938000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3109440,
+        "sha256": "1a47795795fad6c4986cf2e8550f54590c7cbd40e028ca040623aa363b918425"
+      },
+      "bias": {
+        "descriptor_offset": 30695,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 9.08840647184661e-09,
+        "raw_scale_area_hex": "3c231c32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3156032,
+        "sha256": "100cec7faca3a6e77306df9614dcb50f83660740bf9df087e2e929a6983f75c5"
+      }
+    },
+    {
+      "index": 98,
+      "name": "rpn_cls_score4",
+      "tensor_key": "layer_098",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 3.5123914130963385e-05,
+      "bias_scale": 9.73171587759225e-09,
+      "scale_identity_relative_error": 1.6477978708153376e-08,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 31415,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.5123914130963385e-05,
+        "raw_scale_area_hex": "04521338000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3156448,
+        "sha256": "a44e201887b42f334e8b4942b17d2e58a6f3b2b6033eede593f8cdf66e62090d"
+      },
+      "bias": {
+        "descriptor_offset": 31483,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 9.73171587759225e-09,
+        "raw_scale_area_hex": "8a302732000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3203040,
+        "sha256": "1fbb9bc8b50059a40246130e3460e648417127c4cb96ec124bc995acc31861bc"
+      }
+    },
+    {
+      "index": 102,
+      "name": "rpn_cls_score5",
+      "tensor_key": "layer_102",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 3.836754331132397e-05,
+      "bias_scale": 1.0630421876101082e-08,
+      "scale_identity_relative_error": 2.3505426667910965e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 32203,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.836754331132397e-05,
+        "raw_scale_area_hex": "d6ec2038000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3203456,
+        "sha256": "6cb7b9cd119c4be0390c2810eafd1c6dcdbcfea1b7963b60ce182f37ec819dd9"
+      },
+      "bias": {
+        "descriptor_offset": 32271,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.0630421876101082e-08,
+        "raw_scale_area_hex": "17a13632000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3250048,
+        "sha256": "5c1b41a574dd0ae6c18f1d33739e2e722299e735e5a5c7bda4b640e5c541d5f4"
+      }
+    },
+    {
+      "index": 106,
+      "name": "rpn_cls_score6",
+      "tensor_key": "layer_106",
+      "input_layer": 85,
+      "output_channels_candidate": 50,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 0.00048828125,
+      "weight_scale": 3.961977199651301e-05,
+      "bias_scale": 1.097737456490222e-08,
+      "scale_identity_relative_error": 9.72430398057334e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 32991,
+        "bytes": 46592,
+        "stored_shape": [
+          52,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 3.961977199651301e-05,
+        "raw_scale_area_hex": "682d2638000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3250464,
+        "sha256": "685d1ee240cd7f199f649126cd2e4206ef37ace7216818bf72a9073975eb1f57"
+      },
+      "bias": {
+        "descriptor_offset": 33059,
+        "bytes": 416,
+        "stored_shape": [
+          50,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 1.097737456490222e-08,
+        "raw_scale_area_hex": "01973c32000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3297056,
+        "sha256": "054c97da67b41df344cfe0d73650549a71c53703cbc6dc4ada85d7e4577e1ac1"
+      }
+    },
+    {
+      "index": 110,
+      "name": "rpn_bbox_pred",
+      "tensor_key": "layer_110",
+      "input_layer": 85,
+      "output_channels_candidate": 100,
+      "kernel_hw_candidate": [
+        1,
+        1
+      ],
+      "stride_hw_candidate": [
+        1,
+        1
+      ],
+      "dilation_hw_candidate": [
+        1,
+        1
+      ],
+      "padding_hw_candidate": [
+        0,
+        0
+      ],
+      "activation_flag_candidate": 0,
+      "activation_tail_value": 0,
+      "input_scale": 0.0002770680875983089,
+      "output_scale": 3.0517578125e-05,
+      "weight_scale": 2.6289296783943428e-06,
+      "bias_scale": 7.283925129719648e-10,
+      "scale_identity_relative_error": 7.483867463679117e-09,
+      "bias_pairs_identical": true,
+      "weight": {
+        "descriptor_offset": 33778,
+        "bytes": 89600,
+        "stored_shape": [
+          100,
+          448,
+          1,
+          1
+        ],
+        "raw_numeric_tags": [
+          24,
+          8
+        ],
+        "scale": 2.6289296783943428e-06,
+        "raw_scale_area_hex": "ab6c3036000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3297472,
+        "sha256": "1da8a3f2870bf322e406e665457085c8ba0bba0ba06d9e52cfcfa926f64ec68c"
+      },
+      "bias": {
+        "descriptor_offset": 33846,
+        "bytes": 800,
+        "stored_shape": [
+          100,
+          1,
+          1,
+          2
+        ],
+        "raw_numeric_tags": [
+          25,
+          32
+        ],
+        "scale": 7.283925129719648e-10,
+        "raw_scale_area_hex": "11384830000000000000000000000000000000000000000000000000000000000000000000000000",
+        "data_offset": 3387072,
+        "sha256": "f8d637e229a867f233370f80397f4570e7af6d33e109922997e469e733ec0a6c"
+      }
+    }
+  ],
+  "proposal_blocks": [
+    {
+      "layer": 111,
+      "offset": 3387872,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "layer": 112,
+      "offset": 3388448,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "layer": 113,
+      "offset": 3389024,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "layer": 114,
+      "offset": 3389600,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "layer": 115,
+      "offset": 3390176,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "layer": 116,
+      "offset": 3390752,
+      "bytes": 576,
+      "sha256": "7461e7b33db8209a3db89c4727927d4e09bca54e37530885d841bf21bfc5931e",
+      "ratio_candidates": [
+        0.5,
+        0.6669999957084656,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "scale_candidates": [
+        3.0,
+        6.0,
+        9.0,
+        16.0,
+        32.0
+      ]
+    }
+  ],
+  "limitations": [
+    "Stored dimensions and scales recovered; DSP kernel/input/output packing unverified.",
+    "Dequantization uses symmetric scale multiplication supported by bias-scale identities.",
+    "Zero points, rounding, saturation, activations and complete preprocessing unverified.",
+    "No numerical match against original DSP execution; not a deployable or fully trainable network."
+  ],
+  "checks": {
+    "all_parameter_bytes_accounted_for": true,
+    "all_bias_pairs_identical": true,
+    "all_bias_scale_identities_pass": true,
+    "maximum_scale_identity_relative_error": 5.67163331080382e-08,
+    "convolution_layers": 66,
+    "parameter_bytes": 3356320
+  }
+}

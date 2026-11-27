@@ -1,0 +1,48 @@
+{
+  "43_hm_d_nw": {
+    "raw_parameter_reassembly_identical": true,
+    "npz_matches_fresh_decode": true,
+    "checkpoint_matches_original_recovered_tensors": null,
+    "corruption_rejections": [
+      {
+        "case": "bias_pair",
+        "rejection": "Bias pairs differ; stream alignment unproven"
+      },
+      {
+        "case": "weight_shape",
+        "rejection": "Weight shape/byte mismatch"
+      },
+      {
+        "case": "weight_scale",
+        "rejection": "Bias scale != input scale * weight scale"
+      },
+      {
+        "case": "proposal_block",
+        "rejection": "Proposal parameter blocks differ"
+      }
+    ]
+  },
+  "44_hm_d_nw_sng": {
+    "raw_parameter_reassembly_identical": true,
+    "npz_matches_fresh_decode": true,
+    "checkpoint_matches_original_recovered_tensors": null,
+    "corruption_rejections": [
+      {
+        "case": "bias_pair",
+        "rejection": "Bias pairs differ; stream alignment unproven"
+      },
+      {
+        "case": "weight_shape",
+        "rejection": "Weight shape/byte mismatch"
+      },
+      {
+        "case": "weight_scale",
+        "rejection": "Bias scale != input scale * weight scale"
+      },
+      {
+        "case": "proposal_block",
+        "rejection": "Proposal parameter blocks differ"
+      }
+    ]
+  }
+}

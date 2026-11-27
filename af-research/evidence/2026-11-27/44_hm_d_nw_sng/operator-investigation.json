@@ -1,0 +1,5577 @@
+{
+  "source_sha256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+  "layers": [
+    {
+      "index": 0,
+      "name": "data",
+      "operator_id": 6,
+      "tail_offset": 1145,
+      "inputs": [
+        {
+          "layer": null,
+          "port": null
+        }
+      ],
+      "kind": "input_candidate",
+      "shape": [
+        1,
+        1,
+        256,
+        384
+      ],
+      "input_shapes_candidate": [],
+      "output_shapes_candidate": [
+        [
+          1,
+          1,
+          256,
+          384
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "name": "conv1",
+      "operator_id": 1,
+      "tail_offset": 1367,
+      "inputs": [
+        {
+          "layer": 0,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        4,
+        4
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        1,
+        1,
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          1,
+          256,
+          384
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          128,
+          192
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "name": "conv2",
+      "operator_id": 1,
+      "tail_offset": 1768,
+      "inputs": [
+        {
+          "layer": 1,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          128,
+          192
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          64,
+          96
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "name": "conv3",
+      "operator_id": 1,
+      "tail_offset": 2169,
+      "inputs": [
+        {
+          "layer": 2,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        12,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          64,
+          96
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          32,
+          48
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "name": "inc3a/pool1",
+      "operator_id": 5,
+      "tail_offset": 2577,
+      "inputs": [
+        {
+          "layer": 3,
+          "port": 0
+        }
+      ],
+      "kind": "max_pool_candidate",
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "ceil_mode_candidate": true,
+      "pool_extra_flag": 1,
+      "raw_q85": 0,
+      "raw_q86": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "name": "inc3a/conv1",
+      "operator_id": 1,
+      "tail_offset": 2760,
+      "inputs": [
+        {
+          "layer": 4,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        96,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "name": "uconv292",
+      "operator_id": 1,
+      "tail_offset": 3164,
+      "inputs": [
+        {
+          "layer": 3,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        96,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          32,
+          48
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "name": "slice293",
+      "operator_id": 10,
+      "tail_offset": 3568,
+      "inputs": [
+        {
+          "layer": 6,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          16,
+          32,
+          48
+        ],
+        [
+          1,
+          16,
+          32,
+          48
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "name": "inc3a/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 3696,
+      "inputs": [
+        {
+          "layer": 7,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "name": "inc3a/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 4105,
+      "inputs": [
+        {
+          "layer": 7,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          32,
+          48
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "name": "inc3a/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 4514,
+      "inputs": [
+        {
+          "layer": 9,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "name": "inc3a",
+      "operator_id": 9,
+      "tail_offset": 4931,
+      "inputs": [
+        {
+          "layer": 5,
+          "port": 0
+        },
+        {
+          "layer": 8,
+          "port": 0
+        },
+        {
+          "layer": 10,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "name": "inc3b/conv1",
+      "operator_id": 1,
+      "tail_offset": 5037,
+      "inputs": [
+        {
+          "layer": 11,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "name": "uconv294",
+      "operator_id": 1,
+      "tail_offset": 5441,
+      "inputs": [
+        {
+          "layer": 11,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "name": "slice295",
+      "operator_id": 10,
+      "tail_offset": 5845,
+      "inputs": [
+        {
+          "layer": 13,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ],
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "name": "inc3b/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 5973,
+      "inputs": [
+        {
+          "layer": 14,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "name": "inc3b/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 6382,
+      "inputs": [
+        {
+          "layer": 14,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "name": "inc3b/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 6791,
+      "inputs": [
+        {
+          "layer": 16,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "name": "inc3b",
+      "operator_id": 9,
+      "tail_offset": 7208,
+      "inputs": [
+        {
+          "layer": 12,
+          "port": 0
+        },
+        {
+          "layer": 15,
+          "port": 0
+        },
+        {
+          "layer": 17,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 19,
+      "name": "inc3c/conv1",
+      "operator_id": 1,
+      "tail_offset": 7314,
+      "inputs": [
+        {
+          "layer": 18,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 20,
+      "name": "uconv296",
+      "operator_id": 1,
+      "tail_offset": 7718,
+      "inputs": [
+        {
+          "layer": 18,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 21,
+      "name": "slice297",
+      "operator_id": 10,
+      "tail_offset": 8122,
+      "inputs": [
+        {
+          "layer": 20,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ],
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 22,
+      "name": "inc3c/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 8250,
+      "inputs": [
+        {
+          "layer": 21,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 23,
+      "name": "inc3c/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 8659,
+      "inputs": [
+        {
+          "layer": 21,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 24,
+      "name": "inc3c/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 9068,
+      "inputs": [
+        {
+          "layer": 23,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 25,
+      "name": "inc3c",
+      "operator_id": 9,
+      "tail_offset": 9485,
+      "inputs": [
+        {
+          "layer": 19,
+          "port": 0
+        },
+        {
+          "layer": 22,
+          "port": 0
+        },
+        {
+          "layer": 24,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 26,
+      "name": "inc3d/conv1",
+      "operator_id": 1,
+      "tail_offset": 9591,
+      "inputs": [
+        {
+          "layer": 25,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 27,
+      "name": "uconv298",
+      "operator_id": 1,
+      "tail_offset": 9995,
+      "inputs": [
+        {
+          "layer": 25,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 28,
+      "name": "slice299",
+      "operator_id": 10,
+      "tail_offset": 10399,
+      "inputs": [
+        {
+          "layer": 27,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ],
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 29,
+      "name": "inc3d/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 10527,
+      "inputs": [
+        {
+          "layer": 28,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 30,
+      "name": "inc3d/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 10936,
+      "inputs": [
+        {
+          "layer": 28,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 31,
+      "name": "inc3d/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 11345,
+      "inputs": [
+        {
+          "layer": 30,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 32,
+      "name": "inc3d",
+      "operator_id": 9,
+      "tail_offset": 11762,
+      "inputs": [
+        {
+          "layer": 26,
+          "port": 0
+        },
+        {
+          "layer": 29,
+          "port": 0
+        },
+        {
+          "layer": 31,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 33,
+      "name": "inc3e/conv1",
+      "operator_id": 1,
+      "tail_offset": 11868,
+      "inputs": [
+        {
+          "layer": 32,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 34,
+      "name": "uconv300",
+      "operator_id": 1,
+      "tail_offset": 12272,
+      "inputs": [
+        {
+          "layer": 32,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 35,
+      "name": "slice301",
+      "operator_id": 10,
+      "tail_offset": 12676,
+      "inputs": [
+        {
+          "layer": 34,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        16
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ],
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 36,
+      "name": "inc3e/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 12804,
+      "inputs": [
+        {
+          "layer": 35,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 37,
+      "name": "inc3e/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 13213,
+      "inputs": [
+        {
+          "layer": 35,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 38,
+      "name": "inc3e/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 13622,
+      "inputs": [
+        {
+          "layer": 37,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 39,
+      "name": "inc3e",
+      "operator_id": 9,
+      "tail_offset": 14039,
+      "inputs": [
+        {
+          "layer": 33,
+          "port": 0
+        },
+        {
+          "layer": 36,
+          "port": 0
+        },
+        {
+          "layer": 38,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 40,
+      "name": "inc4a/pool1",
+      "operator_id": 5,
+      "tail_offset": 14146,
+      "inputs": [
+        {
+          "layer": 39,
+          "port": 0
+        }
+      ],
+      "kind": "max_pool_candidate",
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "ceil_mode_candidate": true,
+      "pool_extra_flag": 1,
+      "raw_q85": 0,
+      "raw_q86": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 41,
+      "name": "inc4a/conv1",
+      "operator_id": 1,
+      "tail_offset": 14329,
+      "inputs": [
+        {
+          "layer": 40,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 42,
+      "name": "uconv302",
+      "operator_id": 1,
+      "tail_offset": 14733,
+      "inputs": [
+        {
+          "layer": 39,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        192,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 43,
+      "name": "slice303",
+      "operator_id": 10,
+      "tail_offset": 15137,
+      "inputs": [
+        {
+          "layer": 42,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        32
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ],
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 44,
+      "name": "inc4a/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 15265,
+      "inputs": [
+        {
+          "layer": 43,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 45,
+      "name": "inc4a/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 15674,
+      "inputs": [
+        {
+          "layer": 43,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 46,
+      "name": "inc4a/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 16083,
+      "inputs": [
+        {
+          "layer": 45,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 47,
+      "name": "inc4a",
+      "operator_id": 9,
+      "tail_offset": 16500,
+      "inputs": [
+        {
+          "layer": 41,
+          "port": 0
+        },
+        {
+          "layer": 44,
+          "port": 0
+        },
+        {
+          "layer": 46,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 48,
+      "name": "inc4b/conv1",
+      "operator_id": 1,
+      "tail_offset": 16606,
+      "inputs": [
+        {
+          "layer": 47,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 49,
+      "name": "uconv304",
+      "operator_id": 1,
+      "tail_offset": 17010,
+      "inputs": [
+        {
+          "layer": 47,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 50,
+      "name": "slice305",
+      "operator_id": 10,
+      "tail_offset": 17414,
+      "inputs": [
+        {
+          "layer": 49,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        32
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ],
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 51,
+      "name": "inc4b/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 17542,
+      "inputs": [
+        {
+          "layer": 50,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 52,
+      "name": "inc4b/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 17951,
+      "inputs": [
+        {
+          "layer": 50,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 53,
+      "name": "inc4b/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 18360,
+      "inputs": [
+        {
+          "layer": 52,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 54,
+      "name": "inc4b",
+      "operator_id": 9,
+      "tail_offset": 18777,
+      "inputs": [
+        {
+          "layer": 48,
+          "port": 0
+        },
+        {
+          "layer": 51,
+          "port": 0
+        },
+        {
+          "layer": 53,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 55,
+      "name": "inc4c/conv1",
+      "operator_id": 1,
+      "tail_offset": 18883,
+      "inputs": [
+        {
+          "layer": 54,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 56,
+      "name": "uconv306",
+      "operator_id": 1,
+      "tail_offset": 19287,
+      "inputs": [
+        {
+          "layer": 54,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 57,
+      "name": "slice307",
+      "operator_id": 10,
+      "tail_offset": 19691,
+      "inputs": [
+        {
+          "layer": 56,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        32
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ],
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 58,
+      "name": "inc4c/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 19819,
+      "inputs": [
+        {
+          "layer": 57,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 59,
+      "name": "inc4c/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 20228,
+      "inputs": [
+        {
+          "layer": 57,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 60,
+      "name": "inc4c/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 20637,
+      "inputs": [
+        {
+          "layer": 59,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 61,
+      "name": "inc4c",
+      "operator_id": 9,
+      "tail_offset": 21054,
+      "inputs": [
+        {
+          "layer": 55,
+          "port": 0
+        },
+        {
+          "layer": 58,
+          "port": 0
+        },
+        {
+          "layer": 60,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 62,
+      "name": "inc4d/conv1",
+      "operator_id": 1,
+      "tail_offset": 21160,
+      "inputs": [
+        {
+          "layer": 61,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 63,
+      "name": "uconv308",
+      "operator_id": 1,
+      "tail_offset": 21564,
+      "inputs": [
+        {
+          "layer": 61,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 64,
+      "name": "slice309",
+      "operator_id": 10,
+      "tail_offset": 21968,
+      "inputs": [
+        {
+          "layer": 63,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        32
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ],
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 65,
+      "name": "inc4d/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 22096,
+      "inputs": [
+        {
+          "layer": 64,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 66,
+      "name": "inc4d/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 22505,
+      "inputs": [
+        {
+          "layer": 64,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 67,
+      "name": "inc4d/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 22914,
+      "inputs": [
+        {
+          "layer": 66,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 68,
+      "name": "inc4d",
+      "operator_id": 9,
+      "tail_offset": 23331,
+      "inputs": [
+        {
+          "layer": 62,
+          "port": 0
+        },
+        {
+          "layer": 65,
+          "port": 0
+        },
+        {
+          "layer": 67,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 69,
+      "name": "inc4e/conv1",
+      "operator_id": 1,
+      "tail_offset": 23437,
+      "inputs": [
+        {
+          "layer": 68,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 70,
+      "name": "uconv310",
+      "operator_id": 1,
+      "tail_offset": 23841,
+      "inputs": [
+        {
+          "layer": 68,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 48,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        48,
+        256,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 71,
+      "name": "slice311",
+      "operator_id": 10,
+      "tail_offset": 24245,
+      "inputs": [
+        {
+          "layer": 70,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        32
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          48,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ],
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 72,
+      "name": "inc4e/conv3_2",
+      "operator_id": 1,
+      "tail_offset": 24373,
+      "inputs": [
+        {
+          "layer": 71,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 96,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        96,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 73,
+      "name": "inc4e/conv5_2",
+      "operator_id": 1,
+      "tail_offset": 24782,
+      "inputs": [
+        {
+          "layer": 71,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        4,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          16,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 74,
+      "name": "inc4e/conv5_3",
+      "operator_id": 1,
+      "tail_offset": 25191,
+      "inputs": [
+        {
+          "layer": 73,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 32,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        32,
+        8,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 75,
+      "name": "inc4e",
+      "operator_id": 9,
+      "tail_offset": 25608,
+      "inputs": [
+        {
+          "layer": 69,
+          "port": 0
+        },
+        {
+          "layer": 72,
+          "port": 0
+        },
+        {
+          "layer": 74,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "index": 76,
+      "name": "upsample",
+      "operator_id": 1,
+      "tail_offset": 25711,
+      "inputs": [
+        {
+          "layer": 75,
+          "port": 0
+        }
+      ],
+      "kind": "transposed_convolution_candidate",
+      "output_channels": 256,
+      "kernel": [
+        4,
+        4
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": false,
+      "transposed_candidate": true,
+      "weight_stored_shape": [
+        4096,
+        1,
+        1,
+        4
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          256,
+          8,
+          12
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 77,
+      "name": "downsample",
+      "operator_id": 5,
+      "tail_offset": 26118,
+      "inputs": [
+        {
+          "layer": 3,
+          "port": 0
+        }
+      ],
+      "kind": "max_pool_candidate",
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "ceil_mode_candidate": true,
+      "pool_extra_flag": 1,
+      "raw_q85": 0,
+      "raw_q86": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          32,
+          48
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 78,
+      "name": "concat",
+      "operator_id": 9,
+      "tail_offset": 26312,
+      "inputs": [
+        {
+          "layer": 77,
+          "port": 0
+        },
+        {
+          "layer": 39,
+          "port": 0
+        },
+        {
+          "layer": 76,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          192,
+          16,
+          24
+        ],
+        [
+          1,
+          256,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          544,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 79,
+      "name": "uconv312",
+      "operator_id": 1,
+      "tail_offset": 26415,
+      "inputs": [
+        {
+          "layer": 78,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 192,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        192,
+        544,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          544,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 80,
+      "name": "slice313",
+      "operator_id": 10,
+      "tail_offset": 26819,
+      "inputs": [
+        {
+          "layer": 79,
+          "port": 0
+        }
+      ],
+      "kind": "slice_candidate",
+      "axis": 1,
+      "cuts": [
+        64
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          192,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          128,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 81,
+      "name": "rpn_5_1_conv",
+      "operator_id": 1,
+      "tail_offset": 26946,
+      "inputs": [
+        {
+          "layer": 80,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        16,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 82,
+      "name": "rpn_5_2_conv",
+      "operator_id": 1,
+      "tail_offset": 27354,
+      "inputs": [
+        {
+          "layer": 81,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 128,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        128,
+        32,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          128,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 83,
+      "name": "rpn_3_1_conv",
+      "operator_id": 1,
+      "tail_offset": 27762,
+      "inputs": [
+        {
+          "layer": 80,
+          "port": 1
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 256,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        256,
+        32,
+        1,
+        36
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          256,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 84,
+      "name": "rpn_1_conv",
+      "operator_id": 1,
+      "tail_offset": 28168,
+      "inputs": [
+        {
+          "layer": 78,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 64,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": true,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        64,
+        544,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          544,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 85,
+      "name": "concat2",
+      "operator_id": 9,
+      "tail_offset": 28587,
+      "inputs": [
+        {
+          "layer": 82,
+          "port": 0
+        },
+        {
+          "layer": 83,
+          "port": 0
+        },
+        {
+          "layer": 84,
+          "port": 0
+        }
+      ],
+      "kind": "concat_candidate",
+      "axis": 1,
+      "input_shapes_candidate": [
+        [
+          1,
+          128,
+          16,
+          24
+        ],
+        [
+          1,
+          256,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          448,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 86,
+      "name": "rpn_cls_score1",
+      "operator_id": 1,
+      "tail_offset": 28696,
+      "inputs": [
+        {
+          "layer": 85,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 50,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": false,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        52,
+        448,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          448,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 87,
+      "name": "rpn_cls_score1_reshape",
+      "operator_id": 8,
+      "tail_offset": 29114,
+      "inputs": [
+        {
+          "layer": 86,
+          "port": 0
+        }
+      ],
+      "kind": "reshape_candidate",
+      "shape": [
+        1,
+        2,
+        400,
+        24
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 88,
+      "name": "rpn_cls_prob1",
+      "operator_id": 29,
+      "tail_offset": 29238,
+      "inputs": [
+        {
+          "layer": 87,
+          "port": 0
+        }
+      ],
+      "kind": "softmax_candidate",
+      "axis": 1,
+      "raw_q57": 2,
+      "raw_q58": 4,
+      "input_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 89,
+      "name": "rpn_cls_prob1_reshape",
+      "operator_id": 8,
+      "tail_offset": 29359,
+      "inputs": [
+        {
+          "layer": 88,
+          "port": 0
+        }
+      ],
+      "kind": "reshape_candidate",
+      "shape": [
+        1,
+        50,
+        16,
+        24
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 90,
+      "name": "rpn_cls_score2",
+      "operator_id": 1,
+      "tail_offset": 29484,
+      "inputs": [
+        {
+          "layer": 85,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 50,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": false,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        52,
+        448,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          448,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 91,
+      "name": "rpn_cls_score2_reshape",
+      "operator_id": 8,
+      "tail_offset": 29902,
+      "inputs": [
+        {
+          "layer": 90,
+          "port": 0
+        }
+      ],
+      "kind": "reshape_candidate",
+      "shape": [
+        1,
+        2,
+        400,
+        24
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 92,
+      "name": "rpn_cls_prob2",
+      "operator_id": 29,
+      "tail_offset": 30026,
+      "inputs": [
+        {
+          "layer": 91,
+          "port": 0
+        }
+      ],
+      "kind": "softmax_candidate",
+      "axis": 1,
+      "raw_q57": 2,
+      "raw_q58": 4,
+      "input_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 93,
+      "name": "rpn_cls_prob2_reshape",
+      "operator_id": 8,
+      "tail_offset": 30147,
+      "inputs": [
+        {
+          "layer": 92,
+          "port": 0
+        }
+      ],
+      "kind": "reshape_candidate",
+      "shape": [
+        1,
+        50,
+        16,
+        24
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          2,
+          400,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 94,
+      "name": "rpn_bbox_pred",
+      "operator_id": 1,
+      "tail_offset": 30271,
+      "inputs": [
+        {
+          "layer": 85,
+          "port": 0
+        }
+      ],
+      "kind": "convolution_candidate",
+      "output_channels": 100,
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "relu_candidate": false,
+      "transposed_candidate": false,
+      "weight_stored_shape": [
+        100,
+        448,
+        1,
+        1
+      ],
+      "input_shapes_candidate": [
+        [
+          1,
+          448,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": [
+        [
+          1,
+          100,
+          16,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 95,
+      "name": "proposal1",
+      "operator_id": 24,
+      "tail_offset": 30692,
+      "inputs": [
+        {
+          "layer": 89,
+          "port": 0
+        },
+        {
+          "layer": 94,
+          "port": 0
+        },
+        {
+          "layer": null,
+          "port": null
+        }
+      ],
+      "kind": "proposal_candidate",
+      "feature_stride_candidate": [
+        16,
+        16
+      ],
+      "anchor_base_size_candidate": 16,
+      "ratio_count_candidate": 5,
+      "scale_count_candidate": 5,
+      "pre_nms_top_n_candidate": 3000,
+      "post_nms_top_n_candidate": 30,
+      "nms_threshold_candidate": 0.30000001192092896,
+      "raw_q93": 4,
+      "raw_q97": 4,
+      "anchor_count_from_grid": 9600,
+      "input_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ],
+        [
+          1,
+          100,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": []
+    },
+    {
+      "index": 96,
+      "name": "proposal2",
+      "operator_id": 24,
+      "tail_offset": 30855,
+      "inputs": [
+        {
+          "layer": 93,
+          "port": 0
+        },
+        {
+          "layer": 94,
+          "port": 0
+        },
+        {
+          "layer": null,
+          "port": null
+        }
+      ],
+      "kind": "proposal_candidate",
+      "feature_stride_candidate": [
+        16,
+        16
+      ],
+      "anchor_base_size_candidate": 16,
+      "ratio_count_candidate": 5,
+      "scale_count_candidate": 5,
+      "pre_nms_top_n_candidate": 3000,
+      "post_nms_top_n_candidate": 30,
+      "nms_threshold_candidate": 0.30000001192092896,
+      "raw_q93": 4,
+      "raw_q97": 4,
+      "anchor_count_from_grid": 9600,
+      "input_shapes_candidate": [
+        [
+          1,
+          50,
+          16,
+          24
+        ],
+        [
+          1,
+          100,
+          16,
+          24
+        ]
+      ],
+      "output_shapes_candidate": []
+    }
+  ],
+  "checks": {
+    "concat_branches_agree": 12,
+    "explicit_reshape_counts_agree": 4,
+    "packed_input_channel_counts_agree": 61
+  },
+  "concat_checks": [
+    {
+      "layer": 11,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        192,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 18,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        192,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 25,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        192,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 32,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        192,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 39,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ],
+        [
+          1,
+          32,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        192,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 47,
+      "inputs": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output": [
+        1,
+        256,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": 54,
+      "inputs": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output": [
+        1,
+        256,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": 61,
+      "inputs": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output": [
+        1,
+        256,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": 68,
+      "inputs": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output": [
+        1,
+        256,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": 75,
+      "inputs": [
+        [
+          1,
+          128,
+          8,
+          12
+        ],
+        [
+          1,
+          96,
+          8,
+          12
+        ],
+        [
+          1,
+          32,
+          8,
+          12
+        ]
+      ],
+      "output": [
+        1,
+        256,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": 78,
+      "inputs": [
+        [
+          1,
+          96,
+          16,
+          24
+        ],
+        [
+          1,
+          192,
+          16,
+          24
+        ],
+        [
+          1,
+          256,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        544,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 85,
+      "inputs": [
+        [
+          1,
+          128,
+          16,
+          24
+        ],
+        [
+          1,
+          256,
+          16,
+          24
+        ],
+        [
+          1,
+          64,
+          16,
+          24
+        ]
+      ],
+      "output": [
+        1,
+        448,
+        16,
+        24
+      ]
+    }
+  ],
+  "reshape_checks": [
+    {
+      "layer": 87,
+      "input": [
+        1,
+        50,
+        16,
+        24
+      ],
+      "encoded_output": [
+        1,
+        2,
+        400,
+        24
+      ]
+    },
+    {
+      "layer": 89,
+      "input": [
+        1,
+        2,
+        400,
+        24
+      ],
+      "encoded_output": [
+        1,
+        50,
+        16,
+        24
+      ]
+    },
+    {
+      "layer": 91,
+      "input": [
+        1,
+        50,
+        16,
+        24
+      ],
+      "encoded_output": [
+        1,
+        2,
+        400,
+        24
+      ]
+    },
+    {
+      "layer": 93,
+      "input": [
+        1,
+        2,
+        400,
+        24
+      ],
+      "encoded_output": [
+        1,
+        50,
+        16,
+        24
+      ]
+    }
+  ],
+  "tensor_channel_checks": [
+    {
+      "layer": 1,
+      "input_channels": 1,
+      "from_weight_record": 1
+    },
+    {
+      "layer": 2,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 3,
+      "input_channels": 48,
+      "from_weight_record": 48
+    },
+    {
+      "layer": 5,
+      "input_channels": 96,
+      "from_weight_record": 96
+    },
+    {
+      "layer": 6,
+      "input_channels": 96,
+      "from_weight_record": 96
+    },
+    {
+      "layer": 8,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 9,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 10,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 12,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 13,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 15,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 16,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 17,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 19,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 20,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 22,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 23,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 24,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 26,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 27,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 29,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 30,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 31,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 33,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 34,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 36,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 37,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 38,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 41,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 42,
+      "input_channels": 192,
+      "from_weight_record": 192
+    },
+    {
+      "layer": 44,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 45,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 46,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 48,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 49,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 51,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 52,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 53,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 55,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 56,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 58,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 59,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 60,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 62,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 63,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 65,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 66,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 67,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 69,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 70,
+      "input_channels": 256,
+      "from_weight_record": 256
+    },
+    {
+      "layer": 72,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 73,
+      "input_channels": 16,
+      "from_weight_record": 16
+    },
+    {
+      "layer": 74,
+      "input_channels": 32,
+      "from_weight_record": 32
+    },
+    {
+      "layer": 79,
+      "input_channels": 544,
+      "from_weight_record": 544
+    },
+    {
+      "layer": 81,
+      "input_channels": 64,
+      "from_weight_record": 64
+    },
+    {
+      "layer": 82,
+      "input_channels": 128,
+      "from_weight_record": 128
+    },
+    {
+      "layer": 83,
+      "input_channels": 128,
+      "from_weight_record": 128
+    },
+    {
+      "layer": 84,
+      "input_channels": 544,
+      "from_weight_record": 544
+    },
+    {
+      "layer": 86,
+      "input_channels": 448,
+      "from_weight_record": 448
+    },
+    {
+      "layer": 90,
+      "input_channels": 448,
+      "from_weight_record": 448
+    },
+    {
+      "layer": 94,
+      "input_channels": 448,
+      "from_weight_record": 448
+    }
+  ],
+  "limitations": [
+    "Shape-consistent candidate semantics only; no original DSP execution compared.",
+    "Pool max-vs-average not confirmed; ceil behavior required by concat dimensions.",
+    "Activation 0/1 flags correlate with heads/backbone; ReLU interpretation unverified.",
+    "Proposal names for raw parameters are conventional interpretations, not confirmed ABI."
+  ]
+}

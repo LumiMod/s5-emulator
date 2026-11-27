@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.24.0/skimage/data/astronaut.png",
+  "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+  "purpose": "single-image hypothesis smoke test, not an AF evaluation dataset",
+  "license_reference": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut",
+  "image_origin": "NASA Eileen Collins photograph; public domain per scikit-image documentation"
+}

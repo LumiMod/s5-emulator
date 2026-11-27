@@ -1,0 +1,202 @@
+{
+  "status": "computer_side_preparation_complete",
+  "mode": "model_research",
+  "formal_training_started": false,
+  "ready_for_formal_training": false,
+  "steps": [
+    {
+      "command": [
+        "extract.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/00-extract.txt",
+      "log_sha256": "35a86b153ca704f7c9841285578bd7233aa068ad348dd14df4fd512b1a1e0bac",
+      "original_log_sha256": "35a86b153ca704f7c9841285578bd7233aa068ad348dd14df4fd512b1a1e0bac"
+    },
+    {
+      "command": [
+        "decode_parameters.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/01-decode_parameters.txt",
+      "log_sha256": "be9eeb1b4306e4f92b61f91f5d9f6bf12b3bf8ffff88011376a8013539c9bfe9",
+      "original_log_sha256": "be9eeb1b4306e4f92b61f91f5d9f6bf12b3bf8ffff88011376a8013539c9bfe9"
+    },
+    {
+      "command": [
+        "verify_parameters.py",
+        "--skip-first-conv-checkpoint",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/02-verify_parameters.txt",
+      "log_sha256": "2e51eb2c906bb7e13b10c66a1b0effac28dc61b54abb0b377de73fa3c56833ae",
+      "original_log_sha256": "2e51eb2c906bb7e13b10c66a1b0effac28dc61b54abb0b377de73fa3c56833ae"
+    },
+    {
+      "command": [
+        "ops_investigation.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/03-ops_investigation.txt",
+      "log_sha256": "c6aae0ed0b54b424ee9f81b9655bca956e31faceab0266f51a111557c5ebd661",
+      "original_log_sha256": "c6aae0ed0b54b424ee9f81b9655bca956e31faceab0266f51a111557c5ebd661"
+    },
+    {
+      "command": [
+        "packing_investigation.py"
+      ],
+      "exit_code": 0,
+      "log": "logs/04-packing_investigation.txt",
+      "log_sha256": "91cbba7cc5e3d8d74c1256bd59996228c7b159ac65ecce603ec352b92a221ce0",
+      "original_log_sha256": "91cbba7cc5e3d8d74c1256bd59996228c7b159ac65ecce603ec352b92a221ce0"
+    },
+    {
+      "command": [
+        "runtime_investigation.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/05-runtime_investigation.txt",
+      "log_sha256": "cdf8e0caa66ed3690a765362f253779a3135f104692a772ef8ee015593dc5b18",
+      "original_log_sha256": "cdf8e0caa66ed3690a765362f253779a3135f104692a772ef8ee015593dc5b18"
+    },
+    {
+      "command": [
+        "candidate_network.py",
+        "--compare-layouts",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/06-candidate_network.txt",
+      "log_sha256": "2bc9f27249c94a680fd9feda42d8ff116702f68c99dc32e67ac8fe009eb9af1d",
+      "original_log_sha256": "2bc9f27249c94a680fd9feda42d8ff116702f68c99dc32e67ac8fe009eb9af1d"
+    },
+    {
+      "command": [
+        "verify_graph_hypotheses.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/07-verify_graph_hypotheses.txt",
+      "log_sha256": "70c04e24c8f0cbede17b5bed232b8a9911cedb82e6200228169039c56caafc8c",
+      "original_log_sha256": "70c04e24c8f0cbede17b5bed232b8a9911cedb82e6200228169039c56caafc8c"
+    },
+    {
+      "command": [
+        "verify_portability.py"
+      ],
+      "exit_code": 0,
+      "log": "logs/08-verify_portability.txt",
+      "log_sha256": "abf53adb3c9ce88458a300a86854d610d40506ab503b62ac8479c8c0c047852e",
+      "original_log_sha256": "abf53adb3c9ce88458a300a86854d610d40506ab503b62ac8479c8c0c047852e"
+    },
+    {
+      "command": [
+        "proposal_hypothesis.py",
+        "--self-check"
+      ],
+      "exit_code": 0,
+      "log": "logs/09-proposal_hypothesis.txt",
+      "log_sha256": "c96946f9e8f18a612f83c1ea10a3e41ca484dd7902029e93369ba6c5ca2a4cfe",
+      "original_log_sha256": "c96946f9e8f18a612f83c1ea10a3e41ca484dd7902029e93369ba6c5ca2a4cfe"
+    },
+    {
+      "command": [
+        "verify_pretraining_tools.py"
+      ],
+      "exit_code": 0,
+      "log": "logs/10-verify_pretraining_tools.txt",
+      "log_sha256": "b0cca8eca184ac8a9c24f4672655c03a28269ba2d27d5158f468ea6ed4c5dd51",
+      "original_log_sha256": "b0cca8eca184ac8a9c24f4672655c03a28269ba2d27d5158f468ea6ed4c5dd51"
+    },
+    {
+      "command": [
+        "pretraining_readiness.py",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/11-pretraining_readiness.txt",
+      "log_sha256": "fbedaad72e5988bcc752feabc4b8a4932545a48b02972559d282cbbc30d735d7",
+      "original_log_sha256": "fbedaad72e5988bcc752feabc4b8a4932545a48b02972559d282cbbc30d735d7"
+    },
+    {
+      "command": [
+        "photo_probe.py",
+        "<PUBLIC_TEST_IMAGE>/astronaut.png",
+        "--model",
+        "43_hm_d_nw",
+        "--output",
+        "<AF_RESEARCH>/artifacts/photo-probe/43_hm_d_nw",
+        "--compare-layouts",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/12-photo_probe.txt",
+      "log_sha256": "2ded1d1c9a1f98cdef0c306b6e998666749e4f890608685f53ec5b63d4a985e7",
+      "original_log_sha256": "2ded1d1c9a1f98cdef0c306b6e998666749e4f890608685f53ec5b63d4a985e7"
+    },
+    {
+      "command": [
+        "photo_probe.py",
+        "<PUBLIC_TEST_IMAGE>/astronaut.png",
+        "--model",
+        "44_hm_d_nw_sng",
+        "--output",
+        "<AF_RESEARCH>/artifacts/photo-probe/44_hm_d_nw_sng",
+        "--compare-layouts",
+        "--source",
+        "<ORIGINAL_V29>/unpacked-v29"
+      ],
+      "exit_code": 0,
+      "log": "logs/13-photo_probe.txt",
+      "log_sha256": "efa996f95046eeefb93512f641a2f998a892e5abddf0ab87586041c74d8bdec9",
+      "original_log_sha256": "efa996f95046eeefb93512f641a2f998a892e5abddf0ab87586041c74d8bdec9"
+    }
+  ],
+  "skipped_steps": [],
+  "outstanding": [
+    "dataset_structure_and_coverage",
+    "numeric_original_execution_comparison",
+    "held_out_detection_baseline",
+    "image_to_input_preprocessing_fidelity",
+    "proposal_decoder_fidelity",
+    "physical_focus_control_baseline"
+  ],
+  "source_code_sha256": {
+    "build_owner_kit.py": "9b1b49969955f40da5c70714219bf07114436ec8aacb3e2f7cd4cd21ce904f45",
+    "candidate_network.py": "0005f869aee9c69191fc74259a92e6f0bbf9e9aa1d43cceae7ee1694f682b559",
+    "collection.py": "e5a18cdc2696a2cc0761344525a60b4c4b18f9e5982e500d52fed1ee5bfc5664",
+    "decode_parameters.py": "f668e96a79d9af804a9294a4fcf27fb26f58892e13ad5b5bb7dbc94123972fea",
+    "extract.py": "4e17205d87f763c211d17295c49c0c5a0e300bfd33a096f6c64e88f794ae1798",
+    "ops_investigation.py": "4ccc37d77676a794423aacd154a436a84826760e1e6856d4913c4e4180109165",
+    "packing_investigation.py": "eeea598c51cdd7345640989847214100e889fe57fec0a87c0a4954328b8aac1d",
+    "photo_probe.py": "491c3372e375528616381b9e6e2c68123550bc1e68c71cc20de7d8bc28b10db9",
+    "prepare_offline.py": "b5d523269d602afe5af080b9e33f5edcd7e72acbe0bc7177d7fe7e021942f997",
+    "pretraining_data.py": "a910721ffa9ad28117b75fa20233dc95f43f14409b640cfebc48bc8077690dd8",
+    "pretraining_readiness.py": "bcf438eb6af3957be7e817310d0acb9c8a18b260a24fb2163126e50e5d45150d",
+    "probe_first_conv.py": "3d8a768b8f38a518a7c55914c56e6bb94fe73a89cda9aace0038796300496574",
+    "proposal_hypothesis.py": "a15518fc128680c496b928f968cb1af97ee9db943cd719c66cb648a98a8b9682",
+    "research_paths.py": "17fc95de086fbe80acc16ae042049364b8c39befc6fc0b5461ee55688a8494a9",
+    "runtime_investigation.py": "7452d5d7410571093f8ac15edc65291c79facd924e6e66bb3bf4eae7599d1aae",
+    "verify_collection.py": "3348fb3414cfa619585bc56bf1b9754de6abf375e3607b9fd4abb71effc526f0",
+    "verify_graph_hypotheses.py": "cf7dc81274a717589a71c7ede93897caa639cc914c7a958d65ecdc87fbe54ccb",
+    "verify_parameters.py": "4b790acd7bd7588ad14c2e13ebed34a9ec2756fc18d8f8df0227fc6caf2f4c9a",
+    "verify_portability.py": "9a8beaaeed155916d6fc2a5b43c28328464c827e89fa3d4db4f57db7a2b89fe7",
+    "verify_pretraining_tools.py": "9d854ea4707dcd80f98d28d6ab506c5b879b16a2a7654c94312b1a18bc172d4e"
+  },
+  "scope": "Offline tools and hypothesis experiments only. Original-DSP parity and physical AF remain unverified.",
+  "publication_notes": "Local absolute paths normalized. log_sha256 binds published log; original_log_sha256 preserves the pre-normalization hash. No firmware weights or captured private media included."
+}

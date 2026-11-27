@@ -1,0 +1,2 @@
+43_hm_d_nw {'all_parameter_bytes_accounted_for': True, 'all_bias_pairs_identical': True, 'all_bias_scale_identities_pass': True, 'maximum_scale_identity_relative_error': 5.67163331080382e-08, 'convolution_layers': 66, 'parameter_bytes': 3356320}
+44_hm_d_nw_sng {'all_parameter_bytes_accounted_for': True, 'all_bias_pairs_identical': True, 'all_bias_scale_identities_pass': True, 'maximum_scale_identity_relative_error': 4.81462376054018e-08, 'convolution_layers': 62, 'parameter_bytes': 3165984}

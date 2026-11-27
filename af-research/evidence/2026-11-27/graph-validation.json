@@ -1,0 +1,80 @@
+{
+  "43_hm_d_nw": {
+    "source_sha256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+    "graph_checks": {
+      "concat_branches_agree": 12,
+      "explicit_reshape_counts_agree": 12,
+      "packed_input_channel_counts_agree": 65
+    },
+    "packing_roundtrips": {
+      "o4_i4_hw": 65,
+      "hw_o4_i4": 65,
+      "o4_hw_i4": 65
+    },
+    "graph_corruption_rejections": [
+      {
+        "case": "slice_cut",
+        "reason": "Invalid channel split"
+      },
+      {
+        "case": "reshape_count",
+        "reason": "Encoded reshape element-count mismatch"
+      },
+      {
+        "case": "branch_stride",
+        "reason": "Spatial branch mismatch at inc3b"
+      },
+      {
+        "case": "activation_duplicate",
+        "reason": "Activation flag copies disagree"
+      }
+    ],
+    "classification_scalar_index_checks": [
+      "rpn_cls_score1",
+      "rpn_cls_score2",
+      "rpn_cls_score3",
+      "rpn_cls_score4",
+      "rpn_cls_score5",
+      "rpn_cls_score6"
+    ],
+    "classification_nonzero_padding_rejected": true,
+    "limitations": "These checks validate the recorded hypotheses and parsers, not original DSP equivalence."
+  },
+  "44_hm_d_nw_sng": {
+    "source_sha256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+    "graph_checks": {
+      "concat_branches_agree": 12,
+      "explicit_reshape_counts_agree": 4,
+      "packed_input_channel_counts_agree": 61
+    },
+    "packing_roundtrips": {
+      "o4_i4_hw": 61,
+      "hw_o4_i4": 61,
+      "o4_hw_i4": 61
+    },
+    "graph_corruption_rejections": [
+      {
+        "case": "slice_cut",
+        "reason": "Invalid channel split"
+      },
+      {
+        "case": "reshape_count",
+        "reason": "Encoded reshape element-count mismatch"
+      },
+      {
+        "case": "branch_stride",
+        "reason": "Spatial branch mismatch at inc3b"
+      },
+      {
+        "case": "activation_duplicate",
+        "reason": "Activation flag copies disagree"
+      }
+    ],
+    "classification_scalar_index_checks": [
+      "rpn_cls_score1",
+      "rpn_cls_score2"
+    ],
+    "classification_nonzero_padding_rejected": true,
+    "limitations": "These checks validate the recorded hypotheses and parsers, not original DSP equivalence."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "firmware_sha256_verified": "b2ec4aeec209693b874df8dfdf11fc85b38fa4675b44ec554b7a167f430827e1",
+  "firmware_package_check": "passed",
+  "manifest_check": "passed_for_models",
+  "zip_sha256": "5ca4c36ac0756e75b636b5caf9aaa58b89a12de282e126e24803ee42ddcec24f",
+  "zip_check": "passed",
+  "identity_scope": "Each complete model component is checked against the repository-pinned original SHA-256; package provenance is a separate optional check.",
+  "models": {
+    "43_hm_d_nw": {
+      "sha256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+      "layers": 117,
+      "classes": [
+        "__background__",
+        "person",
+        "person_face",
+        "animal",
+        "animal_face",
+        "bird",
+        "bird_face"
+      ],
+      "output_ports": 12,
+      "regions": [
+        {
+          "name": "header",
+          "offset": 0,
+          "size": 272,
+          "sha256": "cab0889d9d8168fb497d0de27a4049022831280adb29b97f5fc04786e4587460"
+        },
+        {
+          "name": "network_description",
+          "offset": 272,
+          "size": 34736,
+          "sha256": "d21915ae7e30c48cf8313be03920de3aa106adec3bdf17c1376943ee0d82ba93"
+        },
+        {
+          "name": "parameter_candidate",
+          "offset": 35008,
+          "size": 3356320,
+          "sha256": "fe99a21db3b04a25a868b989c445bfd1caeed0f7602ac87a4062f16111d20654"
+        },
+        {
+          "name": "ff_padding",
+          "offset": 3391328,
+          "size": 802976,
+          "sha256": "69f5f22b2ccf018323755a7bd972f9c5eed2146b59c80fc15628018ee28d499d"
+        }
+      ],
+      "pinned_model_sha256_verified": true,
+      "manifest_matches_component": true,
+      "zip_matches_component": true,
+      "independent_graph_matches_existing_tsv": true,
+      "region_roundtrip_identical": true
+    },
+    "44_hm_d_nw_sng": {
+      "sha256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+      "layers": 97,
+      "classes": [
+        "__background__",
+        "person",
+        "person_face"
+      ],
+      "output_ports": 4,
+      "regions": [
+        {
+          "name": "header",
+          "offset": 0,
+          "size": 272,
+          "sha256": "b25091b9b812a7695106beaa039fb9a72adb5546315526bf183efd5094f659c2"
+        },
+        {
+          "name": "network_description",
+          "offset": 272,
+          "size": 30688,
+          "sha256": "01b6a9bf16c23b41b182aa8904058faf8d3662668c00967e237fbeeb20613e14"
+        },
+        {
+          "name": "parameter_candidate",
+          "offset": 30960,
+          "size": 3165984,
+          "sha256": "f463706a694eb696e2d4520c8699e247f31edc1e966d87a7db105a4404be8d99"
+        },
+        {
+          "name": "ff_padding",
+          "offset": 3196944,
+          "size": 997360,
+          "sha256": "417e1399febc71ea5b235b3c16ba2e2494a7cae457eda916ea800207d4953595"
+        }
+      ],
+      "pinned_model_sha256_verified": true,
+      "manifest_matches_component": true,
+      "zip_matches_component": true,
+      "independent_graph_matches_existing_tsv": true,
+      "region_roundtrip_identical": true
+    }
+  }
+}

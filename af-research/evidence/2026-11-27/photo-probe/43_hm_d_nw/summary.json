@@ -1,0 +1,54 @@
+{
+  "model_sha256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+  "preprocessing": {
+    "input_file_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "oriented_image_wh": [
+      512,
+      512
+    ],
+    "method": "EXIF transpose; Pillow RGB->L; bilinear stretch to384x256; (pixel-mean)*scale",
+    "mean_hypothesis": 117,
+    "scale_hypothesis": 1,
+    "verified_against_camera": false
+  },
+  "runs": [
+    {
+      "layout": "o4_i4_hw",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.1211526095867157,
+        "proposal2": 0.04689784720540047,
+        "proposal3": 0.17339032888412476,
+        "proposal4": 0.10471139848232269,
+        "proposal5": 0.06974593549966812,
+        "proposal6": 0.05064189434051514
+      },
+      "finite_outputs": true
+    },
+    {
+      "layout": "hw_o4_i4",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.06207709014415741,
+        "proposal2": 0.03272921219468117,
+        "proposal3": 0.11180491000413895,
+        "proposal4": 0.10048533976078033,
+        "proposal5": 0.0359271764755249,
+        "proposal6": 0.02959730103611946
+      },
+      "finite_outputs": true
+    },
+    {
+      "layout": "o4_hw_i4",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.07692209631204605,
+        "proposal2": 0.033788226544857025,
+        "proposal3": 0.12888364493846893,
+        "proposal4": 0.07344332337379456,
+        "proposal5": 0.08801252394914627,
+        "proposal6": 0.03330652788281441
+      },
+      "finite_outputs": true
+    }
+  ],
+  "status": "hypothesis smoke tests only",
+  "training_started": false
+}

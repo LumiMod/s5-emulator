@@ -1,0 +1,5 @@
+{
+  "dataset_manifest_sha256": "REPLACE_WITH_DATASET_MANIFEST_SHA256",
+  "model_sha256": "REPLACE_WITH_MODEL_COMPONENT_SHA256",
+  "frames": []
+}

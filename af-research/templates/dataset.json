@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "classes": ["person", "person_face", "animal", "animal_face", "bird", "bird_face"],
+  "frames": []
+}

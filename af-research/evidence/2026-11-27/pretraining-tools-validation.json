@@ -1,0 +1,12 @@
+{
+  "fixture_only": true,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "source_hashes": {
+    "pretraining_data.py": "a910721ffa9ad28117b75fa20233dc95f43f14409b640cfebc48bc8077690dd8",
+    "pretraining_readiness.py": "bcf438eb6af3957be7e817310d0acb9c8a18b260a24fb2163126e50e5d45150d",
+    "verify_pretraining_tools.py": "9d854ea4707dcd80f98d28d6ab506c5b879b16a2a7654c94312b1a18bc172d4e"
+  }
+}

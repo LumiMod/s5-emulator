@@ -1,0 +1,828 @@
+{
+  "component_digests": {
+    "03_program.bin": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe",
+    "39_hm_c_prog.bin": "06e44fbb2c38f7b389ff71a85dd66ebf06ad1138e2fd8f4aebf3bfc6a97a0d47",
+    "40_hm_d_prog.bin": "dc4064303a8eab1bd7f374aa8d8df52834ace9873dce1f1087458ff2ff75beaf",
+    "41_hm_c_ddr.bin": "b26f3b3d07c411f1b7e641b03aec415f8ae2068edd8746b8ac71d50db143415f",
+    "42_hm_d_ddr.bin": "e9688a52f4371814874321f244516d809d36d8fa16f1895b26a6e0224de734e2"
+  },
+  "runtime_code_base": 2217115648,
+  "runtime_code_bytes": 3145728,
+  "runtime_data_base": 2220261376,
+  "base_evidence": {
+    "code_literal_file_offset": 5638232,
+    "data_literal_file_offset": 5638236,
+    "code_base_load_va": 108922312,
+    "code_pointer_store_va": 108922318,
+    "data_base_load_va": 108922322,
+    "data_pointer_store_va": 108922326,
+    "code_copy_call_va": 108922684,
+    "code_copy_bytes": 3145728,
+    "data_copy_call_va": 108922706,
+    "data_copy_bytes": 131072
+  },
+  "model_load_checks": {
+    "loader_va": 108922626,
+    "magic_compare_va": 108922736,
+    "multi_class_count_compare_va": 108922760,
+    "multi_class_count": 6,
+    "human_class_count_compare_va": 108922804,
+    "human_class_count": 2,
+    "model_load_bytes": 4194304,
+    "registration_caller_va": 108623436,
+    "registration_call_va": 108623534,
+    "registration_target_va": 108861296
+  },
+  "classes": [
+    {
+      "class_name": "10InputLayer",
+      "name_file_offset": 13284,
+      "rtti_file_offset": 13300,
+      "vtable_methods_start_file_offset": 13320,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 13320,
+          "code_va": 2217479490,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 363842,
+          "first_64_bytes_hex": "06e4d1c3d15a11faff0700f8103c00c401f938acd05a11fac0fe07bc80fb000000f806042087a439604135e89b2460e03ae8660dc081060c0183060041caa0d2",
+          "first_64_bytes_sha256": "7a96636b03b6f3096ee65325c6106bc299a1b284e061ddf399761b463594c4cd"
+        },
+        {
+          "vtable_slot_file_offset": 13324,
+          "code_va": 2217478824,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 363176,
+          "first_64_bytes_hex": "103c400100bc0626d05a11fac0fe07bc80fb38e806e4d1c32087a439604135e89b2400c401f938acc081060c0183060041ca000000f8060435f021001ba80918",
+          "first_64_bytes_sha256": "cc9f3148e825b1a5b16fb39dd6e7de8093eba59fd9a662da5abe2cd8568c63ae"
+        },
+        {
+          "vtable_slot_file_offset": 13328,
+          "code_va": 2217395760,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 280112,
+          "first_64_bytes_hex": "e0ff07bc06e421c780207ad35508fff8103cc03c00f038a8060600c1001000f800f0ffb700f0fff300f0ffef00f0ffeb01fa38f080ff38ecc55a11fac35a11fa",
+          "first_64_bytes_sha256": "6582389ff35374393d177888ec2975c89757966b24b355605562eb1103f18e0e"
+        },
+        {
+          "vtable_slot_file_offset": 13332,
+          "code_va": 2217395726,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 280078,
+          "first_64_bytes_hex": "00f8003fe0ff07fc06e421c700487ad35508103cc03c00f038a8060600c1001000f8e0ff07bc06e421c780207ad35508fff8103cc03c00f038a8060600c10010",
+          "first_64_bytes_sha256": "e83a193711188ca1a1532b5ebe7e667d937f93c368d56107d34c597102f2f7a6"
+        },
+        {
+          "vtable_slot_file_offset": 13336,
+          "code_va": 2217472480,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 356832,
+          "first_64_bytes_hex": "20f13df09b0401c404f538e8d45a11fa7838142935e82b1840fb07fc21f838f400c4033800f338ec40fd07bc0884f9c30624d0c3010400f8e83bc84435e87b24",
+          "first_64_bytes_sha256": "ab5a794badbf24e39c1fd0a6228f9a7a301578569c37b8b7986625598f618cf9"
+        },
+        {
+          "vtable_slot_file_offset": 13340,
+          "code_va": 2217471328,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 355680,
+          "first_64_bytes_hex": "142935ec80fd07bc20f13de89b0401c435e8c0fe07bc06e4d1c3ff0700f83038a675c08106042087bb2400846038a9413da820386e4035e87c38494135f0c03c",
+          "first_64_bytes_sha256": "fdfbd113ab684d1b90db7f2fe9f432c5855342c4a4c1137449c34234f78ab3cf"
+        },
+        {
+          "vtable_slot_file_offset": 13344,
+          "code_va": 2217468228,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 352580,
+          "first_64_bytes_hex": "3df09b0401c40c3d103cc03c4038142935e8021cca39204135e800fd024028e8c0fd07bc06e4d1c3ff0700f800c4414235a8bb2401c4c40080ffc63901894002",
+          "first_64_bytes_sha256": "561142f9c742dc98faa9f3aaa4a3fccf42bbbe381f2537e6efd2c15a03f004c7"
+        },
+        {
+          "vtable_slot_file_offset": 13348,
+          "code_va": 2217438050,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 322402,
+          "first_64_bytes_hex": "280500f8c0d507bc9b0401c4103c3de801f838a8c0fc07bc0884f9c31429d0c3010400f80b3d0038bb2401c440f200f8010000f8e03c9439724135e806242087",
+          "first_64_bytes_sha256": "95ff23d6b5dc2869a617dfb12dc97a9dba68625983c4e92fe2a9ff3fca8adebf"
+        },
+        {
+          "vtable_slot_file_offset": 13352,
+          "code_va": 2217433992,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 318344,
+          "first_64_bytes_hex": "466040822664408006e421c70838142935e8bc39204135e867936008fff8f83b084035e8e0ff07fcc03c00f0ffeb06c141822605c1814070260d018300f038a8",
+          "first_64_bytes_sha256": "dd84620bb440ec07ec918d4cd7d6849ae4b75450b9e4306ef11cf15d1b075ac7"
+        },
+        {
+          "vtable_slot_file_offset": 13356,
+          "code_va": 2217433936,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 318288,
+          "first_64_bytes_hex": "018300f038a8261cc1c1103c00f038a8703c462044c226244080008800f8461c008000f84640428226444080008400f8c0fe07fc9b0401c44660408226644080",
+          "first_64_bytes_sha256": "14cd808070b2fba3e837e240be4c4b0e4489d8fe1441d4bb5642f02e42b40087"
+        },
+        {
+          "vtable_slot_file_offset": 13360,
+          "code_va": 2217464992,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 349344,
+          "first_64_bytes_hex": "07fc9b0401c402f138e8d45a11fa0d3d2838142935e809187c38804135f0c0fd484135e8c0fd07bc06e4d1c3ff0700f8060420877b2400840038bb2401c4ec3b",
+          "first_64_bytes_sha256": "cdc7565979226e923e9b3b2d4cff9737d3246d3013f4de01004d52ec24fe69d5"
+        },
+        {
+          "vtable_slot_file_offset": 13364,
+          "code_va": 2217433942,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 318294,
+          "first_64_bytes_hex": "261cc1c1103c00f038a8703c462044c226244080008800f8461c008000f84640428226444080008400f8c0fe07fc9b0401c4466040822664408006e421c70838",
+          "first_64_bytes_sha256": "53da6a67cd35d3c7b1bcac448a9751846cb0d66c84b1459f2cd77148b4bec160"
+        },
+        {
+          "vtable_slot_file_offset": 13368,
+          "code_va": 2217475202,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 359554,
+          "first_64_bytes_hex": "142935e8c0fb07bc9b0401c4103cd083010400f8c03c40fd07bc0884f9c3060420877b2400840038bb2401c4062435e8d438004235e8c03c5850463cc0c94610",
+          "first_64_bytes_sha256": "5b32d33f36afd2c8eb3e7aa5f02e152586219f93ce610df06bdf8dc57bbab8ec"
+        },
+        {
+          "vtable_slot_file_offset": 13372,
+          "code_va": 2217370676,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255028,
+          "first_64_bytes_hex": "ffeb103c00f038a8103c00f038f001e33ae806e4d1c3ff0700f80d3d083e24801be8033e8518c0ff07fc00f00038610ba0d20238f89039e8060420c72fe8013e",
+          "first_64_bytes_sha256": "ee8f74aaadec36bd45cfc3d99b021eb85497f401db975ee28687919ced116be1"
+        },
+        {
+          "vtable_slot_file_offset": 13376,
+          "code_va": 2217371120,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255472,
+          "first_64_bytes_hex": "c03c9439604135e8e0fe07fc9b0401c401f03da80a18c03c660dc08106042087e093cb3c26c44080008000f8ca3c215002f03da820f13da8c03c6615c0810080",
+          "first_64_bytes_sha256": "151dad044f094f30035608c874a03cbf1c58c0375150908c875f264065e9a610"
+        },
+        {
+          "vtable_slot_file_offset": 13380,
+          "code_va": 2217433928,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 318280,
+          "first_64_bytes_hex": "103cc03c200100bc018300f038a8261cc1c1103c00f038a8703c462044c226244080008800f8461c008000f84640428226444080008400f8c0fe07fc9b0401c4",
+          "first_64_bytes_sha256": "fd0381dd36aa08c40412dc880f0381a3cbfe0674e5a424751fc4160f8def2624"
+        },
+        {
+          "vtable_slot_file_offset": 13384,
+          "code_va": 2217371540,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255892,
+          "first_64_bytes_hex": "e0fe07bc9b0401c4103cc03c20f13da8c03c06a44080060400f8060426c44080008000f8ca3c215001f03da82038094035ec20f03de80080e093cb3c00f038a8",
+          "first_64_bytes_sha256": "811279001f3adc60e8b3044002988f37be1e7430618771a568f5ace0dc2aeeb3"
+        },
+        {
+          "vtable_slot_file_offset": 13388,
+          "code_va": 2217371348,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255700,
+          "first_64_bytes_hex": "e0fe07bc9b0401c4103cc03c40f13da8c03c06a44080060400f8060426c44080008000f8ca3c215001f03da8011820382a4135e8093d0080e093cb3c09f03da8",
+          "first_64_bytes_sha256": "bbc4fb6158de7bfdb67026c814ed1c3e424e11161f3ff76d493fef659ce033d4"
+        },
+        {
+          "vtable_slot_file_offset": 13392,
+          "code_va": 2217434080,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 318432,
+          "first_64_bytes_hex": "1df638ec05f038e8d15a11fad25a11fa40f907bc0bf038f421f63df09b0401c4004635ec142935e8081080ffb8e182ffe4538fffff0700f8c14535b4e14535f0",
+          "first_64_bytes_sha256": "d6574b774edf28753647c90df550872827ae4417194dd9aa671d022205f470cb"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "9ConvLayer",
+      "name_file_offset": 19992,
+      "rtti_file_offset": 20004,
+      "vtable_methods_start_file_offset": 20024,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 20024,
+          "code_va": 2217838272,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 722624,
+          "first_64_bytes_hex": "81f938ec404135e83a5b11fa680200f800f80838142935e8c0fe07bc9b0401c438b0385b11fac0ff07bc06e4d1c3ff0700f80614018b4605c1c10604208702ff",
+          "first_64_bytes_sha256": "a7bfc89ca67f7022b70806f7d5237e618319a4fe169b8db713ce010cf6443617"
+        },
+        {
+          "vtable_slot_file_offset": 20028,
+          "code_va": 2217837888,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 722240,
+          "first_64_bytes_hex": "81f938ec404135e83a5b11fa680200f800f80838142935e8c0fe07bc9b0401c438b0385b11fac0ff07bc06e4d1c3ff0700f80614018b4605c1c10604208702ff",
+          "first_64_bytes_sha256": "a7bfc89ca67f7022b70806f7d5237e618319a4fe169b8db713ce010cf6443617"
+        },
+        {
+          "vtable_slot_file_offset": 20032,
+          "code_va": 2217395760,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 280112,
+          "first_64_bytes_hex": "e0ff07bc06e421c780207ad35508fff8103cc03c00f038a8060600c1001000f800f0ffb700f0fff300f0ffef00f0ffeb01fa38f080ff38ecc55a11fac35a11fa",
+          "first_64_bytes_sha256": "6582389ff35374393d177888ec2975c89757966b24b355605562eb1103f18e0e"
+        },
+        {
+          "vtable_slot_file_offset": 20036,
+          "code_va": 2217395726,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 280078,
+          "first_64_bytes_hex": "00f8003fe0ff07fc06e421c700487ad35508103cc03c00f038a8060600c1001000f8e0ff07bc06e421c780207ad35508fff8103cc03c00f038a8060600c10010",
+          "first_64_bytes_sha256": "e83a193711188ca1a1532b5ebe7e667d937f93c368d56107d34c597102f2f7a6"
+        },
+        {
+          "vtable_slot_file_offset": 20040,
+          "code_va": 2217811958,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 696310,
+          "first_64_bytes_hex": "9b0401c4103c400200bc404035e8c0fc07bc0884f9c370391429bb2401c4493d0624d083010400f894390844f8c3fb0300f8010000f8e03c0038060100cafb03",
+          "first_64_bytes_sha256": "e081fdc0af59666cccbf928b1e408e52aeda81159c27170e5430c5d791474759"
+        },
+        {
+          "vtable_slot_file_offset": 20044,
+          "code_va": 2217819616,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 703968,
+          "first_64_bytes_hex": "9df338e83d5b11fa3d5b11fa3d5b11fa80fc07bc9b0401c482f738f09af538ec142935e883f138ec604081ff3d5b11fad1c3ff0700f84c3d20f13db4c04135f0",
+          "first_64_bytes_sha256": "10d78637470497783bb452cf440b8c620f59efbb1f350bff22b2309791dd0958"
+        },
+        {
+          "vtable_slot_file_offset": 20048,
+          "code_va": 2219861216,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 2745568,
+          "first_64_bytes_hex": "35e89439404035e840fc07fc9b0401c4204135ec40fd07bc0884f9c3583814290038bb2401c40624d083010400f8803900c02772466401c0060420877b240084",
+          "first_64_bytes_sha256": "5ad2fe3017c286eaf98148c991283766c35c94c42ad984b0e7dfb944ee1631e6"
+        },
+        {
+          "vtable_slot_file_offset": 20052,
+          "code_va": 2219862944,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 2747296,
+          "first_64_bytes_hex": "07fc04f038f405f038f09b0401c40d3d180e00f84c3d061c9439404135e8408e031c7c38804135f402f038f0142935e835ec6038e04035e840fd07fc0884f9c3",
+          "first_64_bytes_sha256": "1a936d38301e08b58cc1784e0c92c4d87aeac4273111bc97ae4dec99af6be0e2"
+        },
+        {
+          "vtable_slot_file_offset": 20056,
+          "code_va": 2219860992,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 2745344,
+          "first_64_bytes_hex": "4c0200f880fe07bc20f13de89b0401c4d1c3ff0700f81038142935ec494135e86008fff8f83b084035e8c0ff07bc06e406c141824605c18106042087407067d3",
+          "first_64_bytes_sha256": "93688e220878444f3495064cf56c6ae3c1840debf38886381e17b1a93005a5bf"
+        },
+        {
+          "vtable_slot_file_offset": 20060,
+          "code_va": 2217810248,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 694600,
+          "first_64_bytes_hex": "103c0a3880f538e83a1cc0fd07bc39f038e806e4d1c3ff0742f13df0204135e89b2401c4bc0180ff35e8bb2400c4c039604135ec83f13df441c00a8800f80b3d",
+          "first_64_bytes_sha256": "15d5fc8e0729028b85909a3e473fffa9ba763aa944c3708e2924324307af1d07"
+        },
+        {
+          "vtable_slot_file_offset": 20064,
+          "code_va": 2217828462,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 712814,
+          "first_64_bytes_hex": "00fc6038142935ec00fc07bc20f13de89b04894135e8c0fd07bc06e4d1c3ff0700f8060420877b2400840038bb2401c460389d08fff82038004035e8c83c8605",
+          "first_64_bytes_sha256": "4373c0bdc0f9e28c02017106d4346c1fa4f9cd44207be32af6d11bae5cff2603"
+        },
+        {
+          "vtable_slot_file_offset": 20068,
+          "code_va": 2217810254,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 694606,
+          "first_64_bytes_hex": "38e83a1cc0fd07bc39f038e806e4d1c3ff0742f13df0204135e89b2401c4bc0180ff35e8bb2400c4c039604135ec83f13df441c00a8800f80b3d06042087bc39",
+          "first_64_bytes_sha256": "daa2f69c567d643e7885ba0e06fcc8021687a077c7ab2f3e49e0e45b3753b1b1"
+        },
+        {
+          "vtable_slot_file_offset": 20072,
+          "code_va": 2217832864,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 717216,
+          "first_64_bytes_hex": "f9c3a038142935e800fa07bc9b0401c40624d083010400f8c03c40fd07bc0884c0c9060420877b2400840038bb2401c4e74035e8d438004235e8c03c5850463c",
+          "first_64_bytes_sha256": "65a30d44e08de15aa71cf2246c16899a2c06251769416eb2bfa889c3cffe5094"
+        },
+        {
+          "vtable_slot_file_offset": 20076,
+          "code_va": 2217810960,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 695312,
+          "first_64_bytes_hex": "c03c103c00f038a8001083c1090000f8ff0700f8103cc03c064441800a0000f820879b240084c03cc0fe07bc06e4d1c3000400f8ca3c06044180010400f80604",
+          "first_64_bytes_sha256": "d64a4ba26d171e5443b430782e6bba3e00e48f0b2391ab01c71d5358fc3d74d4"
+        },
+        {
+          "vtable_slot_file_offset": 20080,
+          "code_va": 2217371120,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255472,
+          "first_64_bytes_hex": "c03c9439604135e8e0fe07fc9b0401c401f03da80a18c03c660dc08106042087e093cb3c26c44080008000f8ca3c215002f03da820f13da8c03c6615c0810080",
+          "first_64_bytes_sha256": "151dad044f094f30035608c874a03cbf1c58c0375150908c875f264065e9a610"
+        },
+        {
+          "vtable_slot_file_offset": 20084,
+          "code_va": 2217810240,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 694592,
+          "first_64_bytes_hex": "00f8103c00f038a8103c0a3880f538e83a1cc0fd07bc39f038e806e4d1c3ff0742f13df0204135e89b2401c4bc0180ff35e8bb2400c4c039604135ec83f13df4",
+          "first_64_bytes_sha256": "568ea6a41c527477b08016d8387accb2284afb443d157cf92f6df5ec02fa5d3a"
+        },
+        {
+          "vtable_slot_file_offset": 20088,
+          "code_va": 2217371540,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255892,
+          "first_64_bytes_hex": "e0fe07bc9b0401c4103cc03c20f13da8c03c06a44080060400f8060426c44080008000f8ca3c215001f03da82038094035ec20f03de80080e093cb3c00f038a8",
+          "first_64_bytes_sha256": "811279001f3adc60e8b3044002988f37be1e7430618771a568f5ace0dc2aeeb3"
+        },
+        {
+          "vtable_slot_file_offset": 20092,
+          "code_va": 2217371348,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 255700,
+          "first_64_bytes_hex": "e0fe07bc9b0401c4103cc03c40f13da8c03c06a44080060400f8060426c44080008000f8ca3c215001f03da8011820382a4135e8093d0080e093cb3c09f03da8",
+          "first_64_bytes_sha256": "bbc4fb6158de7bfdb67026c814ed1c3e424e11161f3ff76d493fef659ce033d4"
+        },
+        {
+          "vtable_slot_file_offset": 20096,
+          "code_va": 2217821568,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 705920,
+          "first_64_bytes_hex": "8ef538e83f5b11fa3e5b11fa3e5b11fa40f507bc9b0401c483f138f08cf738ec84f338f08af338ec3e5b11fa3f5b11fad1c3c4538fffff0700f83839142935e8",
+          "first_64_bytes_sha256": "90d155fae5d96cc12baf7ada9b0b508e09d6fc7005907559daa0f560c2d30730"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "14XM4InputKernel",
+      "name_file_offset": 23552,
+      "rtti_file_offset": 23572,
+      "vtable_methods_start_file_offset": 23592,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23592,
+          "code_va": 2217876996,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 761348,
+          "first_64_bytes_hex": "c0fe07fc9b0401c4103cc03c06e4d1c3ff0700f80838142935e824380604208701fd38ac705b11fac0ff07bc28e820f13db0c03c060c018b4605c1c106c141c2",
+          "first_64_bytes_sha256": "4179b4f903a9785a5af9c2767704bf797a7f6b7c4e6482edcaf477890caea0c7"
+        },
+        {
+          "vtable_slot_file_offset": 23596,
+          "code_va": 2217876832,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 761184,
+          "first_64_bytes_hex": "35e82438404135e8c0fe07fc9b0401c4c0ff07bc06e4d1c3ff0700f8083814294605c1c10604208701fd38ac705b11faa138004028e820f13db0c03c060c018b",
+          "first_64_bytes_sha256": "7f950f6eeea560a2d7667485d39f461c352f1c857f5378654154bf92d4134f68"
+        },
+        {
+          "vtable_slot_file_offset": 23600,
+          "code_va": 2217876544,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 760896,
+          "first_64_bytes_hex": "07f438ec06e4d1c36ce810faff0700f810fa46e810fa1838404035e8c0ff07fc00f80604208718f038ac5cf038e835e800f826a4408820c040c6007800f8007c",
+          "first_64_bytes_sha256": "f5260d13585c96a2faca71ac0587fb97ea102c611065b15d2492e6b3edfe8ab9"
+        },
+        {
+          "vtable_slot_file_offset": 23604,
+          "code_va": 2217874432,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758784,
+          "first_64_bytes_hex": "06e4d1c37cdf10fa91de10faff0700f8e0ff07bc40f03de81af438f01bf038ec268440c0d8df10fa01df10fa001000f810fa1438a04035e81cf138f01df038ec",
+          "first_64_bytes_sha256": "2cc6b94fa3ac05cf9224b0ad896ccbe0504fc00acc2288d3afddbbd95eb4db4f"
+        },
+        {
+          "vtable_slot_file_offset": 23608,
+          "code_va": 2217874400,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758752,
+          "first_64_bytes_hex": "00f0ffef00f0ffeb103c0838004035e800f0ffa700f0ffdf00f0fff700f0fff306e4d1c37cdf10fa91de10faff0700f8e0ff07bc40f03de81af438f01bf038ec",
+          "first_64_bytes_sha256": "7a98d24ed37f767232527d69336866870cbc0316cb28e410d0448443f057d17e"
+        },
+        {
+          "vtable_slot_file_offset": 23612,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "13XM4PoolKernel",
+      "name_file_offset": 23620,
+      "rtti_file_offset": 23636,
+      "vtable_methods_start_file_offset": 23656,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23656,
+          "code_va": 2217889120,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 773472,
+          "first_64_bytes_hex": "01fd38e8203076d3715b11fa6308fff800f0ffab060c0183e0ff07bc06e421c79b0401c4103cc03c06060081001000f800eb75d36308fff820f13da8e0fe07bc",
+          "first_64_bytes_sha256": "40290f68510fc02ae8ca82c914a863e3c0f38ea5c1dd42f170c9d48e44bedc05"
+        },
+        {
+          "vtable_slot_file_offset": 23660,
+          "code_va": 2217889056,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 773408,
+          "first_64_bytes_hex": "e0fe07bc9b0401c400fd38e8715b11fa018306042087203076d36308fff809180081000376936308fff809f03da8060480006095c03c200100bc1b24e0c10606",
+          "first_64_bytes_sha256": "9a9d4ad7044c3980f429e87eb5666d3bb885d34965628e2b9bb8b804c3e2983a"
+        },
+        {
+          "vtable_slot_file_offset": 23664,
+          "code_va": 2217881856,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 766208,
+          "first_64_bytes_hex": "c14135ece14035e8243080ff05b080ff00fe07bc9b0401c4604035f4c04035f0142935e800f838f41c8080ffa43711fa11faff0700f81438804135f0604135ec",
+          "first_64_bytes_sha256": "fc72ec185bc97ecaa20227acaab1f231eab3b03b9841641fd8d8f95fbcc0e487"
+        },
+        {
+          "vtable_slot_file_offset": 23668,
+          "code_va": 2217877280,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 761632,
+          "first_64_bytes_hex": "03f438e806e4d1c3a2e810faff0700f880ff4d3d06f138ac725b11fac0fd07bc35f441f13df0c14135e89b2401c410000838014235e8bb2400c409181838a041",
+          "first_64_bytes_sha256": "c1b28cc7901f8a348485de6f691b84f656c700a9e216d2ff49c4f560bb699c3e"
+        },
+        {
+          "vtable_slot_file_offset": 23672,
+          "code_va": 2217877256,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 761608,
+          "first_64_bytes_hex": "103cc03c200100bc00f0ffb700f0fff300f0ffef00f0ffeb03f438e806e4d1c3a2e810faff0700f880ff4d3d06f138ac725b11fac0fd07bc35f441f13df0c141",
+          "first_64_bytes_sha256": "ab2895dffe879e79e3c156c75212dcbea823602905a9ff9c72d733cccad041d0"
+        },
+        {
+          "vtable_slot_file_offset": 23676,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "13XM4ConvKernel",
+      "name_file_offset": 24736,
+      "rtti_file_offset": 24752,
+      "vtable_methods_start_file_offset": 24772,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 24772,
+          "code_va": 2217920450,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 804802,
+          "first_64_bytes_hex": "203076d3835b11fa6308fff8103c003f060c01c3e0ff07bc06e421c781f89b0401c4103cc03c06060081001000f800eb75d36308fff820f13da8e0fe07bc22f8",
+          "first_64_bytes_sha256": "828a5b5c9ed67aae6ee66c0f88c722adde5bedd0661309325f3466f1f2c2e797"
+        },
+        {
+          "vtable_slot_file_offset": 24776,
+          "code_va": 2217920388,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 804740,
+          "first_64_bytes_hex": "80f838e8835b11fa103cc03c2087203076d36308fff80918e0fe07bc76936308fff809f03da8060401830604c03c200100bc1b24e0c106060081000338e82030",
+          "first_64_bytes_sha256": "79c204ae794f70ffb83770b9467ec524c6e7a6b966ae86f4b858612941287d29"
+        },
+        {
+          "vtable_slot_file_offset": 24780,
+          "code_va": 2217908224,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 792576,
+          "first_64_bytes_hex": "9b0401c4414135ecc14135e8725080ff81ff5838204135f000fc07fc9ff038f400f820f838b0c04335ec142935e8588011fa01f938b4c0fe07bc06e4d1c3ff07",
+          "first_64_bytes_sha256": "c5dec98058c1a9cc72c753a37c9eae9d05f51d100dfa9702912370319bb50b81"
+        },
+        {
+          "vtable_slot_file_offset": 24784,
+          "code_va": 2217903564,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 787916,
+          "first_64_bytes_hex": "e1c1400835e80a187138214135e840fc07fc9b04c0fe07bc06e4d1c3ff0700f858381429214235ec614235e8545080ff0df038b08b3d060420871838414235f0",
+          "first_64_bytes_sha256": "56490f5c47ea48c007f645432270c3beec36ad56ba6a401b3e93a47ba7b91f0f"
+        },
+        {
+          "vtable_slot_file_offset": 24788,
+          "code_va": 2217897002,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 781354,
+          "first_64_bytes_hex": "200100bc1b24c03c00f0fff300f0ffef00f0ffeb103c804035e8e0ff07fc06e4d1c3ff0700f8c03c22508000018140f838acc03c04381bf0087922061bec6202",
+          "first_64_bytes_sha256": "dbab082ec2c63a69c42466c1d49019a39f2218f6b104a588bb6da8cfdc3e1487"
+        },
+        {
+          "vtable_slot_file_offset": 24792,
+          "code_va": 2217897024,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 781376,
+          "first_64_bytes_hex": "804035e8e0ff07fc06e4d1c3ff0700f8c03c22508000018140f838acc03c04381bf0087922061bec62021be885f038b0008400f80038830aa0d20020c0bf420e",
+          "first_64_bytes_sha256": "dcb387c9dcf538b1d24f0d634fc75b4fa2283db0fc79842a418254ed2b37b1fe"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "17XM4ProposalKernel",
+      "name_file_offset": 23004,
+      "rtti_file_offset": 23024,
+      "vtable_methods_start_file_offset": 23044,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23044,
+          "code_va": 2217871840,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 756192,
+          "first_64_bytes_hex": "81f838e8203076d3685b11fa6308fff800f0ffab060c0183e0ff07bc06e421c79b0401c4103cc03c06060081001000f800eb75d36308fff820f13da8e0fe07bc",
+          "first_64_bytes_sha256": "60640316d20b8abc3edc1cd0e1d4f9939bc95077ff5e0c43efebf0bb8037a923"
+        },
+        {
+          "vtable_slot_file_offset": 23048,
+          "code_va": 2217871776,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 756128,
+          "first_64_bytes_hex": "e0fe07bc9b0401c480f838e8685b11fa018306042087203076d36308fff809180081000376936308fff809f03da8060480006095c03c200100bc1b24e0c10606",
+          "first_64_bytes_sha256": "963767d06121e3fd7a81558afbed45edad9338ff055faff4989fb89947f932cd"
+        },
+        {
+          "vtable_slot_file_offset": 23052,
+          "code_va": 2217870914,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 755266,
+          "first_64_bytes_hex": "acdc10fa44dc10faf2db10fa103c10fa20f03da843fa38f402f938f001fc38b4c2f538ec03f038e88ddb10fa2add000000f8c0fd38b0048819f9703c00f026a0",
+          "first_64_bytes_sha256": "f45be48e1806f29cdcb6243cef2e5825efec8c973b66f79d682b186c19fabaa5"
+        },
+        {
+          "vtable_slot_file_offset": 23056,
+          "code_va": 2217871008,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 755360,
+          "first_64_bytes_hex": "41f13df420f13df019f038e89b0401c435e808c080ff20381af038ec80fd07fcc0bfd9e03bf0fae03beca14035f41429d1c30ca08fff44dc10faff0700f80042",
+          "first_64_bytes_sha256": "8ff94f8050bae4733fe2c6cdfd652b06ecdac779433060b45fdd3abd4ad4f471"
+        },
+        {
+          "vtable_slot_file_offset": 23060,
+          "code_va": 2217870906,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 755258,
+          "first_64_bytes_hex": "200100bc1b2438ecacdc10fa44dc10faf2db10fa103c10fa20f03da843fa38f402f938f001fc38b4c2f538ec03f038e88ddb10fa2add000000f8c0fd38b00488",
+          "first_64_bytes_sha256": "31d3cf00a12e824eea17d7fcbc533a43aac1e2823d2a5dff70e0ffecfb31177d"
+        },
+        {
+          "vtable_slot_file_offset": 23064,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "14XM4SliceKernel",
+      "name_file_offset": 23276,
+      "rtti_file_offset": 23296,
+      "vtable_methods_start_file_offset": 23316,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23316,
+          "code_va": 2217873536,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 757888,
+          "first_64_bytes_hex": "81fa38e8203076d36c5b11fa6308fff800f0ffab060c0183e0ff07bc06e421c79b0401c4103cc03c06060081001000f800eb75d36308fff820f13da8e0fe07bc",
+          "first_64_bytes_sha256": "b1c2d1cc8183817612119447931953f6b932c9d88c6ca5e282fe4d7866ff825a"
+        },
+        {
+          "vtable_slot_file_offset": 23320,
+          "code_va": 2217873472,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 757824,
+          "first_64_bytes_hex": "e0fe07bc9b0401c480fa38e86c5b11fa018306042087203076d36308fff809180081000376936308fff809f03da8060480006095c03c200100bc1b24e0c10606",
+          "first_64_bytes_sha256": "9dbb4059ef72676aac561ff09a8eebaf3b51d70cad6adce6e0a831066c88d2d0"
+        },
+        {
+          "vtable_slot_file_offset": 23324,
+          "code_va": 2217873458,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 757810,
+          "first_64_bytes_hex": "609500f038a8103c00f038a8103ce0fe07bc9b0401c480fa38e86c5b11fa018306042087203076d36308fff809180081000376936308fff809f03da806048000",
+          "first_64_bytes_sha256": "e30ea7c74b43a0a0e913b2b100d09b16c68fcffbaf3430dfec51644638fe7226"
+        },
+        {
+          "vtable_slot_file_offset": 23328,
+          "code_va": 2217873464,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 757816,
+          "first_64_bytes_hex": "103c00f038a8103ce0fe07bc9b0401c480fa38e86c5b11fa018306042087203076d36308fff809180081000376936308fff809f03da8060480006095c03c2001",
+          "first_64_bytes_sha256": "1d6cfbdc7dbaf1157b4377198bf22d6a548c9d34aac25658fe986bd3787117f6"
+        },
+        {
+          "vtable_slot_file_offset": 23332,
+          "code_va": 2217873450,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 757802,
+          "first_64_bytes_hex": "200100bc1b248000609500f038a8103c00f038a8103ce0fe07bc9b0401c480fa38e86c5b11fa018306042087203076d36308fff809180081000376936308fff8",
+          "first_64_bytes_sha256": "58e7d9d4e5b34852d16ec28ffd0dd4ce8587c92729c3a4d6682c294c366951a6"
+        },
+        {
+          "vtable_slot_file_offset": 23336,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "15XM4ConcatKernel",
+      "name_file_offset": 23344,
+      "rtti_file_offset": 23364,
+      "vtable_methods_start_file_offset": 23384,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23384,
+          "code_va": 2217873734,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758086,
+          "first_64_bytes_hex": "6308fff8103cc03c20010183e0ff07bc06e421c701fb38e8203001c4103cc03c06060081001000f8060c75d36308fff820f13da8e0fe07bc9b0438e8169fdcf8",
+          "first_64_bytes_sha256": "654cc2f581c28223cd40513064e8ebe5e47b8424e62dce4ae9c0e16e728e7965"
+        },
+        {
+          "vtable_slot_file_offset": 23388,
+          "code_va": 2217873672,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758024,
+          "first_64_bytes_hex": "103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24e0c10606008100037693630876d36d5b11fa6308",
+          "first_64_bytes_sha256": "108ee1b1bec391b7875f51d4e03621add470a92c9de0868b917a37dd02ae1f06"
+        },
+        {
+          "vtable_slot_file_offset": 23392,
+          "code_va": 2217873660,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758012,
+          "first_64_bytes_hex": "103cc03c00fb38e86d5b11fa103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24e0c1060600810003",
+          "first_64_bytes_sha256": "80f24ca33cee5c61b8d6e0276b63775d13351089cb3122086479ca68eeeab798"
+        },
+        {
+          "vtable_slot_file_offset": 23396,
+          "code_va": 2217873666,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758018,
+          "first_64_bytes_hex": "38e86d5b11fa103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24e0c10606008100037693630876d3",
+          "first_64_bytes_sha256": "f36573fad1d7146bfffbaf3087602b5419821b7d706e05a35dbf7298f4901c76"
+        },
+        {
+          "vtable_slot_file_offset": 23400,
+          "code_va": 2217873652,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758004,
+          "first_64_bytes_hex": "103c0838004035e8103cc03c00fb38e86d5b11fa103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24",
+          "first_64_bytes_sha256": "6f7f6b823c02f8051d8b25b25ef55adb12866525c4ed7bb9005ce0e225b345b9"
+        },
+        {
+          "vtable_slot_file_offset": 23404,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "16XM4ReshapeKernel",
+      "name_file_offset": 23412,
+      "rtti_file_offset": 23432,
+      "vtable_methods_start_file_offset": 23452,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23452,
+          "code_va": 2217873960,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758312,
+          "first_64_bytes_hex": "103cc03c200100bce0ff07bc06e421c781fb38e8203076d3103cc03c06060081001000f8060c0183fff8c03ce0fe07bc20f13de89b0401c438ec6e5b11fa0604",
+          "first_64_bytes_sha256": "562eeb8ca83c52d8bc7bdfad3de5c8d3f2ef6d6e495f7bf579fabbe10039b5f9"
+        },
+        {
+          "vtable_slot_file_offset": 23456,
+          "code_va": 2217873898,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758250,
+          "first_64_bytes_hex": "38a8c03c26606308fff80918e0fe07bc9b0401c480fb09f03da80604018306042087203076d31b24e0c106060081000376936308fff86e5b11fa6308fff8103c",
+          "first_64_bytes_sha256": "528fa884e059213a3db758bc9b638cd072a8d9e3ab0ef8ea7fd9a733cb2a4089"
+        },
+        {
+          "vtable_slot_file_offset": 23460,
+          "code_va": 2217873856,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758208,
+          "first_64_bytes_hex": "38acf8cb10fa703c00f038b420f03de8428a268040c200f838b00000fef801fc38e86e5b11fa103c00f038a8c03c26606308fff80918e0fe07bc9b0401c480fb",
+          "first_64_bytes_sha256": "db0c942c3657b37af9eba8a07bfd041928189b95bb5f265336dd0c0a17d2b01c"
+        },
+        {
+          "vtable_slot_file_offset": 23464,
+          "code_va": 2217873892,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758244,
+          "first_64_bytes_hex": "11fa103c00f038a8c03c26606308fff80918e0fe07bc9b0401c480fb09f03da80604018306042087203076d31b24e0c106060081000376936308fff86e5b11fa",
+          "first_64_bytes_sha256": "877ead68dea8abb5cf7b171d04a7678411f21130d03db28aca7be516eaadafd0"
+        },
+        {
+          "vtable_slot_file_offset": 23468,
+          "code_va": 2217873846,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758198,
+          "first_64_bytes_hex": "004035e8103cc03c200138acf8cb10fa703c00f038b420f03de8428a268040c200f838b00000fef801fc38e86e5b11fa103c00f038a8c03c26606308fff80918",
+          "first_64_bytes_sha256": "110bc33b9084fc7ef4a8c6338334e3cd6dfdf63bae0627f31a0fd508900d5b21"
+        },
+        {
+          "vtable_slot_file_offset": 23472,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    },
+    {
+      "class_name": "17XM4UpsampleKernel",
+      "name_file_offset": 23480,
+      "rtti_file_offset": 23500,
+      "vtable_methods_start_file_offset": 23520,
+      "method_candidates": [
+        {
+          "vtable_slot_file_offset": 23520,
+          "code_va": 2217874278,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758630,
+          "first_64_bytes_hex": "6308fff8103cc03c20010183e0ff07bc06e421c701fc38e8203001c4103cc03c06060081001000f8060c75d36308fff820f13da8e0fe07bc9b0438ec03fc38e8",
+          "first_64_bytes_sha256": "4ea8e6c05e72e580ee6a8073f48d6e4f764f3000dfff2584459028607b5f5c07"
+        },
+        {
+          "vtable_slot_file_offset": 23524,
+          "code_va": 2217874216,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758568,
+          "first_64_bytes_hex": "103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24e0c10606008100037693630876d36f5b11fa6308",
+          "first_64_bytes_sha256": "479c508236d4515a697d31f26b1a6a617e3b5a53942342872f4231343784c726"
+        },
+        {
+          "vtable_slot_file_offset": 23528,
+          "code_va": 2217874080,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758432,
+          "first_64_bytes_hex": "00fc38ec06e4d1c3eedd10faff0700f800f8008c00f80c38404035e8e0ff07fc40ce268440c07e3711faa43711fa0014faf882de10fa03f038ac01f838e820a0",
+          "first_64_bytes_sha256": "23eaf8ba3614ce7fac4e289976a4c4b603236a1bc4d2197f35745e82d20d775f"
+        },
+        {
+          "vtable_slot_file_offset": 23532,
+          "code_va": 2217874210,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758562,
+          "first_64_bytes_hex": "38e86f5b11fa103c00f038a8103c76d36308fff80918e0fe07bc9b0401c4fff809f03da80604018306042087203000bc1b24e0c10606008100037693630876d3",
+          "first_64_bytes_sha256": "e163456594afe26263a89fe0c0972e423eb1b6c57b7408d27cb7a0dfdef268b6"
+        },
+        {
+          "vtable_slot_file_offset": 23536,
+          "code_va": 2217874062,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 758414,
+          "first_64_bytes_hex": "0606c03c00f0ffef00f0ffeb103c0838004000fc38ec06e4d1c3eedd10faff0700f800f8008c00f80c38404035e8e0ff07fc40ce268440c07e3711faa43711fa",
+          "first_64_bytes_sha256": "6050ded032d4e35b4fb838bf00cfeffe591d1558fbca8ad1769b6c6363af3323"
+        },
+        {
+          "vtable_slot_file_offset": 23540,
+          "code_va": 2217859010,
+          "code_file": "41_hm_c_ddr.bin",
+          "code_file_offset": 743362,
+          "first_64_bytes_hex": "c03c703c00f038b020f03de8060400f0ffaf00f0ffebc03c2020c08100f8e0ff07fc03f038f021f038e806e421c7c03c00f0ffeb00a56f93a008fff8021c9b04",
+          "first_64_bytes_sha256": "ddcde8cd53801bc171053bc08fec4a27520ccfcd55f56c8189c29717d965b0ed"
+        }
+      ],
+      "method_semantics": "Vtable order only; individual method names and instructions undecoded."
+    }
+  ],
+  "limitations": [
+    "Code base is established through ARM consumer literals/stores and segment extent.",
+    "CEVA XM4 target supported by CDNN header and concrete XM4 kernel RTTI/vtables.",
+    "No XM4 instruction decoder or simulator used; exact ISA encoding/revision unverified.",
+    "No original input kernel execution or numerical equivalence against reconstructed network.",
+    "DataMean string is a lead, not proof of complete preprocessing formula."
+  ],
+  "secondary_model_files": [],
+  "arm_disassembly": {
+    "available": true,
+    "output": "runtime-arm-consumer.txt"
+  }
+}

@@ -1,0 +1,1418 @@
+{
+  "43_hm_d_nw": {
+    "source_sha256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+    "classification_padding": [
+      {
+        "name": "rpn_cls_score1",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 447,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.996394484249105,
+          -0.9980704219468937,
+          -0.998410575336122,
+          -0.9980094983327169,
+          -0.9938562493581258,
+          -0.9963489092179982,
+          -0.9975174434979969,
+          -0.99820402474324,
+          -0.9978461140397112,
+          -0.9948284268880567,
+          -0.9953686358231355,
+          -0.9978272802335897,
+          -0.9980404246411717,
+          -0.9976523833770724,
+          -0.9953695896714168,
+          -0.996464932649917,
+          -0.9975031773855937,
+          -0.9984746034657364,
+          -0.9978411596592153,
+          -0.9953832699668856,
+          -0.9962867754327955,
+          -0.9980065103173799,
+          -0.9982759056033149,
+          -0.998340743630422,
+          -0.9959296629597503
+        ],
+        "mean_foreground_background_pair_cosine": -0.9970500480970945,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score2",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 448,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9982765781828896,
+          -0.9986607776324892,
+          -0.9983500255737615,
+          -0.9975515957361082,
+          -0.993388046752265,
+          -0.9985869781313088,
+          -0.9985964920487402,
+          -0.998377764614595,
+          -0.9976435197583629,
+          -0.9946326299725823,
+          -0.9984095977409643,
+          -0.9985570635367625,
+          -0.998387078782359,
+          -0.9977193353640403,
+          -0.9934231329552419,
+          -0.9984373237250231,
+          -0.9985272311896298,
+          -0.9984946440334879,
+          -0.9972737705765413,
+          -0.9941426865292753,
+          -0.9982768570696952,
+          -0.9985002373094645,
+          -0.9984327375537079,
+          -0.9975857996015786,
+          -0.9949212894065715
+        ],
+        "mean_foreground_background_pair_cosine": -0.9974061277510979,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score3",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 448,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9963332126985839,
+          -0.9977841265620145,
+          -0.9982358064275986,
+          -0.9982379341639107,
+          -0.9945454163670515,
+          -0.9958316334054982,
+          -0.9976782772093092,
+          -0.9981332657113355,
+          -0.9979959218742653,
+          -0.995946068538455,
+          -0.9958380019210308,
+          -0.9977441972295573,
+          -0.99781116121025,
+          -0.9980349892620949,
+          -0.995971633966215,
+          -0.9955242829713976,
+          -0.9978202816885676,
+          -0.9981269114893073,
+          -0.9981751982330802,
+          -0.9944652675713639,
+          -0.994808728923091,
+          -0.9974632396340123,
+          -0.9980837756395827,
+          -0.9980422906411651,
+          -0.9957442723956457
+        ],
+        "mean_foreground_background_pair_cosine": -0.9969750358293753,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score4",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 446,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9968137902223084,
+          -0.9975581064891935,
+          -0.9971473494719492,
+          -0.9968989631210857,
+          -0.9943528077336212,
+          -0.9968551617393882,
+          -0.9973234389738981,
+          -0.9974263260126378,
+          -0.9968753210502771,
+          -0.9938811462617462,
+          -0.9965663368430734,
+          -0.9974270506831848,
+          -0.9975638621547892,
+          -0.9971524321301386,
+          -0.9941644160314519,
+          -0.9968303197641993,
+          -0.9979148250874295,
+          -0.9972885372623327,
+          -0.9968413218664781,
+          -0.9938105184245875,
+          -0.9963465822533077,
+          -0.9976985295790084,
+          -0.9979221874930352,
+          -0.9969239476791898,
+          -0.9940083535628762
+        ],
+        "mean_foreground_background_pair_cosine": -0.9965436652756474,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score5",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 447,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9974733526688937,
+          -0.9983007676862514,
+          -0.9983045642515267,
+          -0.9979245027409297,
+          -0.993740940059454,
+          -0.9976094883061433,
+          -0.9982674163857336,
+          -0.9985369590203087,
+          -0.9982056446035966,
+          -0.9936939486146763,
+          -0.9976887753239219,
+          -0.9982675442340544,
+          -0.9984166397101243,
+          -0.9981805282424168,
+          -0.9931735969576851,
+          -0.9975438096249856,
+          -0.9981449971590648,
+          -0.9985347952293923,
+          -0.9979328391796002,
+          -0.9931746328791313,
+          -0.9972007505557412,
+          -0.9983084147708484,
+          -0.9984570678190442,
+          -0.9980956318770513,
+          -0.9940574220214596
+        ],
+        "mean_foreground_background_pair_cosine": -0.9971694011968815,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score6",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 447,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9972059279681819,
+          -0.9972431585396112,
+          -0.9970985999908407,
+          -0.9959676225525027,
+          -0.9933609908786456,
+          -0.9974301232483805,
+          -0.997381835302915,
+          -0.9974534189445635,
+          -0.9958454342417355,
+          -0.9947050156440346,
+          -0.9972623878837367,
+          -0.9974319986564824,
+          -0.9975011885092588,
+          -0.9959955875454567,
+          -0.9948035991462878,
+          -0.9973150386387585,
+          -0.997412491279399,
+          -0.9971850859177891,
+          -0.9960495650845155,
+          -0.9944743719276079,
+          -0.997484789143379,
+          -0.9972113528276292,
+          -0.996969352695651,
+          -0.9957462140277799,
+          -0.993275211638692
+        ],
+        "mean_foreground_background_pair_cosine": -0.9963924144893536,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      }
+    ],
+    "roundtrip_layers": {
+      "o4_i4_hw": 65,
+      "hw_o4_i4": 65,
+      "o4_hw_i4": 65
+    },
+    "upsample_pattern": {
+      "block_elements": 64,
+      "unique_blocks": 2,
+      "first_128_blocks_identical": true,
+      "first_128_nonzeros_per_block": [
+        32
+      ],
+      "last_128_blocks_all_zero": true,
+      "first_block_values": [
+        562,
+        1686,
+        1686,
+        5059,
+        562,
+        1686,
+        1686,
+        5059,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1686,
+        562,
+        5059,
+        1686,
+        1686,
+        562,
+        5059,
+        1686,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1686,
+        5059,
+        562,
+        1686,
+        1686,
+        5059,
+        562,
+        1686,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5059,
+        1686,
+        1686,
+        562,
+        5059,
+        1686,
+        1686,
+        562,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interpretation": "Repeated coefficient table plus zero area; histogram does not identify channel mapping."
+    },
+    "spatial_hypothesis_statistics": {
+      "o4_i4_hw": {
+        "mean_normalized_neighbor_difference_energy": 1.7361386556663732,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 1.7355189592702087
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 1.758384914340937
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.6048649382416484
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.060515153507081
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6027708783184538
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9300607643602525
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 1.877641424489609
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7473871161016572
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9118342179957692
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9921190826669153
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.76397655141094
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.907789192491955
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.960992907563767
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.643664454845598
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.8096740998880516
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9066665872286837
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.687208355287011
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.4361147860259393
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.7198025351350583
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.4862694153481244
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.7412246144962462
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 1.8312793640408391
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6812289982287492
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.7980997077234258
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.6998338241753965
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.5795569762047255
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.6474122785967678
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9005891004041504
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7467370108093672
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.5721030753452565
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.6162581158932035
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7480886807026443
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.5744601695157159
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.5467246792786713
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.5380000183902418
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      },
+      "hw_o4_i4": {
+        "mean_normalized_neighbor_difference_energy": 1.9808277774590006,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 2.01523155671281
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 2.0056490083637537
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.972051307042139
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.14694564478675
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.8548187715053377
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0501246727776503
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.073188342332741
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.967488819855215
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.1411064114569234
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.152657900876988
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.943993306614776
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.123613610075282
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.047126694654828
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9631965457824363
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 2.070225051629281
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 2.126785735857205
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9548771471523996
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.7371267549564964
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9646337802639806
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.8262944601856728
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0261967502075726
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0376601813976096
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9896580035492277
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.063559902481487
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0149553902802815
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.8699812416386374
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.957791184394017
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.1062609329761526
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9673974497402875
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.916490268838171
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.8431590604737087
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9486836018693912
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.804057701088207
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.8231834544320495
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.8228015648155478
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      },
+      "o4_hw_i4": {
+        "mean_normalized_neighbor_difference_energy": 2.005985313277309,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 2.125410746615465
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 2.036164894587667
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9614702347686892
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.074309885273646
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 2.1202649743702207
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0949076453731035
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.066655662658414
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 2.0289309507597295
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0736784710728484
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0771991224407373
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 2.046647505074861
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0166630036527033
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0139462030654616
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 2.019555728465239
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.995802832945435
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9796143708253755
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9821866659566822
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 2.010516745398987
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9678941079024763
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9904720388936363
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9772920012234099
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0223985275526215
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9389254681264305
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.979182697511993
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.99396334691344
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9129742646353751
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0068523478645326
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9265143007313226
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9781875576471935
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9957727459599044
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0351880391982005
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9400527942290682
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.9016564058687873
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.941477332197138
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.9767563449450043
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      }
+    },
+    "limitations": [
+      "Roundtrips prove permutation invertibility, not original DSP layout.",
+      "1x1 within-input-block order and block ordering need runtime corroboration.",
+      "3x3 spatial ordering remains underdetermined; three hypotheses retained.",
+      "Conv1 direct OIHW is retained as a hypothesis, not validated by these tests."
+    ],
+    "input_auxiliary_histogram_candidate": {
+      "file_offset": 232640,
+      "uint32_counts": [
+        0,
+        0,
+        0,
+        7,
+        1271,
+        6077,
+        8533,
+        17801,
+        43493,
+        16373,
+        2229,
+        1692,
+        520,
+        308,
+        0,
+        0
+      ],
+      "sum_counts": 98304,
+      "image_pixels": 98304,
+      "interpretation": "Counts sum exactly to valid image pixel count. Histogram candidate; bin boundaries and calibration/runtime purpose are unverified."
+    }
+  },
+  "44_hm_d_nw_sng": {
+    "source_sha256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+    "classification_padding": [
+      {
+        "name": "rpn_cls_score1",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 448,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9908768142050626,
+          -0.9948552837526339,
+          -0.996180371247252,
+          -0.9956907918166966,
+          -0.9867330605599101,
+          -0.9910166744739483,
+          -0.9937455911677621,
+          -0.9949370085461818,
+          -0.9950076561178828,
+          -0.9881095669783412,
+          -0.9906435675765424,
+          -0.9933793623592146,
+          -0.9945222647692609,
+          -0.9947832633717422,
+          -0.9890820676412628,
+          -0.9912080532953982,
+          -0.9940373711410105,
+          -0.9951567688937732,
+          -0.9951135325234582,
+          -0.9884751771653845,
+          -0.9916077672553808,
+          -0.9948969705469719,
+          -0.9957706515544947,
+          -0.9956422119847237,
+          -0.9896493203462281
+        ],
+        "mean_foreground_background_pair_cosine": -0.9928448467716207,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      },
+      {
+        "name": "rpn_cls_score2",
+        "physical_output_channels": 52,
+        "logical_output_channels": 50,
+        "input_channels": 448,
+        "last_two_tiled_output_lanes_nonzero_count": 0,
+        "direct_OI_last_two_rows_nonzero_count": 447,
+        "zero_elements_explained": 896,
+        "first25_last25_pair_cosines": [
+          -0.9922006225668043,
+          -0.9938517419634667,
+          -0.9939644522153074,
+          -0.9916265757668546,
+          -0.9827863716071064,
+          -0.990790105217335,
+          -0.9929175207427408,
+          -0.9942427986149615,
+          -0.9912912227431903,
+          -0.9814171375732591,
+          -0.9913470513398495,
+          -0.9933056067412224,
+          -0.9932239842154684,
+          -0.9918608705839113,
+          -0.9819728027013602,
+          -0.9924564101076618,
+          -0.9930437064627177,
+          -0.9934490223613988,
+          -0.9927560923165244,
+          -0.9831477001924258,
+          -0.9916777328729285,
+          -0.9925697209056169,
+          -0.9937242723453211,
+          -0.9917191469137772,
+          -0.9829216282660931
+        ],
+        "mean_foreground_background_pair_cosine": -0.9905705718934922,
+        "pairing_interpretation": "All 25 row pairs are nearly negatives, independently supporting output ordering as two classes times 25 anchors. This does not establish within-input-channel ordering."
+      }
+    ],
+    "roundtrip_layers": {
+      "o4_i4_hw": 61,
+      "hw_o4_i4": 61,
+      "o4_hw_i4": 61
+    },
+    "upsample_pattern": {
+      "block_elements": 64,
+      "unique_blocks": 2,
+      "first_128_blocks_identical": true,
+      "first_128_nonzeros_per_block": [
+        32
+      ],
+      "last_128_blocks_all_zero": true,
+      "first_block_values": [
+        591,
+        1773,
+        1773,
+        5320,
+        591,
+        1773,
+        1773,
+        5320,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1773,
+        591,
+        5320,
+        1773,
+        1773,
+        591,
+        5320,
+        1773,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1773,
+        5320,
+        591,
+        1773,
+        1773,
+        5320,
+        591,
+        1773,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5320,
+        1773,
+        1773,
+        591,
+        5320,
+        1773,
+        1773,
+        591,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interpretation": "Repeated coefficient table plus zero area; histogram does not identify channel mapping."
+    },
+    "spatial_hypothesis_statistics": {
+      "o4_i4_hw": {
+        "mean_normalized_neighbor_difference_energy": 1.7429983561753277,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 1.7319414748322606
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 1.7579858687189232
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.6053028235295186
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0529490612120442
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6036866960173288
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9290116774942494
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 1.8801194786107405
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7431124125349537
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9097639902895807
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9998213665332112
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7667335395105375
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.906954914840567
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.952722102708842
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6462917498370357
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.8066532967584454
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.897906423808715
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6791122291372593
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.4322320094648642
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.7174434526102302
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.492865768841426
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.743495263531665
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 1.8322072744777234
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.6897911470747318
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.7982741405002043
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.6794694748151806
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.5679437351024508
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.652759172600759
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.905922392152843
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.756955765948245
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.5655071373538794
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.7035808883964003
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.7495413461286264
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.5956760004919266
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.704532431163252
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.546675959107848
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      },
+      "hw_o4_i4": {
+        "mean_normalized_neighbor_difference_energy": 1.986028568356016,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 2.011284732031776
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 2.0095812922562613
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9784747721631248
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.148167718123667
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.852966877581476
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0493113891838712
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0835005307549768
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9715109821860042
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.1391097524599
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.1537034738531653
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9549905235802127
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.112185348379113
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0473190543491047
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.959829430367822
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0706676953387015
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 2.117319912385959
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9650512212299263
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.7471307305550465
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9711986301837041
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.8330047515865218
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.017482195060809
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0407719757910074
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9928327544323845
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.058849058619049
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.022893046943725
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.8581538290847661
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9599803383530845
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.1141471710695643
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9735385150951512
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9196966593232303
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9173536080267852
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9023099540723145
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.8539242944271301
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.8827349760252365
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.8200226975859795
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      },
+      "o4_hw_i4": {
+        "mean_normalized_neighbor_difference_energy": 2.005177895532942,
+        "layers": [
+          {
+            "name": "conv2",
+            "normalized_neighbor_difference_energy": 2.1252032573249084
+          },
+          {
+            "name": "conv3",
+            "normalized_neighbor_difference_energy": 2.038367425169271
+          },
+          {
+            "name": "inc3a/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9667483652289588
+          },
+          {
+            "name": "inc3a/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0698882479062357
+          },
+          {
+            "name": "inc3a/conv5_3",
+            "normalized_neighbor_difference_energy": 2.124214489989839
+          },
+          {
+            "name": "inc3b/conv3_2",
+            "normalized_neighbor_difference_energy": 2.092042278565074
+          },
+          {
+            "name": "inc3b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0640626998707097
+          },
+          {
+            "name": "inc3b/conv5_3",
+            "normalized_neighbor_difference_energy": 2.0326015218690165
+          },
+          {
+            "name": "inc3c/conv3_2",
+            "normalized_neighbor_difference_energy": 2.070852763979052
+          },
+          {
+            "name": "inc3c/conv5_2",
+            "normalized_neighbor_difference_energy": 2.084226986447064
+          },
+          {
+            "name": "inc3c/conv5_3",
+            "normalized_neighbor_difference_energy": 2.05055729420267
+          },
+          {
+            "name": "inc3d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.0187919134885064
+          },
+          {
+            "name": "inc3d/conv5_2",
+            "normalized_neighbor_difference_energy": 2.004239515236632
+          },
+          {
+            "name": "inc3d/conv5_3",
+            "normalized_neighbor_difference_energy": 2.0285309228947668
+          },
+          {
+            "name": "inc3e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9911999556538582
+          },
+          {
+            "name": "inc3e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9776661416797032
+          },
+          {
+            "name": "inc3e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9823058568581526
+          },
+          {
+            "name": "inc4a/conv3_2",
+            "normalized_neighbor_difference_energy": 2.006243608872875
+          },
+          {
+            "name": "inc4a/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9671096425401184
+          },
+          {
+            "name": "inc4a/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9911582766855633
+          },
+          {
+            "name": "inc4b/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9782409921649886
+          },
+          {
+            "name": "inc4b/conv5_2",
+            "normalized_neighbor_difference_energy": 2.0103123970850585
+          },
+          {
+            "name": "inc4b/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9374074564414867
+          },
+          {
+            "name": "inc4c/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9831378217911748
+          },
+          {
+            "name": "inc4c/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9710267818039426
+          },
+          {
+            "name": "inc4c/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9169517759662729
+          },
+          {
+            "name": "inc4d/conv3_2",
+            "normalized_neighbor_difference_energy": 2.014285981149835
+          },
+          {
+            "name": "inc4d/conv5_2",
+            "normalized_neighbor_difference_energy": 1.9342759420837006
+          },
+          {
+            "name": "inc4d/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9925708112378848
+          },
+          {
+            "name": "inc4e/conv3_2",
+            "normalized_neighbor_difference_energy": 1.9988986433897666
+          },
+          {
+            "name": "inc4e/conv5_2",
+            "normalized_neighbor_difference_energy": 1.947701753357998
+          },
+          {
+            "name": "inc4e/conv5_3",
+            "normalized_neighbor_difference_energy": 1.9306526238821335
+          },
+          {
+            "name": "rpn_5_1_conv",
+            "normalized_neighbor_difference_energy": 1.9607426670916253
+          },
+          {
+            "name": "rpn_5_2_conv",
+            "normalized_neighbor_difference_energy": 1.9830359206682555
+          },
+          {
+            "name": "rpn_3_1_conv",
+            "normalized_neighbor_difference_energy": 1.9359736110758705
+          }
+        ],
+        "interpretation": "Smoothness heuristic only. Learned kernels need not be smooth; this cannot select or validate original DSP layout."
+      }
+    },
+    "limitations": [
+      "Roundtrips prove permutation invertibility, not original DSP layout.",
+      "1x1 within-input-block order and block ordering need runtime corroboration.",
+      "3x3 spatial ordering remains underdetermined; three hypotheses retained.",
+      "Conv1 direct OIHW is retained as a hypothesis, not validated by these tests."
+    ],
+    "input_auxiliary_histogram_candidate": {
+      "file_offset": 228592,
+      "uint32_counts": [
+        0,
+        0,
+        0,
+        7,
+        1271,
+        6077,
+        8533,
+        17801,
+        43493,
+        16373,
+        2229,
+        1692,
+        520,
+        308,
+        0,
+        0
+      ],
+      "sum_counts": 98304,
+      "image_pixels": 98304,
+      "interpretation": "Counts sum exactly to valid image pixel count. Histogram candidate; bin boundaries and calibration/runtime purpose are unverified."
+    }
+  }
+}

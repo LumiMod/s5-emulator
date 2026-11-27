@@ -1,0 +1,60 @@
+test_added_file (__main__.CollectionChecks.test_added_file) ... ok
+test_changed_during_pack_rejected_and_cleaned (__main__.CollectionChecks.test_changed_during_pack_rejected_and_cleaned) ... ok
+test_changed_file (__main__.CollectionChecks.test_changed_file) ... ok
+test_csv_extra_field_rejected (__main__.CollectionChecks.test_csv_extra_field_rejected) ... ok
+test_csv_short_row_rejected (__main__.CollectionChecks.test_csv_short_row_rejected) ... ok
+test_empty_media_rejected (__main__.CollectionChecks.test_empty_media_rejected) ... ok
+test_empty_template_cannot_be_packaged (__main__.CollectionChecks.test_empty_template_cannot_be_packaged) ... ok
+test_existing_checksum_preserved (__main__.CollectionChecks.test_existing_checksum_preserved) ... ok
+test_external_path_rejected (__main__.CollectionChecks.test_external_path_rejected) ... ok
+test_manifest_output_symlink_rejected (__main__.CollectionChecks.test_manifest_output_symlink_rejected) ... ok
+test_manifest_scope_rejected (__main__.CollectionChecks.test_manifest_scope_rejected) ... ok
+test_manifest_total_rejected (__main__.CollectionChecks.test_manifest_total_rejected) ... ok
+test_manual_reference_does_not_mislabel_mixed_lighting (__main__.CollectionChecks.test_manual_reference_does_not_mislabel_mixed_lighting) ... ok
+test_missing_settings_directory_rejected (__main__.CollectionChecks.test_missing_settings_directory_rejected) ... ok
+test_no_overwrite (__main__.CollectionChecks.test_no_overwrite) ... ok
+test_noncanonical_manifest_path_rejected (__main__.CollectionChecks.test_noncanonical_manifest_path_rejected) ... ok
+test_nonfinite_event_timestamp_rejected (__main__.CollectionChecks.test_nonfinite_event_timestamp_rejected) ... ok
+test_optional_event_timestamps_allowed (__main__.CollectionChecks.test_optional_event_timestamps_allowed) ... ok
+test_pack_embeds_validated_manifest_snapshot (__main__.CollectionChecks.test_pack_embeds_validated_manifest_snapshot) ... ok
+test_package_and_checksum (__main__.CollectionChecks.test_package_and_checksum) ... ok
+test_root_parent_not_emitted_as_zip_traversal (__main__.CollectionChecks.test_root_parent_not_emitted_as_zip_traversal) ... ok
+test_symlink_rejected (__main__.CollectionChecks.test_symlink_rejected) ... ok
+test_symlink_session_rejected (__main__.CollectionChecks.test_symlink_session_rejected) ... ok
+test_timestamp_without_file_rejected (__main__.CollectionChecks.test_timestamp_without_file_rejected) ... ok
+test_unknown_telemetry_allowed_but_not_training_ready (__main__.CollectionChecks.test_unknown_telemetry_allowed_but_not_training_ready) ... ok
+test_windows_path_escape_rejected (__main__.CollectionChecks.test_windows_path_escape_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.381s
+
+OK
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已打包并校验 <TEMP> SHA256 63984d0df6c6277024a95dc4711ea083684c103111e7d96b37d770e616444ae0
+已创建 <TEMP>
+已打包并校验 <TEMP> SHA256 b096918334ff912a161ccfe3397c728a503d4cf04440c3d2234e57994575a677
+已创建 <TEMP>
+已打包并校验 <TEMP> SHA256 26da05ea91953ef7ab8b447980b13e47b44f406d9e3d9bdd3b7b192cab84da53
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>
+已创建 <TEMP>

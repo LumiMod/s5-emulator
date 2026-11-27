@@ -1,0 +1,42 @@
+{
+  "model_sha256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+  "preprocessing": {
+    "input_file_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "oriented_image_wh": [
+      512,
+      512
+    ],
+    "method": "EXIF transpose; Pillow RGB->L; bilinear stretch to384x256; (pixel-mean)*scale",
+    "mean_hypothesis": 117,
+    "scale_hypothesis": 1,
+    "verified_against_camera": false
+  },
+  "runs": [
+    {
+      "layout": "o4_i4_hw",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.9976669549942017,
+        "proposal2": 0.1947644203901291
+      },
+      "finite_outputs": true
+    },
+    {
+      "layout": "hw_o4_i4",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.2129363864660263,
+        "proposal2": 0.08384821563959122
+      },
+      "finite_outputs": true
+    },
+    {
+      "layout": "o4_hw_i4",
+      "maximum_scores_by_proposal": {
+        "proposal1": 0.21783779561519623,
+        "proposal2": 0.09509184211492538
+      },
+      "finite_outputs": true
+    }
+  ],
+  "status": "hypothesis smoke tests only",
+  "training_started": false
+}

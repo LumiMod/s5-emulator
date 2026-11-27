@@ -1,0 +1,12 @@
+artifacts/
+__pycache__/
+.venv/
+sessions/
+private-data/
+incoming/
+*.rw2
+*.RW2
+*.MOV
+*.mov
+*.MP4
+*.mp4

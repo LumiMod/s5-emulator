@@ -1,0 +1,2 @@
+43_hm_d_nw checked {'o4_i4_hw': 65, 'hw_o4_i4': 65, 'o4_hw_i4': 65} classification padding heads 6
+44_hm_d_nw_sng checked {'o4_i4_hw': 61, 'hw_o4_i4': 61, 'o4_hw_i4': 61} classification padding heads 2

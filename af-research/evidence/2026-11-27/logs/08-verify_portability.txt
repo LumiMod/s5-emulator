@@ -1,0 +1,14 @@
+test_changed_component_rejected_before_outputs (__main__.PortableInputs.test_changed_component_rejected_before_outputs) ... ok
+test_environment_root_and_direct_component_directory (__main__.PortableInputs.test_environment_root_and_direct_component_directory) ... ok
+test_explicit_root_overrides_environment (__main__.PortableInputs.test_explicit_root_overrides_environment) ... ok
+test_explicit_source_overrides_root (__main__.PortableInputs.test_explicit_source_overrides_root) ... ok
+test_matching_archive_reported_separately_from_missing_package (__main__.PortableInputs.test_matching_archive_reported_separately_from_missing_package) ... ok
+test_optional_archive_must_match (__main__.PortableInputs.test_optional_archive_must_match) ... ok
+test_optional_missing_evidence_is_not_reported_passed (__main__.PortableInputs.test_optional_missing_evidence_is_not_reported_passed) ... ok
+test_supplied_wrong_manifest_is_rejected (__main__.PortableInputs.test_supplied_wrong_manifest_is_rejected) ... ok
+test_supplied_wrong_package_is_rejected (__main__.PortableInputs.test_supplied_wrong_package_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.018s
+
+OK

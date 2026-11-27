@@ -1,0 +1,1 @@
+{"ready_for_formal_training": false, "outstanding": ["dataset_structure_and_coverage", "numeric_original_execution_comparison", "held_out_detection_baseline", "image_to_input_preprocessing_fidelity", "proposal_decoder_fidelity", "physical_focus_control_baseline"]}
