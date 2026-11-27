@@ -1,0 +1,404 @@
+{
+  "scope": "main-program early startup only",
+  "source": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin",
+  "source_kind": "original",
+  "source_sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe",
+  "source_bytes": 16674816,
+  "entry": "0x6280004",
+  "entry_state": "ARM",
+  "original_instructions_patched": false,
+  "menu_booted": false,
+  "camera_connected": false,
+  "timeout_seconds": 1.0,
+  "assumptions": [
+    "single Cortex-A7 core with MPIDR core index zero",
+    "flat initially zero RAM, MMU initially disabled",
+    "source copied independently at 0x06280000 and 0x86280000; no coherent alias",
+    "documented warm-handoff CPSR/SP/r0-r3/LR, remaining registers zero",
+    "no SoC/MMIO, other-core, interrupt-controller or display implementation",
+    "bootloader is assumed to have enabled CP10/11 and FPEXC.EN"
+  ],
+  "loader_state_reconstruction": {
+    "description": "Synthetic loader state: CPACR CP10/11 access and FPEXC.EN",
+    "helper_address": "0x10000",
+    "helper_sha256": "001787e3715b50fadb15b68406ff78e3f1e858f005638a31cc43ae697c4c8884",
+    "stop_reply": "T05thread:01;",
+    "system_registers_after_helper": {
+      "NSACR_S": {
+        "number": 110,
+        "value": "0x0"
+      },
+      "NSACR": {
+        "number": 115,
+        "value": "0x0"
+      },
+      "MVBAR_S": {
+        "number": 154,
+        "value": "0x0"
+      },
+      "MVBAR": {
+        "number": 159,
+        "value": "0x0"
+      },
+      "VBAR": {
+        "number": 172,
+        "value": "0x0"
+      },
+      "VBAR_S": {
+        "number": 175,
+        "value": "0x0"
+      },
+      "VBAR_EL2_S": {
+        "number": 181,
+        "value": "0x0"
+      },
+      "VMPIDR_S": {
+        "number": 182,
+        "value": "0x80000000"
+      },
+      "VBAR_EL2": {
+        "number": 183,
+        "value": "0x0"
+      },
+      "VMPIDR": {
+        "number": 184,
+        "value": "0x80000000"
+      },
+      "DACR_S": {
+        "number": 237,
+        "value": "0x0"
+      },
+      "DACR": {
+        "number": 238,
+        "value": "0x0"
+      },
+      "TTBR0": {
+        "number": 269,
+        "value": "0x0"
+      },
+      "TTBR1_S": {
+        "number": 270,
+        "value": "0x0"
+      },
+      "TTBR1": {
+        "number": 271,
+        "value": "0x0"
+      },
+      "TTBR0_S": {
+        "number": 272,
+        "value": "0x0"
+      },
+      "HTTBR_S": {
+        "number": 273,
+        "value": "0x0"
+      },
+      "HTTBR": {
+        "number": 274,
+        "value": "0x0"
+      },
+      "VTTBR_S": {
+        "number": 275,
+        "value": "0x0"
+      },
+      "VTTBR": {
+        "number": 276,
+        "value": "0x0"
+      },
+      "TTBR0_EL1_S": {
+        "number": 285,
+        "value": "0x0"
+      },
+      "TTBR1_EL1_S": {
+        "number": 286,
+        "value": "0x0"
+      },
+      "DFAR_S": {
+        "number": 287,
+        "value": "0x0"
+      },
+      "TTBR0_EL1": {
+        "number": 288,
+        "value": "0x0"
+      },
+      "TTBR1_EL1": {
+        "number": 291,
+        "value": "0x0"
+      },
+      "DFAR": {
+        "number": 292,
+        "value": "0x0"
+      },
+      "IFAR_S": {
+        "number": 293,
+        "value": "0x0"
+      },
+      "TTBCR": {
+        "number": 295,
+        "value": "0x0"
+      },
+      "IFAR": {
+        "number": 296,
+        "value": "0x0"
+      },
+      "TTBCR_S": {
+        "number": 308,
+        "value": "0x0"
+      },
+      "HIFAR_S": {
+        "number": 312,
+        "value": "0x0"
+      },
+      "HIFAR": {
+        "number": 316,
+        "value": "0x0"
+      },
+      "SCTLR_S": {
+        "number": 343,
+        "value": "0xc50078"
+      },
+      "DFSR_S": {
+        "number": 344,
+        "value": "0x0"
+      },
+      "CPACR_S": {
+        "number": 346,
+        "value": "0xf00000"
+      },
+      "IFSR_S": {
+        "number": 347,
+        "value": "0x0"
+      },
+      "SCTLR": {
+        "number": 348,
+        "value": "0xc50078"
+      },
+      "DFSR": {
+        "number": 350,
+        "value": "0x0"
+      },
+      "CPACR": {
+        "number": 353,
+        "value": "0xf00000"
+      },
+      "IFSR": {
+        "number": 354,
+        "value": "0x0"
+      },
+      "SCTLR_EL2_S": {
+        "number": 367,
+        "value": "0x0"
+      },
+      "SCTLR_EL2": {
+        "number": 369,
+        "value": "0x0"
+      }
+    }
+  },
+  "initial_registers": {
+    "r0": "0x800",
+    "r1": "0xc5187d",
+    "r2": "0x3",
+    "r3": "0xffffffff",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0x0",
+    "r13": "0x13000",
+    "r14": "0x3c4",
+    "r15": "0x6280004",
+    "cpsr": "0x600001d3"
+  },
+  "initial_system_registers": {
+    "NSACR_S": {
+      "number": 110,
+      "value": "0x0"
+    },
+    "NSACR": {
+      "number": 115,
+      "value": "0x0"
+    },
+    "MVBAR_S": {
+      "number": 154,
+      "value": "0x0"
+    },
+    "MVBAR": {
+      "number": 159,
+      "value": "0x0"
+    },
+    "VBAR": {
+      "number": 172,
+      "value": "0x0"
+    },
+    "VBAR_S": {
+      "number": 175,
+      "value": "0x0"
+    },
+    "VBAR_EL2_S": {
+      "number": 181,
+      "value": "0x0"
+    },
+    "VMPIDR_S": {
+      "number": 182,
+      "value": "0x80000000"
+    },
+    "VBAR_EL2": {
+      "number": 183,
+      "value": "0x0"
+    },
+    "VMPIDR": {
+      "number": 184,
+      "value": "0x80000000"
+    },
+    "DACR_S": {
+      "number": 237,
+      "value": "0x0"
+    },
+    "DACR": {
+      "number": 238,
+      "value": "0x0"
+    },
+    "TTBR0": {
+      "number": 269,
+      "value": "0x0"
+    },
+    "TTBR1_S": {
+      "number": 270,
+      "value": "0x0"
+    },
+    "TTBR1": {
+      "number": 271,
+      "value": "0x0"
+    },
+    "TTBR0_S": {
+      "number": 272,
+      "value": "0x0"
+    },
+    "HTTBR_S": {
+      "number": 273,
+      "value": "0x0"
+    },
+    "HTTBR": {
+      "number": 274,
+      "value": "0x0"
+    },
+    "VTTBR_S": {
+      "number": 275,
+      "value": "0x0"
+    },
+    "VTTBR": {
+      "number": 276,
+      "value": "0x0"
+    },
+    "TTBR0_EL1_S": {
+      "number": 285,
+      "value": "0x0"
+    },
+    "TTBR1_EL1_S": {
+      "number": 286,
+      "value": "0x0"
+    },
+    "DFAR_S": {
+      "number": 287,
+      "value": "0x0"
+    },
+    "TTBR0_EL1": {
+      "number": 288,
+      "value": "0x0"
+    },
+    "TTBR1_EL1": {
+      "number": 291,
+      "value": "0x0"
+    },
+    "DFAR": {
+      "number": 292,
+      "value": "0x0"
+    },
+    "IFAR_S": {
+      "number": 293,
+      "value": "0x0"
+    },
+    "TTBCR": {
+      "number": 295,
+      "value": "0x0"
+    },
+    "IFAR": {
+      "number": 296,
+      "value": "0x0"
+    },
+    "TTBCR_S": {
+      "number": 308,
+      "value": "0x0"
+    },
+    "HIFAR_S": {
+      "number": 312,
+      "value": "0x0"
+    },
+    "HIFAR": {
+      "number": 316,
+      "value": "0x0"
+    },
+    "SCTLR_S": {
+      "number": 343,
+      "value": "0xc50078"
+    },
+    "DFSR_S": {
+      "number": 344,
+      "value": "0x0"
+    },
+    "CPACR_S": {
+      "number": 346,
+      "value": "0xf00000"
+    },
+    "IFSR_S": {
+      "number": 347,
+      "value": "0x0"
+    },
+    "SCTLR": {
+      "number": 348,
+      "value": "0xc50078"
+    },
+    "DFSR": {
+      "number": 350,
+      "value": "0x0"
+    },
+    "CPACR": {
+      "number": 353,
+      "value": "0xf00000"
+    },
+    "IFSR": {
+      "number": 354,
+      "value": "0x0"
+    },
+    "SCTLR_EL2_S": {
+      "number": 367,
+      "value": "0x0"
+    },
+    "SCTLR_EL2": {
+      "number": 369,
+      "value": "0x0"
+    }
+  },
+  "watchpoints": [
+    {
+      "address": "0x70000000",
+      "size": "0x10000000",
+      "label": "known high peripheral address region"
+    },
+    {
+      "address": "0x1c000000",
+      "size": "0x4000000",
+      "label": "candidate lower peripheral alias region"
+    },
+    {
+      "address": "0x60000",
+      "size": "0x2000",
+      "label": "documented boot IPC register region"
+    }
+  ],
+  "checkpoint": "0x65b3e1a"
+}

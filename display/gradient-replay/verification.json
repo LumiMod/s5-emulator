@@ -1,0 +1,55 @@
+{
+  "purpose": "Replay of unchanged original GUI's captured 4x4 initialization warm-up path; not a menu screenshot or live swap",
+  "source_trace": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/menu-smp/results/isolated-display-vendor-state/graphics/calls.jsonl",
+  "trace_sha256": "34a9d6fa28b21b88fd7fc35456210fd142724e954234ff4615dc3557b446b6b6",
+  "target_api": {
+    "index": 156,
+    "name": "unsupported_or_invalid_call",
+    "pc": "0x65d9d4e",
+    "api": "vgDrawPath",
+    "r0_r3": [
+      268435464,
+      3,
+      0,
+      167727592
+    ],
+    "lr": "0x72a33db",
+    "error": "Gradient or pattern paint has not been implemented",
+    "exception": "UnsupportedVG"
+  },
+  "native_dimensions": [
+    1024,
+    768
+  ],
+  "original_path": {
+    "index": 147,
+    "name": "draw_captured_path",
+    "segments": [
+      2,
+      6,
+      8,
+      6,
+      0
+    ],
+    "coordinates": [
+      0.0,
+      0.0,
+      4.0,
+      4.0,
+      0.0
+    ],
+    "coordinate_count": 5,
+    "modes": 3,
+    "datatype": 3,
+    "scale": 1.0,
+    "bias": 0.0,
+    "geometry_sha256": "a459073f6c7360c270cd1abada4e6164b9f2c9ca6094b9a6c471d7e0461b9436"
+  },
+  "nonconstant_gray_levels_in_original_4x4_path": [
+    222,
+    224,
+    225
+  ],
+  "passed": true,
+  "output": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/display/gradient-replay/replayed-warmup.png"
+}

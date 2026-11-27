@@ -1,0 +1,378 @@
+{
+  "source": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin",
+  "source_sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe",
+  "original_instructions_patched": false,
+  "watchpoints": [],
+  "assumptions": [
+    "single core, synthetic VFP/MMU initial state",
+    "two peer flags cleared without executing peer cores",
+    "flat RAM, independent low/high program copies"
+  ],
+  "events": [],
+  "component_set": [
+    {
+      "name": "03_program.bin",
+      "address": "0x6280000",
+      "bytes": 16674816,
+      "sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe"
+    },
+    {
+      "name": "05_postboot1.bin",
+      "address": "0x7267000",
+      "bytes": 4718592,
+      "sha256": "e14b32e80c50d52e39edd6f7b725aba34b9f0a4ee12ad38987593f5cc8a8ec5f"
+    },
+    {
+      "name": "06_postboot2.bin",
+      "address": "0x76e7000",
+      "bytes": 131072,
+      "sha256": "76a627dc813626668f242f3da0001e9c7df6cb6983a68093951b42d4b8a81284"
+    },
+    {
+      "name": "07_postboot3.bin",
+      "address": "0x7707000",
+      "bytes": 8257536,
+      "sha256": "435f3b6a4f2f3368107885025dc698acc333f6f048875727bed25b93d49b4dbc"
+    },
+    {
+      "name": "08_postboot4.bin",
+      "address": "0x7ee7000",
+      "bytes": 131072,
+      "sha256": "a328d5508102bdb141469c4b6a6dc84b584f14dfbc34cfde54d5837a4f42f444"
+    },
+    {
+      "name": "09_postboot5.bin",
+      "address": "0x7f07000",
+      "bytes": 917504,
+      "sha256": "8912a67ac38cba6edd4f15810322dd0142f3497c20cb077dbfaa203001896286"
+    },
+    {
+      "name": "21_osddata.bin",
+      "address": "0x7fe7000",
+      "bytes": 11010048,
+      "sha256": "9581b1d535c8f3eb20f5f51d7d33c4c5e4106a3024c0ba7bf2b231a480e29f5b"
+    },
+    {
+      "name": "03_program.bin",
+      "address": "0x86280000",
+      "bytes": 16674816,
+      "sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe"
+    }
+  ],
+  "qemu_pid": 6335,
+  "peer_flags_before": "f0f0f0f0f0f0f0f0f0f0f0f000000000",
+  "entry_registers": {
+    "r0": "0x3",
+    "r1": "0x99b5f84",
+    "r2": "0x99b5f78",
+    "r3": "0x3",
+    "r4": "0x99b5f84",
+    "r5": "0x99b5f78",
+    "r6": "0x3",
+    "r7": "0x3",
+    "r8": "0x1",
+    "r9": "0x0",
+    "r10": "0x99b1620",
+    "r11": "0x0",
+    "r12": "0x0",
+    "r13": "0x99b5f40",
+    "r14": "0x64232a5",
+    "r15": "0x642c43c",
+    "cpsr": "0x600001b3"
+  },
+  "tx_buffer": "0439ff",
+  "rx_before": "ffffff",
+  "stack_address": "0x99b5f40",
+  "stack_words": [
+    "0x99b5f84",
+    "0x64e6a99",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x99b5f84",
+    "0x99b5f78",
+    "0x3",
+    "0x1",
+    "0x7f081c0c",
+    "0x99b5fb8",
+    "0x99b5fb8",
+    "0x420",
+    "0x6752fe7",
+    "0xffffff",
+    "0x99b5fb8",
+    "0x3",
+    "0xff3904",
+    "0xc",
+    "0xc",
+    "0x99b5fb8",
+    "0x6728b1b",
+    "0x0",
+    "0x0",
+    "0x6f48eb8",
+    "0x6f48ebc",
+    "0x0",
+    "0x0",
+    "0x99b1620",
+    "0x6728caf",
+    "0x0",
+    "0x63c88f7",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x8dfe890",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x653a231",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef",
+    "0xefefefef"
+  ],
+  "controller_table": "0000047f0010047f0020047f0030047f0040047f0050047f0060047f",
+  "registers_7f043000": "c701000000000000000000000000000002000000000000000000000000000000",
+  "model": {
+    "name": "exploratory cold RTC / cleared backup-register state",
+    "hardware_part_identified": false,
+    "hardware_reset_defaults_verified": false,
+    "rtc_ticks_modeled": false,
+    "unmodeled_register_reads": "stop with error",
+    "reset_assumptions": {
+      "0x0420..0x043e": 0,
+      "0x040e": 1,
+      "0x0410": 0,
+      "0x0440": 0
+    },
+    "protocol_evidence": [
+      "0x06752fb0 read frame",
+      "0x06753036 write frame"
+    ],
+    "rtc_evidence": [
+      "0x064d060a calendar reads",
+      "0x064d0982 BCD decode",
+      "0x067531ac stock cold-calendar initialization"
+    ]
+  },
+  "transfers": [
+    {
+      "index": 0,
+      "tx": "0439ff",
+      "cs_register": "0x10000001",
+      "io": [
+        {
+          "pc": "0x642c4c6",
+          "tx": 4,
+          "status": 3
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 57,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 0,
+          "status": 7
+        }
+      ],
+      "rx": "ffff00",
+      "instruction_steps": 99,
+      "register_event": {
+        "operation": "read",
+        "address": "0x438",
+        "value": 0,
+        "source": "synthetic cold-start backup/status reset assumption"
+      }
+    },
+    {
+      "index": 1,
+      "tx": "043800",
+      "cs_register": "0x10000001",
+      "io": [
+        {
+          "pc": "0x642c4c6",
+          "tx": 4,
+          "status": 3
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 56,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 0,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        }
+      ],
+      "rx": "ffffff",
+      "instruction_steps": 99,
+      "register_event": {
+        "operation": "write",
+        "address": "0x438",
+        "value": 0,
+        "source": "preceding observed original-firmware write"
+      }
+    },
+    {
+      "index": 2,
+      "tx": "0441ff",
+      "cs_register": "0x10000001",
+      "io": [
+        {
+          "pc": "0x642c4c6",
+          "tx": 4,
+          "status": 3
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 65,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 255,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4d8",
+          "rx": 0,
+          "status": 7
+        }
+      ],
+      "rx": "ffff00",
+      "instruction_steps": 99,
+      "register_event": {
+        "operation": "read",
+        "address": "0x440",
+        "value": 0,
+        "source": "synthetic cold-start backup/status reset assumption"
+      }
+    },
+    {
+      "index": 3,
+      "tx": "041bff",
+      "cs_register": "0x10000001",
+      "io": [
+        {
+          "pc": "0x642c4c6",
+          "tx": 4,
+          "status": 3
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 27,
+          "status": 7
+        },
+        {
+          "pc": "0x642c4c6",
+          "tx": 255,
+          "status": 7
+        }
+      ],
+      "unsupported": "Unmodeled register read 0x041a"
+    }
+  ],
+  "stop_reason": "Unmodeled register read 0x041a",
+  "final_registers": {
+    "r0": "0x3",
+    "r1": "0x99b5f7f",
+    "r2": "0x99b5f70",
+    "r3": "0x3",
+    "r4": "0x0",
+    "r5": "0x2",
+    "r6": "0x7f043000",
+    "r7": "0x8ab472c",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x99b1620",
+    "r11": "0x0",
+    "r12": "0xff",
+    "r13": "0x99b5f24",
+    "r14": "0x64232a5",
+    "r15": "0x642c4c6",
+    "cpsr": "0x600001b3"
+  },
+  "model_events": [
+    {
+      "operation": "read",
+      "address": "0x438",
+      "value": 0,
+      "source": "synthetic cold-start backup/status reset assumption"
+    },
+    {
+      "operation": "write",
+      "address": "0x438",
+      "value": 0,
+      "source": "preceding observed original-firmware write"
+    },
+    {
+      "operation": "read",
+      "address": "0x440",
+      "value": 0,
+      "source": "synthetic cold-start backup/status reset assumption"
+    }
+  ],
+  "menu_booted": false,
+  "qemu_exit_code": 0
+}

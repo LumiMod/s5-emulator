@@ -1,0 +1,41 @@
+{
+  "official_sha256": "b2ec4aeec209693b874df8dfdf11fc85b38fa4675b44ec554b7a167f430827e1",
+  "output": "/Users/lixiuqi/相机功能验证/s5_v29_patched/S5___V29_ALL_PATCHED.bin",
+  "components": [
+    {
+      "index": 3,
+      "name": "program",
+      "file": "03_program.bin",
+      "size": 16674816,
+      "iv": "1198b52525a4a0d03c6b9eee4d650bdf",
+      "plaintext_sha256": "3bd040495a82a860961ae289748f3cdc6ee1074c8f8e191c61e085c58e78dc62"
+    },
+    {
+      "index": 7,
+      "name": "postboot3",
+      "file": "07_postboot3.bin",
+      "size": 8257536,
+      "iv": "3a3a619d8316c86a5ae73a7a5e73abc2",
+      "plaintext_sha256": "1a051a544bd0536f8c1d2fd340109faf738840c8cbcdc6a20432d5e7eb523e87"
+    },
+    {
+      "index": 20,
+      "name": "osdover",
+      "file": "20_osdover.bin",
+      "size": 10485760,
+      "iv": "16261b47a44e3cc6c1675a4baed8180f",
+      "plaintext_sha256": "dbf8e3dcf70329d6b36d8d366b26a3b1dfdf9d3651b18365d144c3c1ca656aea"
+    },
+    {
+      "index": 30,
+      "name": "rootfs1",
+      "file": "30_rootfs1.bin",
+      "size": 3145728,
+      "iv": "2a72875cc0184159f7190717906008f1",
+      "plaintext_sha256": "887cbd9ce45d37c517f09ffbc6672c32899846390645d3d741f2d00ee16f9977"
+    }
+  ],
+  "output_sha256": "d442be3cf1f5abf7759c7712937716dfc578ec2590a173143bd5590f40e2dc6b",
+  "outer_crc32": "0x163713b4",
+  "round_trip_verified": true
+}

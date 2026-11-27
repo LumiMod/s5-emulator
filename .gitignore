@@ -1,0 +1,49 @@
+# macOS / Python
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Compiled binaries / object files
+*.o
+*.a
+*.so
+*.dylib
+qemu/peer-isa-analysis/teakra-probe
+
+# Toolchain downloads, build dirs, and conda/mamba caches (rebuild via toolchain/build.sh)
+toolchain/build/
+toolchain/qemu-9.2.4/
+toolchain/qemu-9.2.4.tar.xz
+toolchain/micromamba.tar.bz2
+toolchain/deps/
+toolchain/mamba-root/
+toolchain/bin/
+toolchain/uv-cache/
+toolchain/config-temp/
+toolchain/*.log
+
+# Large local QEMU runtime dumps & temporary logs (GB-scale)
+results/
+capture/results/
+lab/results/
+qa/
+menu-smp/
+menu-boot-linux/
+display/prepared/
+display/scatter-check/
+analysis/kernel.raw
+qemu/results-*/
+qemu/display-test-smoke*/
+qemu/frame-test-smoke*/
+qemu/oneshot-reload-*/
+qemu/serial-tx-hle-*/
+qemu/software-status-*/
+*.log
+*.jsonl
+ram.bin
+input-Y.bin
+input-C.bin
+output-Y.bin
+output-C.bin

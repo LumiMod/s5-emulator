@@ -1,0 +1,1 @@
+{"passed":false,"failure":"GDB bulk direct GIC MMIO read closed QEMU RSP before original function execution; no firmware failure inferred. Superseded by guest LDRB readback probe."}

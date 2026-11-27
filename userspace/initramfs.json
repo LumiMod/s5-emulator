@@ -1,0 +1,17 @@
+{
+  "initramfs": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/userspace/initramfs.cpio",
+  "initramfs_bytes": 7168,
+  "initramfs_sha256": "20de1651a248c9cef349afef6edd67085c2c7766398d80bebba074796efda77b",
+  "init_elf": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/userspace/initramfs.init.elf",
+  "init_elf_sha256": "aa7e52b530410d63d6af4f3d34c9c484df32ccf961f41972d1894f9b9f5b7110",
+  "init_code_bytes": 1888,
+  "command_bytes": 79,
+  "execution": "original /bin/sh -c inside original SquashFS rootfs",
+  "stdout": "pipe -> hexadecimal records in Linux /dev/kmsg",
+  "marker_token": null,
+  "output_encoding": "hex",
+  "output_chunk_max_bytes": 384,
+  "output_marker": "S5LAB_OUT ",
+  "end_marker": "S5LAB_END status=0x<raw wait4 status>",
+  "camera_hardware_simulated": false
+}

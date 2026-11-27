@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "cpu": 0,
+      "pc": "0x63b0124",
+      "label": "primary_shared_barrier",
+      "shared_words": [
+        "0xf0f0f0f0",
+        "0xf0f0f0f0",
+        "0xf0f0f0f0",
+        "0x0"
+      ]
+    },
+    {
+      "cpu": 0,
+      "pc": "0x642c43c",
+      "label": "serial_transfer_entry",
+      "shared_words": [
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x0"
+      ]
+    }
+  ],
+  "final_pcs": [
+    "0x6554d8e",
+    "0x63be8aa",
+    "0x63be8aa",
+    "0x10800"
+  ],
+  "shared_words": [
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "stop_reason": "time_bound",
+  "storage_reads": 0,
+  "graphics_sources": 0,
+  "output": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/serial/results-smp-cold"
+}

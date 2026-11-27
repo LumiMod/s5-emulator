@@ -1,0 +1,18 @@
+{
+  "scope": "Original loader timer initializer, isolated from full boot",
+  "source": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/01_loader2.bin",
+  "sha256": "4a925f2e019310a9a8f2029df652cc7a5e93be5fb8ee4b6b29c6c6d3805cea85",
+  "entry_file_offset": "0x5e6",
+  "loader_loaded_at": "0x0",
+  "original_instructions_patched": false,
+  "synthetic_component": "return breakpoint and parked-core ARM loops at 0x200000",
+  "no_full_loader_or_main_firmware_boot_claimed": true,
+  "before_control": "0x20",
+  "stop_reply": "T05thread:01;",
+  "after_control": "0x86",
+  "first_value": 4294967278,
+  "second_value": 4294914407,
+  "elapsed_ticks_mod32": 52871,
+  "passed": true,
+  "qemu_exit_code": 0
+}

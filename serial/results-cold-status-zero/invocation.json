@@ -1,0 +1,103 @@
+{
+  "argv": [
+    "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-emulator/toolchain/build/qemu-system-arm",
+    "-M",
+    "none",
+    "-cpu",
+    "cortex-a7",
+    "-m",
+    "3G",
+    "-S",
+    "-accel",
+    "tcg,thread=single",
+    "-display",
+    "none",
+    "-monitor",
+    "none",
+    "-serial",
+    "none",
+    "-no-user-config",
+    "-nodefaults",
+    "-qmp",
+    "unix:/tmp/s5-rsp-oo6sucnm/qmp,server=on,wait=off",
+    "-gdb",
+    "unix:/tmp/s5-rsp-oo6sucnm/gdb,server=on,wait=off",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin,addr=0x6280000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/05_postboot1.bin,addr=0x7267000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/06_postboot2.bin,addr=0x76e7000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/07_postboot3.bin,addr=0x7707000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/08_postboot4.bin,addr=0x7ee7000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/09_postboot5.bin,addr=0x7f07000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/21_osddata.bin,addr=0x7fe7000,force-raw=on",
+    "-device",
+    "loader,file=/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin,addr=0x86280000,force-raw=on"
+  ],
+  "ram_base": 0,
+  "ram_bytes": 3221225472,
+  "machine": "none",
+  "cpu_count": 1,
+  "mapped_address_ranges": [
+    [
+      0,
+      3221225472
+    ]
+  ],
+  "loaded_files": [
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin",
+      "address": 103284736,
+      "bytes": 16674816,
+      "sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/05_postboot1.bin",
+      "address": 119959552,
+      "bytes": 4718592,
+      "sha256": "e14b32e80c50d52e39edd6f7b725aba34b9f0a4ee12ad38987593f5cc8a8ec5f"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/06_postboot2.bin",
+      "address": 124678144,
+      "bytes": 131072,
+      "sha256": "76a627dc813626668f242f3da0001e9c7df6cb6983a68093951b42d4b8a81284"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/07_postboot3.bin",
+      "address": 124809216,
+      "bytes": 8257536,
+      "sha256": "435f3b6a4f2f3368107885025dc698acc333f6f048875727bed25b93d49b4dbc"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/08_postboot4.bin",
+      "address": 133066752,
+      "bytes": 131072,
+      "sha256": "a328d5508102bdb141469c4b6a6dc84b584f14dfbc34cfde54d5837a4f42f444"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/09_postboot5.bin",
+      "address": 133197824,
+      "bytes": 917504,
+      "sha256": "8912a67ac38cba6edd4f15810322dd0142f3497c20cb077dbfaa203001896286"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/21_osddata.bin",
+      "address": 134115328,
+      "bytes": 11010048,
+      "sha256": "9581b1d535c8f3eb20f5f51d7d33c4c5e4106a3024c0ba7bf2b231a480e29f5b"
+    },
+    {
+      "file": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin",
+      "address": 2250768384,
+      "bytes": 16674816,
+      "sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe"
+    }
+  ],
+  "scope": "Flat-memory ARM function probe; no S5 hardware model"
+}

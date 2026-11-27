@@ -1,0 +1,763 @@
+{
+  "scope": "main-program early startup only",
+  "source": "/Users/lixiuqi/Documents/ChatGPT/\u76f8\u673a/s5-v29-offline/unpacked-v29/03_program.bin",
+  "source_kind": "original",
+  "source_sha256": "fc496d62a91f6e9b1b84807183bb805bc546c9105d2938546b58a66ad9d132fe",
+  "source_bytes": 16674816,
+  "entry": "0x6280004",
+  "entry_state": "ARM",
+  "original_instructions_patched": false,
+  "menu_booted": false,
+  "camera_connected": false,
+  "timeout_seconds": 3.0,
+  "assumptions": [
+    "single Cortex-A7 core with MPIDR core index zero",
+    "flat initially zero RAM, MMU initially disabled",
+    "source copied independently at 0x06280000 and 0x86280000; no coherent alias",
+    "documented warm-handoff CPSR/SP/r0-r3/LR, remaining registers zero",
+    "no SoC/MMIO, other-core, interrupt-controller or display implementation",
+    "bootloader is assumed to have enabled CP10/11 and FPEXC.EN",
+    "synthetic 1 MiB identity section table at 0x100000; normal uncached RAM; MMU on"
+  ],
+  "loader_state_reconstruction": {
+    "description": "Synthetic loader state: CPACR CP10/11 access and FPEXC.EN",
+    "helper_address": "0x10000",
+    "helper_sha256": "001787e3715b50fadb15b68406ff78e3f1e858f005638a31cc43ae697c4c8884",
+    "stop_reply": "T05thread:01;",
+    "system_registers_after_helper": {
+      "NSACR_S": {
+        "number": 110,
+        "value": "0x0"
+      },
+      "NSACR": {
+        "number": 115,
+        "value": "0x0"
+      },
+      "MVBAR_S": {
+        "number": 154,
+        "value": "0x0"
+      },
+      "MVBAR": {
+        "number": 159,
+        "value": "0x0"
+      },
+      "VBAR": {
+        "number": 172,
+        "value": "0x0"
+      },
+      "VBAR_S": {
+        "number": 175,
+        "value": "0x0"
+      },
+      "VBAR_EL2_S": {
+        "number": 181,
+        "value": "0x0"
+      },
+      "VMPIDR_S": {
+        "number": 182,
+        "value": "0x80000000"
+      },
+      "VBAR_EL2": {
+        "number": 183,
+        "value": "0x0"
+      },
+      "VMPIDR": {
+        "number": 184,
+        "value": "0x80000000"
+      },
+      "DACR_S": {
+        "number": 237,
+        "value": "0x0"
+      },
+      "DACR": {
+        "number": 238,
+        "value": "0x0"
+      },
+      "TTBR0": {
+        "number": 269,
+        "value": "0x0"
+      },
+      "TTBR1_S": {
+        "number": 270,
+        "value": "0x0"
+      },
+      "TTBR1": {
+        "number": 271,
+        "value": "0x0"
+      },
+      "TTBR0_S": {
+        "number": 272,
+        "value": "0x0"
+      },
+      "HTTBR_S": {
+        "number": 273,
+        "value": "0x0"
+      },
+      "HTTBR": {
+        "number": 274,
+        "value": "0x0"
+      },
+      "VTTBR_S": {
+        "number": 275,
+        "value": "0x0"
+      },
+      "VTTBR": {
+        "number": 276,
+        "value": "0x0"
+      },
+      "TTBR0_EL1_S": {
+        "number": 285,
+        "value": "0x0"
+      },
+      "TTBR1_EL1_S": {
+        "number": 286,
+        "value": "0x0"
+      },
+      "DFAR_S": {
+        "number": 287,
+        "value": "0x0"
+      },
+      "TTBR0_EL1": {
+        "number": 288,
+        "value": "0x0"
+      },
+      "TTBR1_EL1": {
+        "number": 291,
+        "value": "0x0"
+      },
+      "DFAR": {
+        "number": 292,
+        "value": "0x0"
+      },
+      "IFAR_S": {
+        "number": 293,
+        "value": "0x0"
+      },
+      "TTBCR": {
+        "number": 295,
+        "value": "0x0"
+      },
+      "IFAR": {
+        "number": 296,
+        "value": "0x0"
+      },
+      "TTBCR_S": {
+        "number": 308,
+        "value": "0x0"
+      },
+      "HIFAR_S": {
+        "number": 312,
+        "value": "0x0"
+      },
+      "HIFAR": {
+        "number": 316,
+        "value": "0x0"
+      },
+      "SCTLR_S": {
+        "number": 343,
+        "value": "0xc50078"
+      },
+      "DFSR_S": {
+        "number": 344,
+        "value": "0x0"
+      },
+      "CPACR_S": {
+        "number": 346,
+        "value": "0xf00000"
+      },
+      "IFSR_S": {
+        "number": 347,
+        "value": "0x0"
+      },
+      "SCTLR": {
+        "number": 348,
+        "value": "0xc50078"
+      },
+      "DFSR": {
+        "number": 350,
+        "value": "0x0"
+      },
+      "CPACR": {
+        "number": 353,
+        "value": "0xf00000"
+      },
+      "IFSR": {
+        "number": 354,
+        "value": "0x0"
+      },
+      "SCTLR_EL2_S": {
+        "number": 367,
+        "value": "0x0"
+      },
+      "SCTLR_EL2": {
+        "number": 369,
+        "value": "0x0"
+      }
+    }
+  },
+  "synthetic_mmu_state": {
+    "description": "Synthetic identity short-section page table; Normal non-cacheable RAM",
+    "peripheral_range_strongly_ordered": "0x70000000..0x7fffffff",
+    "table_address": "0x100000",
+    "table_sha256": "be5f76f1a89829d075fccbd6b7088770e94d733c7616634692dff33f50e8d5a3",
+    "helper_sha256": "50fa5526bd42aca91c7b02d255afb6d769d318acb6912fec6839e89b9fc64fe4",
+    "stop_reply": "T05thread:01;",
+    "system_registers_after_helper": {
+      "NSACR_S": {
+        "number": 110,
+        "value": "0x0"
+      },
+      "NSACR": {
+        "number": 115,
+        "value": "0x0"
+      },
+      "MVBAR_S": {
+        "number": 154,
+        "value": "0x0"
+      },
+      "MVBAR": {
+        "number": 159,
+        "value": "0x0"
+      },
+      "VBAR": {
+        "number": 172,
+        "value": "0x0"
+      },
+      "VBAR_S": {
+        "number": 175,
+        "value": "0x0"
+      },
+      "VBAR_EL2_S": {
+        "number": 181,
+        "value": "0x0"
+      },
+      "VMPIDR_S": {
+        "number": 182,
+        "value": "0x80000000"
+      },
+      "VBAR_EL2": {
+        "number": 183,
+        "value": "0x0"
+      },
+      "VMPIDR": {
+        "number": 184,
+        "value": "0x80000000"
+      },
+      "DACR_S": {
+        "number": 237,
+        "value": "0x1"
+      },
+      "DACR": {
+        "number": 238,
+        "value": "0x0"
+      },
+      "TTBR0": {
+        "number": 269,
+        "value": "0x0"
+      },
+      "TTBR1_S": {
+        "number": 270,
+        "value": "0x0"
+      },
+      "TTBR1": {
+        "number": 271,
+        "value": "0x0"
+      },
+      "TTBR0_S": {
+        "number": 272,
+        "value": "0x100000"
+      },
+      "HTTBR_S": {
+        "number": 273,
+        "value": "0x0"
+      },
+      "HTTBR": {
+        "number": 274,
+        "value": "0x0"
+      },
+      "VTTBR_S": {
+        "number": 275,
+        "value": "0x0"
+      },
+      "VTTBR": {
+        "number": 276,
+        "value": "0x0"
+      },
+      "TTBR0_EL1_S": {
+        "number": 285,
+        "value": "0x100000"
+      },
+      "TTBR1_EL1_S": {
+        "number": 286,
+        "value": "0x0"
+      },
+      "DFAR_S": {
+        "number": 287,
+        "value": "0x0"
+      },
+      "TTBR0_EL1": {
+        "number": 288,
+        "value": "0x0"
+      },
+      "TTBR1_EL1": {
+        "number": 291,
+        "value": "0x0"
+      },
+      "DFAR": {
+        "number": 292,
+        "value": "0x0"
+      },
+      "IFAR_S": {
+        "number": 293,
+        "value": "0x0"
+      },
+      "TTBCR": {
+        "number": 295,
+        "value": "0x0"
+      },
+      "IFAR": {
+        "number": 296,
+        "value": "0x0"
+      },
+      "TTBCR_S": {
+        "number": 308,
+        "value": "0x0"
+      },
+      "HIFAR_S": {
+        "number": 312,
+        "value": "0x0"
+      },
+      "HIFAR": {
+        "number": 316,
+        "value": "0x0"
+      },
+      "SCTLR_S": {
+        "number": 343,
+        "value": "0xc50079"
+      },
+      "DFSR_S": {
+        "number": 344,
+        "value": "0x0"
+      },
+      "CPACR_S": {
+        "number": 346,
+        "value": "0xf00000"
+      },
+      "IFSR_S": {
+        "number": 347,
+        "value": "0x0"
+      },
+      "SCTLR": {
+        "number": 348,
+        "value": "0xc50078"
+      },
+      "DFSR": {
+        "number": 350,
+        "value": "0x0"
+      },
+      "CPACR": {
+        "number": 353,
+        "value": "0xf00000"
+      },
+      "IFSR": {
+        "number": 354,
+        "value": "0x0"
+      },
+      "SCTLR_EL2_S": {
+        "number": 367,
+        "value": "0x0"
+      },
+      "SCTLR_EL2": {
+        "number": 369,
+        "value": "0x0"
+      }
+    }
+  },
+  "initial_registers": {
+    "r0": "0x800",
+    "r1": "0xc5187d",
+    "r2": "0x3",
+    "r3": "0xffffffff",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0x0",
+    "r13": "0x13000",
+    "r14": "0x3c4",
+    "r15": "0x6280004",
+    "cpsr": "0x600001d3"
+  },
+  "initial_system_registers": {
+    "NSACR_S": {
+      "number": 110,
+      "value": "0x0"
+    },
+    "NSACR": {
+      "number": 115,
+      "value": "0x0"
+    },
+    "MVBAR_S": {
+      "number": 154,
+      "value": "0x0"
+    },
+    "MVBAR": {
+      "number": 159,
+      "value": "0x0"
+    },
+    "VBAR": {
+      "number": 172,
+      "value": "0x0"
+    },
+    "VBAR_S": {
+      "number": 175,
+      "value": "0x0"
+    },
+    "VBAR_EL2_S": {
+      "number": 181,
+      "value": "0x0"
+    },
+    "VMPIDR_S": {
+      "number": 182,
+      "value": "0x80000000"
+    },
+    "VBAR_EL2": {
+      "number": 183,
+      "value": "0x0"
+    },
+    "VMPIDR": {
+      "number": 184,
+      "value": "0x80000000"
+    },
+    "DACR_S": {
+      "number": 237,
+      "value": "0x1"
+    },
+    "DACR": {
+      "number": 238,
+      "value": "0x0"
+    },
+    "TTBR0": {
+      "number": 269,
+      "value": "0x0"
+    },
+    "TTBR1_S": {
+      "number": 270,
+      "value": "0x0"
+    },
+    "TTBR1": {
+      "number": 271,
+      "value": "0x0"
+    },
+    "TTBR0_S": {
+      "number": 272,
+      "value": "0x100000"
+    },
+    "HTTBR_S": {
+      "number": 273,
+      "value": "0x0"
+    },
+    "HTTBR": {
+      "number": 274,
+      "value": "0x0"
+    },
+    "VTTBR_S": {
+      "number": 275,
+      "value": "0x0"
+    },
+    "VTTBR": {
+      "number": 276,
+      "value": "0x0"
+    },
+    "TTBR0_EL1_S": {
+      "number": 285,
+      "value": "0x100000"
+    },
+    "TTBR1_EL1_S": {
+      "number": 286,
+      "value": "0x0"
+    },
+    "DFAR_S": {
+      "number": 287,
+      "value": "0x0"
+    },
+    "TTBR0_EL1": {
+      "number": 288,
+      "value": "0x0"
+    },
+    "TTBR1_EL1": {
+      "number": 291,
+      "value": "0x0"
+    },
+    "DFAR": {
+      "number": 292,
+      "value": "0x0"
+    },
+    "IFAR_S": {
+      "number": 293,
+      "value": "0x0"
+    },
+    "TTBCR": {
+      "number": 295,
+      "value": "0x0"
+    },
+    "IFAR": {
+      "number": 296,
+      "value": "0x0"
+    },
+    "TTBCR_S": {
+      "number": 308,
+      "value": "0x0"
+    },
+    "HIFAR_S": {
+      "number": 312,
+      "value": "0x0"
+    },
+    "HIFAR": {
+      "number": 316,
+      "value": "0x0"
+    },
+    "SCTLR_S": {
+      "number": 343,
+      "value": "0xc50079"
+    },
+    "DFSR_S": {
+      "number": 344,
+      "value": "0x0"
+    },
+    "CPACR_S": {
+      "number": 346,
+      "value": "0xf00000"
+    },
+    "IFSR_S": {
+      "number": 347,
+      "value": "0x0"
+    },
+    "SCTLR": {
+      "number": 348,
+      "value": "0xc50078"
+    },
+    "DFSR": {
+      "number": 350,
+      "value": "0x0"
+    },
+    "CPACR": {
+      "number": 353,
+      "value": "0xf00000"
+    },
+    "IFSR": {
+      "number": 354,
+      "value": "0x0"
+    },
+    "SCTLR_EL2_S": {
+      "number": 367,
+      "value": "0x0"
+    },
+    "SCTLR_EL2": {
+      "number": 369,
+      "value": "0x0"
+    }
+  },
+  "watchpoints": [],
+  "checkpoint": "0x6495ab6",
+  "stop_reason": "execution time bound reached; interrupted",
+  "wall_seconds": 3.001157,
+  "final_registers": {
+    "r0": "0x3",
+    "r1": "0xe1e1e1e0",
+    "r2": "0x1",
+    "r3": "0x8ab4e54",
+    "r4": "0x209c0",
+    "r5": "0xf0f0f0f0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x628015c",
+    "r11": "0x0",
+    "r12": "0x628016c",
+    "r13": "0xac34ba8",
+    "r14": "0x63bf3a3",
+    "r15": "0x63b0136",
+    "cpsr": "0x600001b3"
+  },
+  "final_system_registers": {
+    "NSACR_S": {
+      "number": 110,
+      "value": "0x0"
+    },
+    "NSACR": {
+      "number": 115,
+      "value": "0x0"
+    },
+    "MVBAR_S": {
+      "number": 154,
+      "value": "0x0"
+    },
+    "MVBAR": {
+      "number": 159,
+      "value": "0x0"
+    },
+    "VBAR": {
+      "number": 172,
+      "value": "0x0"
+    },
+    "VBAR_S": {
+      "number": 175,
+      "value": "0x0"
+    },
+    "VBAR_EL2_S": {
+      "number": 181,
+      "value": "0x0"
+    },
+    "VMPIDR_S": {
+      "number": 182,
+      "value": "0x80000000"
+    },
+    "VBAR_EL2": {
+      "number": 183,
+      "value": "0x0"
+    },
+    "VMPIDR": {
+      "number": 184,
+      "value": "0x80000000"
+    },
+    "DACR_S": {
+      "number": 237,
+      "value": "0x1"
+    },
+    "DACR": {
+      "number": 238,
+      "value": "0x0"
+    },
+    "TTBR0": {
+      "number": 269,
+      "value": "0x0"
+    },
+    "TTBR1_S": {
+      "number": 270,
+      "value": "0x0"
+    },
+    "TTBR1": {
+      "number": 271,
+      "value": "0x0"
+    },
+    "TTBR0_S": {
+      "number": 272,
+      "value": "0x100000"
+    },
+    "HTTBR_S": {
+      "number": 273,
+      "value": "0x0"
+    },
+    "HTTBR": {
+      "number": 274,
+      "value": "0x0"
+    },
+    "VTTBR_S": {
+      "number": 275,
+      "value": "0x0"
+    },
+    "VTTBR": {
+      "number": 276,
+      "value": "0x0"
+    },
+    "TTBR0_EL1_S": {
+      "number": 285,
+      "value": "0x100000"
+    },
+    "TTBR1_EL1_S": {
+      "number": 286,
+      "value": "0x0"
+    },
+    "DFAR_S": {
+      "number": 287,
+      "value": "0x0"
+    },
+    "TTBR0_EL1": {
+      "number": 288,
+      "value": "0x0"
+    },
+    "TTBR1_EL1": {
+      "number": 291,
+      "value": "0x0"
+    },
+    "DFAR": {
+      "number": 292,
+      "value": "0x0"
+    },
+    "IFAR_S": {
+      "number": 293,
+      "value": "0x0"
+    },
+    "TTBCR": {
+      "number": 295,
+      "value": "0x0"
+    },
+    "IFAR": {
+      "number": 296,
+      "value": "0x0"
+    },
+    "TTBCR_S": {
+      "number": 308,
+      "value": "0x0"
+    },
+    "HIFAR_S": {
+      "number": 312,
+      "value": "0x0"
+    },
+    "HIFAR": {
+      "number": 316,
+      "value": "0x0"
+    },
+    "SCTLR_S": {
+      "number": 343,
+      "value": "0xc50079"
+    },
+    "DFSR_S": {
+      "number": 344,
+      "value": "0x0"
+    },
+    "CPACR_S": {
+      "number": 346,
+      "value": "0xf00000"
+    },
+    "IFSR_S": {
+      "number": 347,
+      "value": "0x0"
+    },
+    "SCTLR": {
+      "number": 348,
+      "value": "0xc50078"
+    },
+    "DFSR": {
+      "number": 350,
+      "value": "0x0"
+    },
+    "CPACR": {
+      "number": 353,
+      "value": "0xf00000"
+    },
+    "IFSR": {
+      "number": 354,
+      "value": "0x0"
+    },
+    "SCTLR_EL2_S": {
+      "number": 367,
+      "value": "0x0"
+    },
+    "SCTLR_EL2": {
+      "number": 369,
+      "value": "0x0"
+    }
+  },
+  "final_instruction_state": "Thumb",
+  "pc_window_address": "0x63b0126",
+  "pc_window_hex": "01201a6054f82050401c03282944f9d30029f4d100202060bde8704034f117b40000c0090200144eab08544eab0800487047247a19092de9f04fa5b058f128fa",
+  "hmp_registers": "\r\nCPU#0\r\nR00=00000003 R01=e1e1e1e0 R02=00000001 R03=08ab4e54\r\nR04=000209c0 R05=f0f0f0f0 R06=00000000 R07=00000000\r\nR08=00000000 R09=00000000 R10=0628015c R11=00000000\r\nR12=0628016c R13=0ac34ba8 R14=063bf3a3 R15=063b0136\r\nPSR=600001b3 -ZC- T S svc32\r\ns00=00000000 s01=00000000 d00=0000000000000000\r\ns02=00000000 s03=00000000 d01=0000000000000000\r\ns04=00000000 s05=00000000 d02=0000000000000000\r\ns06=00000000 s07=00000000 d03=0000000000000000\r\ns08=00000000 s09=00000000 d04=0000000000000000\r\ns10=00000000 s11=00000000 d05=0000000000000000\r\ns12=00000000 s13=00000000 d06=0000000000000000\r\ns14=00000000 s15=00000000 d07=0000000000000000\r\ns16=00000000 s17=00000000 d08=0000000000000000\r\ns18=00000000 s19=00000000 d09=0000000000000000\r\ns20=00000000 s21=00000000 d10=0000000000000000\r\ns22=00000000 s23=00000000 d11=0000000000000000\r\ns24=00000000 s25=00000000 d12=0000000000000000\r\ns26=00000000 s27=00000000 d13=0000000000000000\r\ns28=00000000 s29=00000000 d14=0000000000000000\r\ns30=00000000 s31=00000000 d15=0000000000000000\r\ns32=00000000 s33=00000000 d16=0000000000000000\r\ns34=00000000 s35=00000000 d17=0000000000000000\r\ns36=00000000 s37=00000000 d18=0000000000000000\r\ns38=00000000 s39=00000000 d19=0000000000000000\r\ns40=00000000 s41=00000000 d20=0000000000000000\r\ns42=00000000 s43=00000000 d21=0000000000000000\r\ns44=00000000 s45=00000000 d22=0000000000000000\r\ns46=00000000 s47=00000000 d23=0000000000000000\r\ns48=00000000 s49=00000000 d24=0000000000000000\r\ns50=00000000 s51=00000000 d25=0000000000000000\r\ns52=00000000 s53=00000000 d26=0000000000000000\r\ns54=00000000 s55=00000000 d27=0000000000000000\r\ns56=00000000 s57=00000000 d28=0000000000000000\r\ns58=00000000 s59=00000000 d29=0000000000000000\r\ns60=00000000 s61=00000000 d30=0000000000000000\r\ns62=00000000 s63=00000000 d31=0000000000000000\r\nFPSCR: 00000000\r\n",
+  "qemu_exit_code": 0
+}
